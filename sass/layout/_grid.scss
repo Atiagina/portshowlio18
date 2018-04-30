@@ -1,0 +1,47 @@
+/* Sass Document */
+
+.grid {
+			
+			width: 100vw;
+			height: auto;
+		
+			padding:0;
+			margin:0 auto;
+			border: 2px solid black;
+		}
+		
+		.grid-item {
+		
+			height: 25vw;
+			width: 25vw;
+			padding: 40px;
+			margin: 0;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			border: 2px solid black;
+		}
+		
+		
+		
+		
+		.workSection .grid-item:nth-child(5n) {  
+  width: 50vw;
+			height: 25vw;
+			margin:0;
+}
+		span {
+			display: none;
+			
+		}
+		
+		.grid-item:hover span {
+			display: flex;
+			width: 100%;
+			height: 100%;
+			padding: 10px;
+			flex-direction: column;
+			justify-content: center;
+			background-color: rgba(255,255,255,0.8);
+			align-content: center;
+		}

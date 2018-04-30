@@ -1,0 +1,2222 @@
+/*!
+Theme Name: portshowlio
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: portshowlio
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+portshowlio is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+h1, h2, h3, h4, h5, p, blockquote, figure, ol, ul {
+  margin: 0;
+  padding: 0; }
+
+iframe {
+  border: 0; }
+
+main {
+  display: block; }
+
+::-moz-selection {
+  background-color: #57a290;
+  color: #fff; }
+
+::selection {
+  background-color: #57a290;
+  color: #fff; }
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+:focus {
+  outline: 0; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 0; }
+
+body {
+  margin: 0;
+  line-height: 1.4;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #616161; }
+
+hr {
+  height: 2px;
+  margin: 1rem auto;
+  border: 0;
+  background: rgba(0, 0, 0, 0.3); }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.hide, .xlarge-hide {
+  display: none !important; }
+
+.small-show, .medium-show, .large-show, xlarge-show {
+  display: none; }
+
+.clear:before, .clear:after {
+  content: '';
+  display: table; }
+
+.clear:after {
+  clear: both; }
+
+.clear {
+  zoom: 1; }
+
+a {
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2266a7;
+  cursor: pointer;
+  -webkit-text-decoration-skip: objects; }
+  a:active, a:hover {
+    color: #f15a3b; }
+  a img {
+    border: 0; }
+
+p {
+  margin-bottom: 1.1rem;
+  text-rendering: optimizeLegibility; }
+
+em, i, .em {
+  font-style: italic;
+  line-height: inherit; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.lowercase {
+  text-transform: lowercase; }
+
+strong, b, .strong {
+  font-weight: bolder;
+  line-height: inherit; }
+
+small, .small {
+  font-size: 80%; }
+
+.large {
+  font-size: 140%; }
+
+sup, .sup, sub, .sub {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline; }
+
+sup, .sup {
+  top: -.5em; }
+
+sub, .sub {
+  bottom: -.25em; }
+
+.ellipsis, .ellipsis li {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.text-clip, .text-clip li {
+  text-overflow: clip;
+  white-space: nowrap;
+  overflow: hidden; }
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-size: inherit; }
+  h1.super-header, h2.super-header, h3.super-header, h4.super-header, h5.super-header, .h1.super-header, .h2.super-header, .h3.super-header, .h4.super-header, .h5.super-header {
+    font-size: 4rem;
+    line-height: 1.18; }
+
+.super-header {
+  font-size: 4rem;
+  line-height: 1.18; }
+
+.h1 {
+  font-size: 3rem;
+  line-height: 1.22; }
+
+.h2 {
+  font-size: 2.5rem;
+  line-height: 1.4; }
+
+.h3 {
+  font-size: 2rem;
+  line-height: 1.55; }
+
+.h4 {
+  font-size: 1.5rem;
+  line-height: 1.7; }
+
+.h5 {
+  font-size: 1rem;
+  line-height: 1.85; }
+
+.sub-header {
+  color: rgba(97, 97, 97, 0.6); }
+
+.super-header.vw {
+  font-size: 7vw; }
+
+h1.vw {
+  font-size: 6vw; }
+
+h2.vw {
+  font-size: 5vw; }
+
+h3.vw {
+  font-size: 4.5vw; }
+
+h4.vw {
+  font-size: 4vw; }
+
+h5.vw {
+  font-size: 3.5vw; }
+
+ul, ol, dl {
+  list-style-position: outside;
+  margin-bottom: 1.15rem; }
+  ul ul, ul ol, ul dl, ol ul, ol ol, ol dl, dl ul, dl ol, dl dl {
+    margin-bottom: 0; }
+
+ul {
+  margin-left: 1.2rem;
+  list-style-type: disc; }
+  ul ul {
+    list-style-type: circle; }
+  ul.lined, ul.none {
+    list-style-type: none;
+    margin-left: 0; }
+  ul.lined li {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2); }
+
+ol {
+  margin-left: 1.55rem;
+  list-style-type: decimal; }
+
+.img, img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  border-style: none; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden; }
+  .video-container iframe, .video-container object, .video-container embed, .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.full {
+  margin: 0 auto; }
+
+.full {
+  max-width: 960px;
+  width: 100%; }
+
+.grid {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap; }
+
+.nowrap {
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
+
+.wrap-reverse {
+  -webkit-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse; }
+
+.justify-start {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start; }
+
+.justify-end {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end; }
+
+.justify-center {
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.justify-space {
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
+
+.justify-around {
+  -webkit-justify-content: space-around;
+  justify-content: space-around; }
+
+.reverse {
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
+.vertical {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
+  .vertical.reverse {
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+
+.align-top {
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-align-self: flex-start;
+  align-self: flex-start; }
+
+.align-bottom {
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  -webkit-align-self: flex-end;
+  align-self: flex-end; }
+
+.align-center {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-align-self: center;
+  align-self: center; }
+
+.align-baseline {
+  -webkit-align-items: baseline;
+  align-items: baseline; }
+
+.align-stretch {
+  -webkit-align-items: stretch;
+  align-items: stretch; }
+
+.cell {
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 0px;
+  min-width: 0px;
+  max-width: 100%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+  .cell.fit {
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto; }
+  .cell.fill {
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    width: auto; }
+  .cell.collapse {
+    margin-left: 0;
+    margin-right: 0; }
+  .cell.collapse-padding {
+    padding-left: 0;
+    padding-right: 0; }
+
+.hide {
+  display: none !important; }
+
+.show {
+  display: inherit !important; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-justify {
+  text-align: justify; }
+
+.twelve {
+  max-width: calc( 100%/12 * 12 - 1rem );
+  flex: 0 0 calc( 100%/12 * 12 - 1rem ); }
+  .twelve.collapse {
+    max-width: calc( 100%/12 * 12 );
+    flex: 0 0 calc( 100%/12 * 12 ); }
+
+.order-12 {
+  -webkit-order: 12;
+  order: 12; }
+
+.eleven {
+  max-width: calc( 100%/12 * 11 - 1rem );
+  flex: 0 0 calc( 100%/12 * 11 - 1rem ); }
+  .eleven.collapse {
+    max-width: calc( 100%/12 * 11 );
+    flex: 0 0 calc( 100%/12 * 11 ); }
+
+.order-11 {
+  -webkit-order: 11;
+  order: 11; }
+
+.ten {
+  max-width: calc( 100%/12 * 10 - 1rem );
+  flex: 0 0 calc( 100%/12 * 10 - 1rem ); }
+  .ten.collapse {
+    max-width: calc( 100%/12 * 10 );
+    flex: 0 0 calc( 100%/12 * 10 ); }
+
+.order-10 {
+  -webkit-order: 10;
+  order: 10; }
+
+.nine {
+  max-width: calc( 100%/12 * 9 - 1rem );
+  flex: 0 0 calc( 100%/12 * 9 - 1rem ); }
+  .nine.collapse {
+    max-width: calc( 100%/12 * 9 );
+    flex: 0 0 calc( 100%/12 * 9 ); }
+
+.order-9 {
+  -webkit-order: 9;
+  order: 9; }
+
+.eight {
+  max-width: calc( 100%/12 * 8 - 1rem );
+  flex: 0 0 calc( 100%/12 * 8 - 1rem ); }
+  .eight.collapse {
+    max-width: calc( 100%/12 * 8 );
+    flex: 0 0 calc( 100%/12 * 8 ); }
+
+.order-8 {
+  -webkit-order: 8;
+  order: 8; }
+
+.seven {
+  max-width: calc( 100%/12 * 7 - 1rem );
+  flex: 0 0 calc( 100%/12 * 7 - 1rem ); }
+  .seven.collapse {
+    max-width: calc( 100%/12 * 7 );
+    flex: 0 0 calc( 100%/12 * 7 ); }
+
+.order-7 {
+  -webkit-order: 7;
+  order: 7; }
+
+.six {
+  max-width: calc( 100%/12 * 6 - 1rem );
+  flex: 0 0 calc( 100%/12 * 6 - 1rem ); }
+  .six.collapse {
+    max-width: calc( 100%/12 * 6 );
+    flex: 0 0 calc( 100%/12 * 6 ); }
+
+.order-6 {
+  -webkit-order: 6;
+  order: 6; }
+
+.five {
+  max-width: calc( 100%/12 * 5 - 1rem );
+  flex: 0 0 calc( 100%/12 * 5 - 1rem ); }
+  .five.collapse {
+    max-width: calc( 100%/12 * 5 );
+    flex: 0 0 calc( 100%/12 * 5 ); }
+
+.order-5 {
+  -webkit-order: 5;
+  order: 5; }
+
+.four {
+  max-width: calc( 100%/12 * 4 - 1rem );
+  flex: 0 0 calc( 100%/12 * 4 - 1rem ); }
+  .four.collapse {
+    max-width: calc( 100%/12 * 4 );
+    flex: 0 0 calc( 100%/12 * 4 ); }
+
+.order-4 {
+  -webkit-order: 4;
+  order: 4; }
+
+.three {
+  max-width: calc( 100%/12 * 3 - 1rem );
+  flex: 0 0 calc( 100%/12 * 3 - 1rem ); }
+  .three.collapse {
+    max-width: calc( 100%/12 * 3 );
+    flex: 0 0 calc( 100%/12 * 3 ); }
+
+.order-3 {
+  -webkit-order: 3;
+  order: 3; }
+
+.two {
+  max-width: calc( 100%/12 * 2 - 1rem );
+  flex: 0 0 calc( 100%/12 * 2 - 1rem ); }
+  .two.collapse {
+    max-width: calc( 100%/12 * 2 );
+    flex: 0 0 calc( 100%/12 * 2 ); }
+
+.order-2 {
+  -webkit-order: 2;
+  order: 2; }
+
+.one {
+  max-width: calc( 100%/12 * 1 - 1rem );
+  flex: 0 0 calc( 100%/12 * 1 - 1rem ); }
+  .one.collapse {
+    max-width: calc( 100%/12 * 1 );
+    flex: 0 0 calc( 100%/12 * 1 ); }
+
+.order-1 {
+  -webkit-order: 1;
+  order: 1; }
+
+.fifth {
+  max-width: calc( 20% - 1rem );
+  flex: 0 0 calc( 20% - 1rem ); }
+  .fifth.collapse {
+    max-width: 20%;
+    flex: 0 0 20%; }
+
+@media only screen and (min-width: 480px) {
+  .small-hide {
+    display: none !important; }
+
+  .small-show {
+    display: inherit !important; }
+
+  .small-text-left {
+    text-align: left; }
+
+  .small-text-right {
+    text-align: right; }
+
+  .small-text-center {
+    text-align: center; }
+
+  .small-text-justify {
+    text-align: justify; }
+
+  .small-twelve {
+    max-width: calc( 100%/12 * 12 - 1rem );
+    flex: 0 0 calc( 100%/12 * 12 - 1rem ); }
+    .small-twelve.collapse {
+      max-width: calc( 100%/12 * 12 );
+      flex: 0 0 calc( 100%/12 * 12 ); }
+
+  .small-order-12 {
+    -webkit-order: 12;
+    order: 12; }
+
+  .small-eleven {
+    max-width: calc( 100%/12 * 11 - 1rem );
+    flex: 0 0 calc( 100%/12 * 11 - 1rem ); }
+    .small-eleven.collapse {
+      max-width: calc( 100%/12 * 11 );
+      flex: 0 0 calc( 100%/12 * 11 ); }
+
+  .small-order-11 {
+    -webkit-order: 11;
+    order: 11; }
+
+  .small-ten {
+    max-width: calc( 100%/12 * 10 - 1rem );
+    flex: 0 0 calc( 100%/12 * 10 - 1rem ); }
+    .small-ten.collapse {
+      max-width: calc( 100%/12 * 10 );
+      flex: 0 0 calc( 100%/12 * 10 ); }
+
+  .small-order-10 {
+    -webkit-order: 10;
+    order: 10; }
+
+  .small-nine {
+    max-width: calc( 100%/12 * 9 - 1rem );
+    flex: 0 0 calc( 100%/12 * 9 - 1rem ); }
+    .small-nine.collapse {
+      max-width: calc( 100%/12 * 9 );
+      flex: 0 0 calc( 100%/12 * 9 ); }
+
+  .small-order-9 {
+    -webkit-order: 9;
+    order: 9; }
+
+  .small-eight {
+    max-width: calc( 100%/12 * 8 - 1rem );
+    flex: 0 0 calc( 100%/12 * 8 - 1rem ); }
+    .small-eight.collapse {
+      max-width: calc( 100%/12 * 8 );
+      flex: 0 0 calc( 100%/12 * 8 ); }
+
+  .small-order-8 {
+    -webkit-order: 8;
+    order: 8; }
+
+  .small-seven {
+    max-width: calc( 100%/12 * 7 - 1rem );
+    flex: 0 0 calc( 100%/12 * 7 - 1rem ); }
+    .small-seven.collapse {
+      max-width: calc( 100%/12 * 7 );
+      flex: 0 0 calc( 100%/12 * 7 ); }
+
+  .small-order-7 {
+    -webkit-order: 7;
+    order: 7; }
+
+  .small-six {
+    max-width: calc( 100%/12 * 6 - 1rem );
+    flex: 0 0 calc( 100%/12 * 6 - 1rem ); }
+    .small-six.collapse {
+      max-width: calc( 100%/12 * 6 );
+      flex: 0 0 calc( 100%/12 * 6 ); }
+
+  .small-order-6 {
+    -webkit-order: 6;
+    order: 6; }
+
+  .small-five {
+    max-width: calc( 100%/12 * 5 - 1rem );
+    flex: 0 0 calc( 100%/12 * 5 - 1rem ); }
+    .small-five.collapse {
+      max-width: calc( 100%/12 * 5 );
+      flex: 0 0 calc( 100%/12 * 5 ); }
+
+  .small-order-5 {
+    -webkit-order: 5;
+    order: 5; }
+
+  .small-four {
+    max-width: calc( 100%/12 * 4 - 1rem );
+    flex: 0 0 calc( 100%/12 * 4 - 1rem ); }
+    .small-four.collapse {
+      max-width: calc( 100%/12 * 4 );
+      flex: 0 0 calc( 100%/12 * 4 ); }
+
+  .small-order-4 {
+    -webkit-order: 4;
+    order: 4; }
+
+  .small-three {
+    max-width: calc( 100%/12 * 3 - 1rem );
+    flex: 0 0 calc( 100%/12 * 3 - 1rem ); }
+    .small-three.collapse {
+      max-width: calc( 100%/12 * 3 );
+      flex: 0 0 calc( 100%/12 * 3 ); }
+
+  .small-order-3 {
+    -webkit-order: 3;
+    order: 3; }
+
+  .small-two {
+    max-width: calc( 100%/12 * 2 - 1rem );
+    flex: 0 0 calc( 100%/12 * 2 - 1rem ); }
+    .small-two.collapse {
+      max-width: calc( 100%/12 * 2 );
+      flex: 0 0 calc( 100%/12 * 2 ); }
+
+  .small-order-2 {
+    -webkit-order: 2;
+    order: 2; }
+
+  .small-one {
+    max-width: calc( 100%/12 * 1 - 1rem );
+    flex: 0 0 calc( 100%/12 * 1 - 1rem ); }
+    .small-one.collapse {
+      max-width: calc( 100%/12 * 1 );
+      flex: 0 0 calc( 100%/12 * 1 ); }
+
+  .small-order-1 {
+    -webkit-order: 1;
+    order: 1; }
+
+  .small-fifth {
+    max-width: calc( 20% - 1rem );
+    flex: 0 0 calc( 20% - 1rem ); }
+    .small-fifth.collapse {
+      max-width: 20%;
+      flex: 0 0 20%; } }
+@media only screen and (min-width: 768px) {
+  .medium-hide {
+    display: none !important; }
+
+  .medium-show {
+    display: inherit !important; }
+
+  .medium-text-left {
+    text-align: left; }
+
+  .medium-text-right {
+    text-align: right; }
+
+  .medium-text-center {
+    text-align: center; }
+
+  .medium-text-justify {
+    text-align: justify; }
+
+  .medium-twelve {
+    max-width: calc( 100%/12 * 12 - 1rem );
+    flex: 0 0 calc( 100%/12 * 12 - 1rem ); }
+    .medium-twelve.collapse {
+      max-width: calc( 100%/12 * 12 );
+      flex: 0 0 calc( 100%/12 * 12 ); }
+
+  .medium-order-12 {
+    -webkit-order: 12;
+    order: 12; }
+
+  .medium-eleven {
+    max-width: calc( 100%/12 * 11 - 1rem );
+    flex: 0 0 calc( 100%/12 * 11 - 1rem ); }
+    .medium-eleven.collapse {
+      max-width: calc( 100%/12 * 11 );
+      flex: 0 0 calc( 100%/12 * 11 ); }
+
+  .medium-order-11 {
+    -webkit-order: 11;
+    order: 11; }
+
+  .medium-ten {
+    max-width: calc( 100%/12 * 10 - 1rem );
+    flex: 0 0 calc( 100%/12 * 10 - 1rem ); }
+    .medium-ten.collapse {
+      max-width: calc( 100%/12 * 10 );
+      flex: 0 0 calc( 100%/12 * 10 ); }
+
+  .medium-order-10 {
+    -webkit-order: 10;
+    order: 10; }
+
+  .medium-nine {
+    max-width: calc( 100%/12 * 9 - 1rem );
+    flex: 0 0 calc( 100%/12 * 9 - 1rem ); }
+    .medium-nine.collapse {
+      max-width: calc( 100%/12 * 9 );
+      flex: 0 0 calc( 100%/12 * 9 ); }
+
+  .medium-order-9 {
+    -webkit-order: 9;
+    order: 9; }
+
+  .medium-eight {
+    max-width: calc( 100%/12 * 8 - 1rem );
+    flex: 0 0 calc( 100%/12 * 8 - 1rem ); }
+    .medium-eight.collapse {
+      max-width: calc( 100%/12 * 8 );
+      flex: 0 0 calc( 100%/12 * 8 ); }
+
+  .medium-order-8 {
+    -webkit-order: 8;
+    order: 8; }
+
+  .medium-seven {
+    max-width: calc( 100%/12 * 7 - 1rem );
+    flex: 0 0 calc( 100%/12 * 7 - 1rem ); }
+    .medium-seven.collapse {
+      max-width: calc( 100%/12 * 7 );
+      flex: 0 0 calc( 100%/12 * 7 ); }
+
+  .medium-order-7 {
+    -webkit-order: 7;
+    order: 7; }
+
+  .medium-six {
+    max-width: calc( 100%/12 * 6 - 1rem );
+    flex: 0 0 calc( 100%/12 * 6 - 1rem ); }
+    .medium-six.collapse {
+      max-width: calc( 100%/12 * 6 );
+      flex: 0 0 calc( 100%/12 * 6 ); }
+
+  .medium-order-6 {
+    -webkit-order: 6;
+    order: 6; }
+
+  .medium-five {
+    max-width: calc( 100%/12 * 5 - 1rem );
+    flex: 0 0 calc( 100%/12 * 5 - 1rem ); }
+    .medium-five.collapse {
+      max-width: calc( 100%/12 * 5 );
+      flex: 0 0 calc( 100%/12 * 5 ); }
+
+  .medium-order-5 {
+    -webkit-order: 5;
+    order: 5; }
+
+  .medium-four {
+    max-width: calc( 100%/12 * 4 - 1rem );
+    flex: 0 0 calc( 100%/12 * 4 - 1rem ); }
+    .medium-four.collapse {
+      max-width: calc( 100%/12 * 4 );
+      flex: 0 0 calc( 100%/12 * 4 ); }
+
+  .medium-order-4 {
+    -webkit-order: 4;
+    order: 4; }
+
+  .medium-three {
+    max-width: calc( 100%/12 * 3 - 1rem );
+    flex: 0 0 calc( 100%/12 * 3 - 1rem ); }
+    .medium-three.collapse {
+      max-width: calc( 100%/12 * 3 );
+      flex: 0 0 calc( 100%/12 * 3 ); }
+
+  .medium-order-3 {
+    -webkit-order: 3;
+    order: 3; }
+
+  .medium-two {
+    max-width: calc( 100%/12 * 2 - 1rem );
+    flex: 0 0 calc( 100%/12 * 2 - 1rem ); }
+    .medium-two.collapse {
+      max-width: calc( 100%/12 * 2 );
+      flex: 0 0 calc( 100%/12 * 2 ); }
+
+  .medium-order-2 {
+    -webkit-order: 2;
+    order: 2; }
+
+  .medium-one {
+    max-width: calc( 100%/12 * 1 - 1rem );
+    flex: 0 0 calc( 100%/12 * 1 - 1rem ); }
+    .medium-one.collapse {
+      max-width: calc( 100%/12 * 1 );
+      flex: 0 0 calc( 100%/12 * 1 ); }
+
+  .medium-order-1 {
+    -webkit-order: 1;
+    order: 1; }
+
+  .medium-fifth {
+    max-width: calc( 20% - 1rem );
+    flex: 0 0 calc( 20% - 1rem ); }
+    .medium-fifth.collapse {
+      max-width: 20%;
+      flex: 0 0 20%; }
+
+  .super-header.vw {
+    font-size: 5vw; }
+
+  .h1.vw {
+    font-size: 3.5vw; }
+
+  .h2.vw {
+    font-size: 3vw; }
+
+  .h3.vw {
+    font-size: 2.5vw; }
+
+  .h4.vw {
+    font-size: 2vw; }
+
+  .h5.vw {
+    font-size: 1.5vw; } }
+@media only screen and (min-width: 1024px) {
+  .large-hide {
+    display: none !important; }
+
+  .large-show {
+    display: inherit !important; }
+
+  .large-text-left {
+    text-align: left; }
+
+  .large-text-right {
+    text-align: right; }
+
+  .large-text-center {
+    text-align: center; }
+
+  .large-text-justify {
+    text-align: justify; }
+
+  .large-twelve {
+    max-width: calc( 100%/12 * 12 - 1rem );
+    flex: 0 0 calc( 100%/12 * 12 - 1rem ); }
+    .large-twelve.collapse {
+      max-width: calc( 100%/12 * 12 );
+      flex: 0 0 calc( 100%/12 * 12 ); }
+
+  .large-order-12 {
+    -webkit-order: 12;
+    order: 12; }
+
+  .large-eleven {
+    max-width: calc( 100%/12 * 11 - 1rem );
+    flex: 0 0 calc( 100%/12 * 11 - 1rem ); }
+    .large-eleven.collapse {
+      max-width: calc( 100%/12 * 11 );
+      flex: 0 0 calc( 100%/12 * 11 ); }
+
+  .large-order-11 {
+    -webkit-order: 11;
+    order: 11; }
+
+  .large-ten {
+    max-width: calc( 100%/12 * 10 - 1rem );
+    flex: 0 0 calc( 100%/12 * 10 - 1rem ); }
+    .large-ten.collapse {
+      max-width: calc( 100%/12 * 10 );
+      flex: 0 0 calc( 100%/12 * 10 ); }
+
+  .large-order-10 {
+    -webkit-order: 10;
+    order: 10; }
+
+  .large-nine {
+    max-width: calc( 100%/12 * 9 - 1rem );
+    flex: 0 0 calc( 100%/12 * 9 - 1rem ); }
+    .large-nine.collapse {
+      max-width: calc( 100%/12 * 9 );
+      flex: 0 0 calc( 100%/12 * 9 ); }
+
+  .large-order-9 {
+    -webkit-order: 9;
+    order: 9; }
+
+  .large-eight {
+    max-width: calc( 100%/12 * 8 - 1rem );
+    flex: 0 0 calc( 100%/12 * 8 - 1rem ); }
+    .large-eight.collapse {
+      max-width: calc( 100%/12 * 8 );
+      flex: 0 0 calc( 100%/12 * 8 ); }
+
+  .large-order-8 {
+    -webkit-order: 8;
+    order: 8; }
+
+  .large-seven {
+    max-width: calc( 100%/12 * 7 - 1rem );
+    flex: 0 0 calc( 100%/12 * 7 - 1rem ); }
+    .large-seven.collapse {
+      max-width: calc( 100%/12 * 7 );
+      flex: 0 0 calc( 100%/12 * 7 ); }
+
+  .large-order-7 {
+    -webkit-order: 7;
+    order: 7; }
+
+  .large-six {
+    max-width: calc( 100%/12 * 6 - 1rem );
+    flex: 0 0 calc( 100%/12 * 6 - 1rem ); }
+    .large-six.collapse {
+      max-width: calc( 100%/12 * 6 );
+      flex: 0 0 calc( 100%/12 * 6 ); }
+
+  .large-order-6 {
+    -webkit-order: 6;
+    order: 6; }
+
+  .large-five {
+    max-width: calc( 100%/12 * 5 - 1rem );
+    flex: 0 0 calc( 100%/12 * 5 - 1rem ); }
+    .large-five.collapse {
+      max-width: calc( 100%/12 * 5 );
+      flex: 0 0 calc( 100%/12 * 5 ); }
+
+  .large-order-5 {
+    -webkit-order: 5;
+    order: 5; }
+
+  .large-four {
+    max-width: calc( 100%/12 * 4 - 1rem );
+    flex: 0 0 calc( 100%/12 * 4 - 1rem ); }
+    .large-four.collapse {
+      max-width: calc( 100%/12 * 4 );
+      flex: 0 0 calc( 100%/12 * 4 ); }
+
+  .large-order-4 {
+    -webkit-order: 4;
+    order: 4; }
+
+  .large-three {
+    max-width: calc( 100%/12 * 3 - 1rem );
+    flex: 0 0 calc( 100%/12 * 3 - 1rem ); }
+    .large-three.collapse {
+      max-width: calc( 100%/12 * 3 );
+      flex: 0 0 calc( 100%/12 * 3 ); }
+
+  .large-order-3 {
+    -webkit-order: 3;
+    order: 3; }
+
+  .large-two {
+    max-width: calc( 100%/12 * 2 - 1rem );
+    flex: 0 0 calc( 100%/12 * 2 - 1rem ); }
+    .large-two.collapse {
+      max-width: calc( 100%/12 * 2 );
+      flex: 0 0 calc( 100%/12 * 2 ); }
+
+  .large-order-2 {
+    -webkit-order: 2;
+    order: 2; }
+
+  .large-one {
+    max-width: calc( 100%/12 * 1 - 1rem );
+    flex: 0 0 calc( 100%/12 * 1 - 1rem ); }
+    .large-one.collapse {
+      max-width: calc( 100%/12 * 1 );
+      flex: 0 0 calc( 100%/12 * 1 ); }
+
+  .large-order-1 {
+    -webkit-order: 1;
+    order: 1; }
+
+  .large-fifth {
+    max-width: calc( 20% - 1rem );
+    flex: 0 0 calc( 20% - 1rem ); }
+    .large-fifth.collapse {
+      max-width: 20%;
+      flex: 0 0 20%; } }
+@media only screen and (min-width: 1200px) {
+  .xlarge-hide {
+    display: none !important; }
+
+  .xlarge-show {
+    display: inherit !important; }
+
+  .xlarge-text-left {
+    text-align: left; }
+
+  .xlarge-text-right {
+    text-align: right; }
+
+  .xlarge-text-center {
+    text-align: center; }
+
+  .xlarge-text-justify {
+    text-align: justify; }
+
+  .xlarge-twelve {
+    max-width: calc( 100%/12 * 12 - 1rem );
+    flex: 0 0 calc( 100%/12 * 12 - 1rem ); }
+    .xlarge-twelve.collapse {
+      max-width: calc( 100%/12 * 12 );
+      flex: 0 0 calc( 100%/12 * 12 ); }
+
+  .xlarge-order-12 {
+    -webkit-order: 12;
+    order: 12; }
+
+  .xlarge-eleven {
+    max-width: calc( 100%/12 * 11 - 1rem );
+    flex: 0 0 calc( 100%/12 * 11 - 1rem ); }
+    .xlarge-eleven.collapse {
+      max-width: calc( 100%/12 * 11 );
+      flex: 0 0 calc( 100%/12 * 11 ); }
+
+  .xlarge-order-11 {
+    -webkit-order: 11;
+    order: 11; }
+
+  .xlarge-ten {
+    max-width: calc( 100%/12 * 10 - 1rem );
+    flex: 0 0 calc( 100%/12 * 10 - 1rem ); }
+    .xlarge-ten.collapse {
+      max-width: calc( 100%/12 * 10 );
+      flex: 0 0 calc( 100%/12 * 10 ); }
+
+  .xlarge-order-10 {
+    -webkit-order: 10;
+    order: 10; }
+
+  .xlarge-nine {
+    max-width: calc( 100%/12 * 9 - 1rem );
+    flex: 0 0 calc( 100%/12 * 9 - 1rem ); }
+    .xlarge-nine.collapse {
+      max-width: calc( 100%/12 * 9 );
+      flex: 0 0 calc( 100%/12 * 9 ); }
+
+  .xlarge-order-9 {
+    -webkit-order: 9;
+    order: 9; }
+
+  .xlarge-eight {
+    max-width: calc( 100%/12 * 8 - 1rem );
+    flex: 0 0 calc( 100%/12 * 8 - 1rem ); }
+    .xlarge-eight.collapse {
+      max-width: calc( 100%/12 * 8 );
+      flex: 0 0 calc( 100%/12 * 8 ); }
+
+  .xlarge-order-8 {
+    -webkit-order: 8;
+    order: 8; }
+
+  .xlarge-seven {
+    max-width: calc( 100%/12 * 7 - 1rem );
+    flex: 0 0 calc( 100%/12 * 7 - 1rem ); }
+    .xlarge-seven.collapse {
+      max-width: calc( 100%/12 * 7 );
+      flex: 0 0 calc( 100%/12 * 7 ); }
+
+  .xlarge-order-7 {
+    -webkit-order: 7;
+    order: 7; }
+
+  .xlarge-six {
+    max-width: calc( 100%/12 * 6 - 1rem );
+    flex: 0 0 calc( 100%/12 * 6 - 1rem ); }
+    .xlarge-six.collapse {
+      max-width: calc( 100%/12 * 6 );
+      flex: 0 0 calc( 100%/12 * 6 ); }
+
+  .xlarge-order-6 {
+    -webkit-order: 6;
+    order: 6; }
+
+  .xlarge-five {
+    max-width: calc( 100%/12 * 5 - 1rem );
+    flex: 0 0 calc( 100%/12 * 5 - 1rem ); }
+    .xlarge-five.collapse {
+      max-width: calc( 100%/12 * 5 );
+      flex: 0 0 calc( 100%/12 * 5 ); }
+
+  .xlarge-order-5 {
+    -webkit-order: 5;
+    order: 5; }
+
+  .xlarge-four {
+    max-width: calc( 100%/12 * 4 - 1rem );
+    flex: 0 0 calc( 100%/12 * 4 - 1rem ); }
+    .xlarge-four.collapse {
+      max-width: calc( 100%/12 * 4 );
+      flex: 0 0 calc( 100%/12 * 4 ); }
+
+  .xlarge-order-4 {
+    -webkit-order: 4;
+    order: 4; }
+
+  .xlarge-three {
+    max-width: calc( 100%/12 * 3 - 1rem );
+    flex: 0 0 calc( 100%/12 * 3 - 1rem ); }
+    .xlarge-three.collapse {
+      max-width: calc( 100%/12 * 3 );
+      flex: 0 0 calc( 100%/12 * 3 ); }
+
+  .xlarge-order-3 {
+    -webkit-order: 3;
+    order: 3; }
+
+  .xlarge-two {
+    max-width: calc( 100%/12 * 2 - 1rem );
+    flex: 0 0 calc( 100%/12 * 2 - 1rem ); }
+    .xlarge-two.collapse {
+      max-width: calc( 100%/12 * 2 );
+      flex: 0 0 calc( 100%/12 * 2 ); }
+
+  .xlarge-order-2 {
+    -webkit-order: 2;
+    order: 2; }
+
+  .xlarge-one {
+    max-width: calc( 100%/12 * 1 - 1rem );
+    flex: 0 0 calc( 100%/12 * 1 - 1rem ); }
+    .xlarge-one.collapse {
+      max-width: calc( 100%/12 * 1 );
+      flex: 0 0 calc( 100%/12 * 1 ); }
+
+  .xlarge-order-1 {
+    -webkit-order: 1;
+    order: 1; }
+
+  .xlarge-fifth {
+    max-width: calc( 20% - 1rem );
+    flex: 0 0 calc( 20% - 1rem ); }
+    .xlarge-fifth.collapse {
+      max-width: 20%;
+      flex: 0 0 20%; } }
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+	 ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+	 ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+	 ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+	 ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+	 ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+	 ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *		`fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+	 ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+	 ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: #404040;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both; }
+
+h1 {
+  font-size: 44px;
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize; }
+
+h2 {
+  font-size: 44px;
+  color: black;
+  font-weight: bold; }
+
+h3 {
+  font-size: 28px;
+  color: black;
+  font-weight: medium; }
+
+h4 {
+  font-size: 24px;
+  color: black;
+  font-weight: medium; }
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: black;
+  font-weight: book; }
+
+@media all and (max-width: 640px) {
+  h1 {
+    font-size: 36px;
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize; }
+
+  h2 {
+    font-size: 36px;
+    color: black;
+    font-weight: bold; }
+
+  h3 {
+    font-size: 20px;
+    color: black;
+    font-weight: medium; }
+
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: black;
+    font-weight: book; } }
+@media all and (max-width: 375px) {
+  h1 {
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize; }
+
+  h2 {
+    font-size: 30px;
+    color: black;
+    font-weight: bold; }
+
+  h3 {
+    font-size: 18px;
+    color: black;
+    font-weight: medium; }
+
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: black;
+    font-weight: book; } }
+p {
+  margin-bottom: 1.5em; }
+
+dfn, cite, em, i {
+  font-style: italic; }
+
+blockquote {
+  margin: 0 1.5em; }
+
+address {
+  margin: 0 0 1.5em; }
+
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em; }
+
+code, kbd, tt, var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 0.9375rem; }
+
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help; }
+
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none; }
+
+big {
+  font-size: 125%; }
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+/* Sass Document */
+.grid {
+  width: 100vw;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  border: 2px solid black; }
+
+.grid-item {
+  height: 25vw;
+  width: 25vw;
+  padding: 40px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid black; }
+
+.workSection .grid-item:nth-child(5n) {
+  width: 50vw;
+  height: 25vw;
+  margin: 0; }
+
+span {
+  display: none; }
+
+.grid-item:hover span {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  align-content: center; }
+
+/* Scss Document */
+body {
+  padding-top: 60px; }
+
+.home_video {
+  height: 90vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.studentSection {
+  display: none; }
+
+.row {
+  margin: 40px; }
+
+img {
+  object-fit: contain; }
+
+ul {
+  list-style-type: none;
+  margin: 0; }
+  ul li {
+    display: inline-block;
+    padding-left: 0; }
+    ul li a {
+      margin: 10px 10px 10px 0;
+      padding-left: 0; }
+
+.studentcard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid black; }
+
+.studentimg {
+  width: 100%;
+  object-fit: contain;
+  min-width: 150px;
+  margin-right: 1vw; }
+
+.projectimagehalf {
+  object-fit: contain;
+  width: 50vw;
+  height: auto;
+  padding: 10px;
+  float: left; }
+
+.projectdesc {
+  padding: 20px;
+  border: 1px solid black; }
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit; }
+
+body {
+  background: #fff;
+  /* Fallback for when there is no custom background color defined. */ }
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em; }
+
+.border {
+  border: 4px solid black; }
+
+ul, ol {
+  margin: 0 0 1.5em 3em; }
+
+ul {
+  list-style: disc; }
+
+ol {
+  list-style: decimal; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin: 0 1.5em 1.5em; }
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */ }
+
+figure {
+  margin: 1em 0;
+  /* Extra wide images within figure tags don't overflow the content area. */ }
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%; }
+
+/*buttons*/
+.button {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer; }
+
+/* button click */
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid;
+  border-color: #ccc #ccc #bbb;
+  border-radius: 3px;
+  background: #e6e6e6;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: .6em 1em .4em; }
+  button:hover,
+  input[type="button"]:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover {
+    border-color: #ccc #bbb #aaa; }
+  button:active, button:focus,
+  input[type="button"]:active,
+  input[type="button"]:focus,
+  input[type="reset"]:active,
+  input[type="reset"]:focus,
+  input[type="submit"]:active,
+  input[type="submit"]:focus {
+    border-color: #aaa #bbb #bbb; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 3px; }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  input[type="search"]:focus,
+  input[type="number"]:focus,
+  input[type="tel"]:focus,
+  input[type="range"]:focus,
+  input[type="date"]:focus,
+  input[type="month"]:focus,
+  input[type="week"]:focus,
+  input[type="time"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="color"]:focus,
+  textarea:focus {
+    color: #111; }
+
+select {
+  border: 1px solid #ccc; }
+
+textarea {
+  width: 100%; }
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+  color: royalblue; }
+  a:visited {
+    color: purple; }
+  a:hover, a:focus, a:active {
+    color: midnightblue; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.main-navigation {
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%; }
+  .main-navigation ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0; }
+    .main-navigation ul ul {
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      float: left;
+      position: absolute;
+      top: 100%;
+      left: -999em;
+      z-index: 99999; }
+      .main-navigation ul ul ul {
+        left: -999em;
+        top: 0; }
+      .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+        left: 100%; }
+      .main-navigation ul ul a {
+        width: 200px; }
+    .main-navigation ul li:hover > ul,
+    .main-navigation ul li.focus > ul {
+      left: auto; }
+  .main-navigation li {
+    float: left;
+    position: relative; }
+  .main-navigation a {
+    display: block;
+    text-decoration: none; }
+
+/* header-navigation */
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block; }
+
+@media screen and (min-width: 37.5em) {
+  .menu-toggle {
+    display: none; }
+
+  .main-navigation ul {
+    display: block; } }
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+  margin: 0 0 1.5em;
+  overflow: hidden; }
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%; }
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%; }
+
+header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000000;
+  display: flex;
+  flex-direction: row; }
+  header #logonav {
+    background-size: contain;
+    margin: 5px;
+    -webkit-transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -moz-transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -o-transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    /* easeOutQuad */
+    width: 150px;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+.hidelogo {
+  display: none; }
+
+.showlogo {
+  display: block; }
+
+#topnav {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  -webkit-transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* easeOutQuad */ }
+  #topnav .row01 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-items: space-around;
+    align-items: center; }
+    #topnav .row01 .header-link {
+      width: 33.33%; }
+      #topnav .row01 .header-link:hover {
+        background-color: #FACED6; }
+      #topnav .row01 .header-link p {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 10px auto; }
+  #topnav .row02 {
+    width: 100%;
+    height: 50px;
+    margin-top: -4px;
+    display: flex;
+    flex-direction: row;
+    justify-items: space-around;
+    align-items: center; }
+    #topnav .row02 .header-link-2 {
+      width: 50%; }
+      #topnav .row02 .header-link-2:hover {
+        background-color: #FACED6; }
+      #topnav .row02 .header-link-2 p {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 10px auto;
+        border-top: none; }
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */ }
+  .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */ }
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+  outline: 0; }
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em; }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em; }
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: "";
+  display: table;
+  table-layout: fixed; }
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both; }
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. */ }
+  .widget select {
+    max-width: 100%; }
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+  display: block; }
+
+.hentry {
+  margin: 0 0 1.5em; }
+
+.updated:not(.published) {
+  display: none; }
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0; }
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em; }
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+  word-wrap: break-word; }
+
+.bypostauthor {
+  display: block; }
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none; }
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+  display: block; }
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%; }
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+  display: inline-block; }
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%; }
+  .wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .wp-caption .wp-caption-text {
+    margin: 0.8075em 0; }
+
+.wp-caption-text {
+  text-align: center; }
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+  margin-bottom: 1.5em; }
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%; }
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%; }
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%; }
+  .gallery-columns-5 .gallery-item {
+    max-width: 20%; }
+  .gallery-columns-6 .gallery-item {
+    max-width: 16.66%; }
+  .gallery-columns-7 .gallery-item {
+    max-width: 14.28%; }
+  .gallery-columns-8 .gallery-item {
+    max-width: 12.5%; }
+  .gallery-columns-9 .gallery-item {
+    max-width: 11.11%; }
+
+.gallery-caption {
+  display: block; }

@@ -1,0 +1,94 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+h1 {
+font-size: 44px;
+color: black;
+font-weight: bold;
+text-transform: capitalize;
+}
+
+h2 {
+font-size: 44px;
+color: black;
+font-weight: bold;
+}
+h3 {
+    font-size: 28px;
+    color: black;
+    font-weight: medium;
+}
+h4 {
+    font-size: 24px;
+    color: black;
+    font-weight: medium;
+}
+
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: black;
+    font-weight: book;
+}
+
+@media all and (max-width: 640px) {
+    
+    h1 {
+font-size: 36px;
+color: black;
+font-weight: bold;
+text-transform: capitalize;
+}
+
+h2 {
+font-size: 36px;
+color: black;
+font-weight: bold;
+}
+    
+h3 {
+    font-size: 20px;
+    color: black;
+    font-weight: medium;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: black;
+    font-weight: book;
+}
+
+}
+
+@media all and (max-width: 375px) {
+    
+    h1 {
+font-size: 30px;
+color: black;
+font-weight: bold;
+text-transform: capitalize;
+}
+
+	h2 {
+font-size: 30px;
+color: black;
+font-weight: bold;
+}
+    
+h3 {
+    font-size: 18px;
+    color: black;
+    font-weight: medium;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: black;
+    font-weight: book;
+}
+
+}

@@ -1,0 +1,51 @@
+.row {
+    margin: 40px;
+}
+
+img {
+    object-fit: contain;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    li{
+        display: inline-block;
+        padding-left: 0;
+        a{
+            margin: 10px 10px 10px 0;
+             padding-left: 0;
+        }
+    }
+}
+
+.studentcard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+   padding: 20px;
+    border: 1px solid black;
+}
+
+.studentimg {
+    
+   width: 100%;
+    object-fit: contain;
+    min-width: 150px;
+    margin-right: 1vw;
+}
+
+.projectimagehalf {
+    object-fit: contain;
+    width: 50vw;
+    height: auto;
+    padding: 10px;
+    float: left;
+}
+
+.projectdesc {
+    padding: 20px;
+    border: 1px solid black;
+}

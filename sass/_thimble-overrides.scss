@@ -1,0 +1,43 @@
+// ThimbleCSS Overrides
+
+// Colors
+$blue: #2266a7;
+$yellow: #FFE066;
+$red: #f15a3b;
+$green: #57a290;
+$gray:#6e7e85;
+
+// Typography
+$body-font: Verdana, Geneva, sans-serif;
+$header-font: Verdana, Geneva, sans-serif;
+
+$font-color:#616161;
+$subfont-color: rgba($font-color,.6);
+
+$link-color:$blue;
+$link-hover:$red;
+
+// Transitions
+$fast-speed:all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+$normal-speed:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+$slow-speed:all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+$slowest-speed:all 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+
+// Shadows
+$base-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
+$hover-shadow: 0 6px 16px rgba(0, 0, 0, 0.25), 0 4px 20px rgba(0, 0, 0, 0.18);
+$selected-shadow: 0 12px 16px rgba(0, 0, 0, 0.25), 0 18px 40px rgba(0, 0, 0, 0.19);
+$solid-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+
+// Metrics
+$site-width:960px;
+$small-site-width:760px;
+
+$cell-margin:.5rem;
+$cell-padding:.5rem;
+
+// Media Break Adjustments
+$small-break:  480px;
+$medium-break: 768px;
+$large-break:  1024px;
+$xlarge-break: 1200px;
