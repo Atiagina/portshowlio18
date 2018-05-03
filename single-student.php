@@ -5,7 +5,7 @@ PostType Page Template: students
 get_header(); ?>
 
 <?php get_template_part( 'content', 'header' ); ?>
-<h1>header goes here</h1>
+
 
 
 <!-- student card -->  
@@ -111,6 +111,6 @@ get_header(); ?>
  
  
 
-
+<?php get_footer(); ?>
 
 

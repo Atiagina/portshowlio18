@@ -22,38 +22,57 @@
 </head>
 
 <body <?php body_class(); ?>>
+	
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'portshowlio' ); ?></a>
 
-	<header >
-<div id="logonav" style="background-image: url(<?php the_field('logonav');?>);">
+	<header>
+		
+<a id="logoNav" class="hidelogo" href="<?php echo esc_url( home_url( '/' )); ?>" rel="home" style="background-image: url(<?php echo header_image() ?>);" >
 	
-		</div>
-<div id="topnav">
-<div class="row01">
-<a id="workLink" class="header-link border">
-	<p>works</p>
-        </a>
+		</a>
+		
+	<?php
+if ( is_page_template( 'template-home.php' ) ) {
+    // This is a homepage
+	echo '<div id="topNav">';
+	echo '<div class="row01">';
+	echo '<a id="workLink" href="';
+	echo esc_url( home_url("/#workSection" ));
+	echo '" class="headerLink border">';
+	echo '<p>works</p></a>';
+    echo '<a id="studentLink" href="';
+	echo esc_url( home_url("/#studentSection" ));
+	echo '" class="headerLink border">';
+	echo '<p>students</p></a>';
+	echo '<a id="eventLink" href="';
+	echo esc_url( home_url("/#eventSection" ));
+	echo '" class="headerLink border">';
+	echo '<p>event</p></a>';
+	echo '</div>';
+	echo '<div class="row02">';
+	echo '<a class="headerLink2 border">';
+	echo '<p>filter</p></a>';
+	echo '<a class="headerLink2 border">';
+	echo '<p>search</p></a>';
+	echo '</div>';
+	echo '</div>';
+
+} else {
+	echo '<div style="width: 100vw; background-color: white; display: flex;
+	flex-direction: row; height: 80px; padding: 10px;">';
 	
-<a id="studentLink" class="header-link border">
-	<p> students</p>
-        </a>
-	
-<a id="eventLink" class="header-link border">
-	<p> event</p>
-        </a>
-	</div>	
-<div class="row02">
-<a class="header-link-2 border">
-	<p>filter</p>
-        </a>
-	
-<a class="header-link-2 border">
-	<p> search</p>
-        </a>
-	
-	</div>
-</div>
+	echo '<h1>';
+	echo the_field('student_name');
+	echo '</h1>';
+	echo '<img src="';
+	echo the_field('student_photo');
+	echo '" alt="photo" style="width: 80px;">';
+	echo '</div>';
+    // This is not a homepage
+}
+?>
+
 
 		
 	</header><!-- #masthead -->
