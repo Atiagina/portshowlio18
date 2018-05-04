@@ -1624,7 +1624,7 @@ body {
   width: 100vw;
   height: auto;
   margin: 0 auto;
-  border: 2px solid black; }
+  border: 4px solid black; }
   .grid .grid-item {
     height: 25vw;
     width: 25vw;
@@ -2000,7 +2000,7 @@ header {
       width: 33.33%;
       border-right: none; }
       #topNav .row01 .headerLink:last-child {
-        border-right: 4px solid black; }
+        border-right: 8px solid black; }
       #topNav .row01 .headerLink:hover {
         background-color: #FACED6; }
       #topNav .row01 .headerLink p {

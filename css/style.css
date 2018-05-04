@@ -2265,7 +2265,7 @@ body {
   width: 100vw;
   height: auto;
   margin: 0 auto;
-  border: 2px solid black;
+  border: 4px solid black;
 }
 
 /* line 13, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
@@ -2806,7 +2806,7 @@ header #logoNav {
 
 /* line 88, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
 #topNav .row01 .headerLink:last-child {
-  border-right: 4px solid black;
+  border-right: 8px solid black;
 }
 
 /* line 91, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */

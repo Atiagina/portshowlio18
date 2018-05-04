@@ -54,7 +54,13 @@ if ( is_page_template( 'template-home.php' ) ) {
 	echo '<a class="headerLink2 border">';
 	echo '<p>filter</p></a>';
 	echo '<a class="headerLink2 border">';
+	//echo '<p><span class="search"><input type="text" class="quicksearch" placeholder="Search" /></span>';
+	//echo '<span class="searchButton">';
+	//echo '<span class="icon-search">';
+	//echo '</span>';
+	//echo '</span>';
 	echo '<p>search</p></a>';
+	//echo '</a>';
 	echo '</div>';
 	echo '</div>';
 
