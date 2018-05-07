@@ -16,8 +16,24 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	
+	<!-- add fonts here -->
+	<style>
+    @font-face {
+    font-family: HalisR;
+    src: url(<?php bloginfo('template_url'); ?>/fonts/halisr-regular-webfont.ttf),
+		url(<?php bloginfo('template_url'); ?>/fonts/halisr-regular-webfont.woff),
+		url(<?php bloginfo('template_url'); ?>/fonts/halisr-regular-webfont.woff2);
+}
+@font-face {
+    font-family: HalisR-Bold;
+    src: url(<?php bloginfo('template_url'); ?>/fonts/halisr-bold-webfont.woff),
+		url(<?php bloginfo('template_url'); ?>/fonts/halisr-bold-webfont.woff2);
+}
+    </style>
+	
 	<?php wp_head(); ?>
 </head>
 

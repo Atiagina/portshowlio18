@@ -63,11 +63,14 @@
 	 <?php while ($query->have_posts()) : $query->the_post(); ?>
 
 		<div class="grid-item" style="background-image:url(<?php the_field('student_photo');?>);">
-<a href='<?php the_permalink() ?>'>
-				<span class="text">
-					<h1><?php the_field('student_name');?></h1>
-					  <?php the_field('student_category_1'); ?>/<?php the_field('student_category_2'); ?>/<?php the_field('student_category_3'); ?>
-					</span>
+			<a href='<?php the_permalink() ?>'>
+			<span class="hoverPhoto" style="background-image:url(<?php the_field('student_hover_photo');?>);">
+			</span>
+
+				<div class="text">
+					<h3><?php the_field('student_name');?></h3>
+					<p> <?php the_field('student_category_1'); ?>/<?php the_field('student_category_2'); ?>/<?php the_field('student_category_3'); ?> </p>
+				</div>
 </a>
 			</div>
 					

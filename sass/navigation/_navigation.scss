@@ -35,6 +35,8 @@ header {
 	}
 }
 
+/* animation for the logo on scroll */
+
 @keyframes logoMovement {
   0% {
     width: 10px;
@@ -59,6 +61,8 @@ header {
 	display: block;
 	
 }
+
+/* nabigation buttons */
 
 #topNav {
 	width: 100%;
@@ -85,19 +89,33 @@ header {
 		.headerLink {
 		width: 33.33%;
 			border-right: none;
+			border-bottom: 3px solid black;
 			&:last-child {
-				border-right: 8px solid black;
+				border-right: 6px solid black;
 			}
-			&:hover {
-				background-color: $pink;
-			}
+			
+				
+			
 		p {
 			display: flex;
 justify-content: center;
 align-content: center;
 margin: 10px auto;
+			font-family: HalisR-Bold;
+			text-transform: uppercase;
 		}
 	}
+		#workLink:hover{
+					background-color: $yellow;
+				}
+				#studentLink:hover{
+					background-color: $light-blue;
+				}
+				
+				#eventLink:hover {
+					background-color: $green;
+				}
+		
 	}
 	.row02 {
 		width: 100%;
@@ -112,8 +130,9 @@ margin: 10px auto;
 	.headerLink2 {
 		width: 50%;
 		border-right: none;
+		border-top: 3px solid black;
 			&:last-child {
-				border-right: 4px solid black;
+				border-right: 6px solid black;
 			}
 		&:hover {
 				background-color: $pink;
@@ -124,8 +143,13 @@ justify-content: center;
 align-content: center;
 margin: 10px auto;
 			border-top: none;
+			font-family: HalisR-Bold;
+			text-transform: uppercase;
 		}
 	}
 	}
 	
 }
+
+/* colors for links */
+

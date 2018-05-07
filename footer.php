@@ -45,7 +45,7 @@ $('#studentLink').click(function() {
 		$('#workLink').css('cursor','pointer');
 		$('#studentLink').css('cursor','default');
 
-		$('#studentLink').css('background-color','#FACED6');
+		$('#studentLink').css('background-color','#6EC6EA');
 		$('#workLink').css('background-color','white');
 		$('#eventLink').css('background-color','white');
 
@@ -57,7 +57,7 @@ $('#workLink').click(function() {
 		$('#studentLink').css('cursor','pointer');
 		$('#workLink').css('cursor','default');
 $('#eventLink').css('background-color','white');
-		$('#workLink').css('background-color','#FACED6');
+		$('#workLink').css('background-color','#F4EF4A');
 		$('#studentLink').css('background-color','white');
 $('.studentSection').css('display','none');
 		$('.workSection').css('display','inherit');
@@ -80,7 +80,7 @@ $('#eventLink').click(function() {
 		$('#studentLink').css('background-color','white');
 $('.studentSection').css('display','none');
 		$('.workSection').css('display','none');
-		$('#eventLink').css('background-color','#FACED6');
+		$('#eventLink').css('background-color','#00B686');
 		$('.eventSection').css('display','flex');
 		$('.filterContainer').css('display','initial');
 		$('.sidebar').removeClass('sidebarBlackout');
