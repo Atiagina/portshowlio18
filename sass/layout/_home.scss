@@ -13,3 +13,26 @@ body {
 .studentSection {
 	display: none;
 }
+
+
+
+
+.quicksearch {
+	display: none;
+}
+
+
+#filters {
+	background-color: white;
+	width: 100vw;
+	height: 50px;
+	border: 5px solid black;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	display: none;
+	position: fixed; 
+	top: 100px; left: 0px;
+	z-index: 100000; 
+	
+}

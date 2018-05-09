@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package portshowlio
+ * @package portshowlio18
  */
 
 if ( ! function_exists( 'portshowlio_setup' ) ) :

@@ -1618,27 +1618,28 @@ big {
 --------------------------------------------------------------*/
 /* Sass Document */
 body {
+  box-sizing: border-box;
   width: 100vw; }
 
 .grid {
   width: 100vw;
   height: auto;
   margin: 0 auto;
-  border: 3px solid black;
-  background-color: black; }
+  /*border: 3px solid black;*/
+  box-sizing: border-box; }
   .grid .grid-item {
     height: 25vw;
-    width: 25vw;
+    width: 24.5vw;
     padding: 0px;
     margin: 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: 3px solid black;
+    outline: 5px solid black;
     background-color: white; }
 
 .workSection .grid-item:nth-child(5n) {
-  width: 50vw;
+  width: 49vw;
   height: 25vw;
   margin: 0; }
 
@@ -1661,38 +1662,52 @@ span {
   .grid-item:hover span h1 {
     text-align: center; }
 
-.studentSection .hoverPhoto {
-  display: none; }
-.studentSection .text {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-content: center;
-  color: black;
-  text-align: center;
-  padding-bottom: 0; }
-  .studentSection .text h3 {
-    font-family: HalisR-Bold;
+.studentSection .grid-item {
+  overflow: hidden;
+  height: 30vw; }
+  .studentSection .grid-item .hoverPhoto {
+    display: none; }
+  .studentSection .grid-item .mainPhoto {
+    display: flex;
+    width: 25vw;
+    height: 25vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .studentSection .grid-item .text {
+    display: flex;
     width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
     color: black;
-    background-color: white;
-    border-top: 6px solid black; }
-  .studentSection .text p {
-    background-color: white;
-    font-family: HalisR;
-    margin-bottom: 0;
-    padding-bottom: 5px; }
+    text-align: center;
+    padding-bottom: 0; }
+    .studentSection .grid-item .text h3 {
+      font-family: HalisR-Bold;
+      width: 100%;
+      color: black;
+      background-color: white;
+      border-top: 6px solid black; }
+    .studentSection .grid-item .text p {
+      background-color: white;
+      font-family: HalisR;
+      margin-bottom: 0;
+      padding-bottom: 5px; }
 .studentSection .grid-item:hover .hoverPhoto {
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 25vw;
+  height: 25vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
-.studentSection .grid-item:hover .text {
-  visibility: hidden; }
+.studentSection .grid-item:hover .mainPhoto {
+  display: none; }
+
+.search.search-results #main,
+.search.search-results {
+  margin-top: 100px; }
 
 /* Scss Document */
 body {
@@ -1707,6 +1722,23 @@ body {
 
 .studentSection {
   display: none; }
+
+.quicksearch {
+  display: none; }
+
+#filters {
+  background-color: white;
+  width: 100vw;
+  height: 50px;
+  border: 5px solid black;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+  position: fixed;
+  top: 100px;
+  left: 0px;
+  z-index: 100000; }
 
 .row {
   margin: 40px; }
@@ -1980,16 +2012,15 @@ a {
   text-align: right;
   width: 50%; }
 
-header {
+nav {
   width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100000000;
   display: flex;
-  flex-direction: row;
-  background-color: white; }
-  header #logoNav {
+  flex-direction: row; }
+  nav #logoNav {
     background-size: contain;
     margin: 5px;
     -webkit-transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -2035,16 +2066,21 @@ header {
   #topNav .row01 {
     width: 100%;
     height: 50px;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-items: space-around;
-    align-items: center; }
+    align-items: center;
+    border: 5px solid black;
+    border-bottom: 2.5px solid black;
+    box-sizing: border-box; }
     #topNav .row01 .headerLink {
-      width: 33.33%;
-      border-right: none;
-      border-bottom: 3px solid black; }
+      width: 33.3333%;
+      height: 100%;
+      margin: 0;
+      border-right: 5px solid black; }
       #topNav .row01 .headerLink:last-child {
-        border-right: 6px solid black; }
+        border-right: 0; }
       #topNav .row01 .headerLink p {
         display: flex;
         justify-content: center;
@@ -2061,17 +2097,23 @@ header {
   #topNav .row02 {
     width: 100%;
     height: 50px;
-    margin-top: -4px;
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-items: space-around;
-    align-items: center; }
+    align-items: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-top: 2.5px solid black; }
     #topNav .row02 .headerLink2 {
       width: 50%;
-      border-right: none;
-      border-top: 3px solid black; }
+      height: 100%;
+      border-right: 5px solid black;
+      margin: 0; }
       #topNav .row02 .headerLink2:last-child {
-        border-right: 6px solid black; }
+        border-right: 0; }
       #topNav .row02 .headerLink2:hover {
         background-color: #FACED6; }
       #topNav .row02 .headerLink2 p {
@@ -2084,6 +2126,10 @@ header {
         text-transform: uppercase; }
 
 /* colors for links */
+.is-checked {
+  background-color: black;
+  color: white; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/

@@ -1,5 +1,6 @@
 <?php
- /*
+
+/*
 PostType Page Template: students
  */
 get_header(); ?>
