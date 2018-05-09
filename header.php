@@ -87,9 +87,9 @@ if ( is_page_template( 'template-home.php' ) ) {
 } 
    elseif (is_singular( 'student' )) {
 	echo '<div style="width: 100vw; background-color: white; display: flex;
-	flex-direction: row; height: 80px; padding: 10px;">';
+	flex-direction: row; align-content: center; height: 100px; padding: 10px; border: 5px solid black;">';
 	
-	echo '<a id="logoNav" href="';
+	echo '<a id="logoNavStudent" href="';
 	echo esc_url( home_url()); 
 	echo '" rel="home" style="background-image: url(';
 	echo header_image();
@@ -105,9 +105,9 @@ if ( is_page_template( 'template-home.php' ) ) {
 } else {
 	echo '<div id="topNav">';
 	 	echo '<div style="width: 100vw; background-color: white; display: flex;
-	flex-direction: row; height: 80px; padding: 10px;">';
+	flex-direction: row; height: 80px; padding: 10px; border: 5px solid black;">';
 	
-	echo '<a id="logoNav" href="';
+	echo '<a id="logoNavDef" href="';
 	echo esc_url( home_url()); 
 	echo '" rel="home" style="background-image: url(';
 	echo header_image();

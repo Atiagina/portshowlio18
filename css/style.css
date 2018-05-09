@@ -2288,16 +2288,14 @@ body {
 /* line 34, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
 .workSection .grid-item:nth-child(5n) {
   width: 49.4vw;
-  height: 25vw;
-  margin: 0;
 }
 
-/* line 39, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
+/* line 37, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
 span {
   display: none;
 }
 
-/* line 44, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
+/* line 42, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
 .grid-item:hover span {
   display: flex;
   width: 100%;
@@ -2313,33 +2311,34 @@ span {
   font-family: HalisR-Bold;
 }
 
-/* line 57, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
+/* line 55, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
 .grid-item:hover span h1 {
   text-align: center;
 }
 
-/* line 63, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
+/* line 61, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
 .studentSection .grid-item {
   overflow: hidden;
+  width: 24.5vw;
   height: 30vw;
 }
 
-/* line 66, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
+/* line 65, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
 .studentSection .grid-item .hoverPhoto {
   display: none;
 }
 
-/* line 68, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
+/* line 67, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
 .studentSection .grid-item .mainPhoto {
   display: flex;
-  width: 25vw;
-  height: 25vw;
+  width: 100%;
+  height: 24.5vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* line 76, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
+/* line 75, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
 .studentSection .grid-item .text {
   display: flex;
   width: 100%;
@@ -2352,7 +2351,7 @@ span {
   padding-bottom: 0;
 }
 
-/* line 88, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
+/* line 87, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
 .studentSection .grid-item .text h3 {
   font-family: HalisR-Bold;
   width: 100%;
@@ -2361,7 +2360,7 @@ span {
   border-top: 6px solid black;
 }
 
-/* line 95, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
+/* line 94, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
 .studentSection .grid-item .text p {
   background-color: white;
   font-family: HalisR;
@@ -2369,22 +2368,22 @@ span {
   padding-bottom: 5px;
 }
 
-/* line 107, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
+/* line 106, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
 .studentSection .grid-item:hover .hoverPhoto {
   display: flex;
-  width: 25vw;
-  height: 25vw;
+  width: 100%;
+  height: 24.5vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* line 115, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
+/* line 114, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
 .studentSection .grid-item:hover .mainPhoto {
   display: none;
 }
 
-/* line 124, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
+/* line 123, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/layout/_grid.scss */
 .search.search-results #main,
 .search.search-results {
   margin-top: 100px;
@@ -2873,6 +2872,15 @@ nav #logoNav {
   background-position: center;
 }
 
+/* line 41, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
+nav #logoNavStudent {
+  background-size: contain;
+  background-position: center;
+  margin: 5px;
+  width: 150px;
+  background-repeat: no-repeat;
+}
+
 /* animation for the logo on scroll */
 @keyframes logoMovement {
   0% {
@@ -2886,23 +2894,23 @@ nav #logoNav {
   }
 }
 
-/* line 56, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
+/* line 64, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
 #logoNav.showlogo {
   animation: logoMovement 0.5s ease-in-out;
 }
 
-/* line 60, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
+/* line 68, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
 .hidelogo {
   display: none;
 }
 
-/* line 64, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
+/* line 72, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
 .showlogo {
   display: block;
 }
 
 /* nabigation buttons */
-/* line 71, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
+/* line 79, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
 #topNav {
   width: 100%;
   height: auto;
@@ -2918,7 +2926,7 @@ nav #logoNav {
   /* easeOutQuad */
 }
 
-/* line 86, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
+/* line 94, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
 #topNav .row01 {
   width: 100%;
   height: 50px;
@@ -2932,7 +2940,7 @@ nav #logoNav {
   box-sizing: border-box;
 }
 
-/* line 97, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
+/* line 105, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
 #topNav .row01 .headerLink {
   width: 33.3333%;
   height: 100%;
@@ -2940,12 +2948,12 @@ nav #logoNav {
   border-right: 5px solid black;
 }
 
-/* line 102, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
+/* line 110, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
 #topNav .row01 .headerLink:last-child {
   border-right: 0;
 }
 
-/* line 108, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
+/* line 116, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
 #topNav .row01 .headerLink p {
   display: flex;
   justify-content: center;
@@ -2955,22 +2963,22 @@ nav #logoNav {
   text-transform: uppercase;
 }
 
-/* line 117, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
+/* line 125, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
 #topNav .row01 #workLink:hover {
   background-color: #F4EF4A;
 }
 
-/* line 120, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
+/* line 128, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
 #topNav .row01 #studentLink:hover {
   background-color: #6EC6EA;
 }
 
-/* line 124, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
+/* line 132, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
 #topNav .row01 #eventLink:hover {
   background-color: #00B686;
 }
 
-/* line 129, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
+/* line 137, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
 #topNav .row02 {
   width: 100%;
   height: 50px;
@@ -2986,7 +2994,7 @@ nav #logoNav {
   border-top: 2.5px solid black;
 }
 
-/* line 143, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
+/* line 151, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
 #topNav .row02 .headerLink2 {
   width: 50%;
   height: 100%;
@@ -2994,17 +3002,17 @@ nav #logoNav {
   margin: 0;
 }
 
-/* line 149, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
+/* line 157, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
 #topNav .row02 .headerLink2:last-child {
   border-right: 0;
 }
 
-/* line 152, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
+/* line 160, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
 #topNav .row02 .headerLink2:hover {
   background-color: #FACED6;
 }
 
-/* line 155, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
+/* line 163, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
 #topNav .row02 .headerLink2 p {
   display: flex;
   justify-content: center;
@@ -3016,7 +3024,7 @@ nav #logoNav {
 }
 
 /* colors for links */
-/* line 171, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
+/* line 179, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/navigation/_navigation.scss */
 .is-checked {
   background-color: black;
   color: white;
