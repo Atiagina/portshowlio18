@@ -79,7 +79,7 @@ if ( is_page_template( 'template-home.php' ) ) {
 	//echo '<span class="icon-search">';
 	//echo '</span>';
 	//echo '</span>';
-	echo '<p class="buttonTitle">search</p> <input type="text" class="quicksearch" placeholder="Search" /><p class="closeButton">close</p></a>';
+	echo '<p class="buttonTitle">search</p> </a>';
 	//echo '</a>';
 	echo '</div>';
 	echo '</div>';

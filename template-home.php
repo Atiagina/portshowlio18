@@ -18,7 +18,7 @@
 <div >
 	
 		<div >
-
+<input type="text" class="quicksearch" placeholder="Search" />
 
 
 	<div id="filters" class="button-group">
@@ -314,29 +314,25 @@ $('.studentSection').css('display','none');
 });
 </script>
 <script>
+	$('.quicksearch').css('display','none');
 	
 	$('.searchButton').click(function() {
-		if($('.quicksearch').css('display') === 'none'){
-			$('.quicksearch').css('display','flex');
-			$('.closeButton').css('display','flex');
-			$('.closeButton').css('align-self','flex-end');
-			$('.buttonTitle').css('display','none');
-			$('.homeHero').css('display','none');
-			$('.searchButton').css('background-color','white');
-		}
 		
-	});
-	</script>
-<script>
-		
-$('.closeButton').click(function() {
 		if($('.quicksearch').css('display') === 'flex'){
 			$('.quicksearch').css('display','none');
-			$('.closeButton').css('display','none');
-		}
-});
-							 
+			
+			$('.buttonTitle').css('display','flex');
+			$('.homeHero').css('display','none');
+			$('.searchButton').css('background-color','white');
+			$grid.isotope({ filter: '*' });
+				
+	} else {
+							 $('.quicksearch').css('display','flex');
+							
+							 }
+	});
 	</script>
+
 
 <script>
 	
