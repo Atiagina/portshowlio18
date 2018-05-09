@@ -251,6 +251,26 @@ $('#studentLink').click(function() {
 		$('#eventLink').css('background-color','white');
 	$('.searchButton').css('background-color','white');
 	$('.filterButton').css('background-color','white');
+	$('.studentSection').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 0,
+		fitWidth: true
+});
+	$('#filters').css('display','none');
+			$('.filterButton').css('background-color','white');
+				var $grid = $('.gridHome').isotope({
+  itemSelector: '.itemHome',
+  //layoutMode: 'fitRows',
+  filter: function() {
+    var $this = $(this);
+    var searchResult = qsRegex ? $this.text().match( qsRegex ) : true;
+    var buttonResult = buttonFilter ? $this.is( buttonFilter ) : true;
+    return searchResult && buttonResult;
+  }
+});
+	
+  $grid.isotope({ filter: '*' });
 	
 		//var $filtersJoin = $filters.join(', ');
 		//$grid.isotope({ filter: $filtersJoin });
@@ -270,6 +290,25 @@ $('.studentSection').css('display','none');
 		$('body').css('background','white');
 	$('.searchButton').css('background-color','white');
 	$('.filterButton').css('background-color','white');
+	$('.workSection').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 0,
+		fitWidth: true
+});
+	$('#filters').css('display','none');
+				var $grid = $('.gridHome').isotope({
+  itemSelector: '.itemHome',
+  //layoutMode: 'fitRows',
+  filter: function() {
+    var $this = $(this);
+    var searchResult = qsRegex ? $this.text().match( qsRegex ) : true;
+    var buttonResult = buttonFilter ? $this.is( buttonFilter ) : true;
+    return searchResult && buttonResult;
+  }
+});
+	
+  $grid.isotope({ filter: '*' });
 		//var $filtersJoin = $filters.join(', ');
 		//$grid.isotope({ filter: $filtersJoin });
 	});

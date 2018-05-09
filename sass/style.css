@@ -1619,27 +1619,29 @@ big {
 /* Sass Document */
 body {
   box-sizing: border-box;
-  width: 100vw; }
+  width: 100%;
+  overflow-x: hidden; }
 
 .grid {
-  width: 100vw;
+  width: 100%;
   height: auto;
   margin: 0 auto;
   /*border: 3px solid black;*/
   box-sizing: border-box; }
   .grid .grid-item {
     height: 25vw;
-    width: 24.5vw;
+    width: 24.7vw;
     padding: 0px;
     margin: 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     outline: 5px solid black;
-    background-color: white; }
+    background-color: white;
+    box-sizing: border-box; }
 
 .workSection .grid-item:nth-child(5n) {
-  width: 49vw;
+  width: 49.4vw;
   height: 25vw;
   margin: 0; }
 
@@ -2028,7 +2030,7 @@ a {
   width: 50%; }
 
 nav {
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
