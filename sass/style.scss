@@ -1,5 +1,5 @@
 /*!
-Theme Name: portshowlio
+Theme Name: portshowlio18
 Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
@@ -63,8 +63,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 @import "layout/grid";
 @import "layout/home";
+@import "layout/single-student";
 
-@import "studentpage";
 
 /*--------------------------------------------------------------
 # Elements
@@ -116,4 +116,171 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 @import "media/media";
 
+/*for single design template*/
+/*modified by ERIK FOR IVANNA on 5/1/18*/
 
+*{
+	font-family: HalisR, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+.row {
+
+	justify-content: flex-start;
+} 
+.tinylogo img{
+	margin-top: 20px;
+	width: 100px;
+}
+.studentSidebar {
+	width: 650px;
+    height: 300px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+.sidebar {
+    max-width: none;
+	padding-left: 28px;
+	display: flex;
+	height: 80vh !important;
+}
+
+.headshot {
+	    width: 300px;
+    height: 300px;
+    float: left;
+    border: 5px black solid;
+}
+.studentInfo {
+	width: 280px;
+	height: 300px;
+	float: left;
+	margin-left: 20px;
+}
+.dash {
+	float: left;
+    text-align: left;
+    width: 400px;
+    margin-bottom: -2px;
+    margin-right: 20px;
+    margin-top: 130px;
+}
+.justify-end {
+	justify-content: flex-end;
+}
+.projectTitle {
+	font-weight: bold;
+    font-size: 33px;
+    color: black;
+	    margin-bottom: 0px;
+}
+.projectSelector {
+	position: fixed;
+	top: 50px;
+	right: 49px;
+	height: 200px;
+	z-index: 100;
+}
+.projectSelectorName {
+	display: block;
+	    height: auto;
+    padding: 1px 5px;
+   float: right;
+    clear: both;
+	border: 2px black solid;
+	font-size: 17px;
+    color: black;
+    font-weight: 600;
+	    margin: -2px 0 0 0;
+}
+.projectSelectorName:hover {
+	background: #F4EF4A;
+}
+
+.collaboratorTitle {
+}
+.projectDescription {
+	outline: thin red solid;
+}
+.name {
+	font-size: 17px;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+	
+}
+.socialIcon {
+	display: block;
+	height: 32px;
+	width: 32px;
+	float: left;
+	margin-right: 20px;
+}
+
+
+span.nextStudent a {
+    font-size: 29px;
+    color: black;
+	    border: 2px black solid;
+    padding: 6px 17px;
+}
+
+span.nextStudent a:hover, span.nextStudent a:active {
+	text-decoration: none;
+}
+
+p.category {
+    text-transform: capitalize;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+	margin-bottom: 5px;
+	
+}
+p.collaboratortitle {
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+	margin: 0;
+}
+
+p {
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.cell.twelve.imageGrid {
+    padding: 0;
+}
+
+.ivannafooter{
+	margin-top: 100px;
+	border: solid black 4px;
+}
+
+.ivannafooter .fab {
+	font-size: 30px;
+}
+
+.ivannafooter a .fab {
+	color: black;
+}
+.ivannafooter a .fab:hover {
+	color: black;
+}
+.footersocial {
+	padding: 0px;
+}
+
+.socialoutline {
+	border: solid black 4px;
+	    height: 55px;
+}
+
+.red {background-color: #de3831;}
+.green {background-color: #00b588;}
+.blue {background-color: #73c7e7;}
+.yellow {background-color: #f5ed59;}
+
+/*end Ivanna*/

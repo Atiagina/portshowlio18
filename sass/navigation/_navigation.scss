@@ -100,7 +100,8 @@ nav {
 		justify-items: space-around;
 	align-items: center;
 		border:5px solid black;
-		border-bottom: 2.5px solid black;
+		border-bottom: 3px solid black;
+		
 		box-sizing: border-box;
 		.headerLink {
 		 width: 33.3333%;
@@ -137,7 +138,7 @@ margin: 10px auto;
 	.row02 {
 		width: 100%;
 		height: 50px;
-		margin-top: 0;
+		margin-top: -1px;
 		padding: 0;
 		box-sizing: border-box;
 		display: flex;
@@ -146,7 +147,7 @@ margin: 10px auto;
 	align-items: center;
 		border:5px solid black;
 		box-sizing: border-box;
-		border-top: 2.5px solid black;
+		border-top: 3px solid black;
 	
 	.headerLink2 {
 		width: 50%;
@@ -179,4 +180,20 @@ margin: 10px auto;
 .is-checked {
 	background-color: black;
 	color: white;
+}
+
+.buttonTitleBefore::before{
+	 content: "search";
+}
+
+.buttonTitleAfter::before{
+	 content: "close";
+}
+
+.filterTitleBefore::before{
+	 content: "filter";
+}
+
+.filterTitleAfter::before{
+	 content: "close";
 }

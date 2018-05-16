@@ -1,5 +1,5 @@
 /*!
-Theme Name: portshowlio
+Theme Name: portshowlio18
 Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
@@ -1512,7 +1512,8 @@ h1 {
 h2 {
   font-size: 44px;
   color: black;
-  font-weight: bold; }
+  font-weight: bold;
+  line-height: 36px; }
 
 h3 {
   font-size: 28px;
@@ -1643,23 +1644,43 @@ body {
 .workSection .grid-item:nth-child(5n) {
   width: 49.4vw; }
 
-span {
+div.textProject {
   display: none; }
 
-.grid-item:hover span {
+.textProject {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  text-align: left;
+  color: black;
+  padding: 10px; }
+  .textProject h2 {
+    margin-bottom: 20px; }
+  .textProject h3 {
+    font-family: HalisR-Bold;
+    width: 100%;
+    color: black;
+    background-color: white;
+    border-top: 6px solid black; }
+  .textProject p {
+    text-align: left;
+    font-family: HalisR;
+    margin-bottom: 0;
+    padding-bottom: 5px; }
+
+.grid-item:hover .textProject {
   display: flex;
   width: 100%;
   height: 100%;
   padding: 10px;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
   background-color: #F4EF4A;
-  align-items: center;
   color: black;
   font-family: HalisR-Bold; }
-  .grid-item:hover span h1 {
+  .grid-item:hover .textProject h1 {
     text-align: center; }
 
 .studentSection .grid-item {
@@ -1676,26 +1697,9 @@ span {
     background-repeat: no-repeat;
     background-position: center; }
   .studentSection .grid-item .text {
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-content: center;
-    color: black;
-    text-align: center;
-    padding-bottom: 0; }
-    .studentSection .grid-item .text h3 {
-      font-family: HalisR-Bold;
-      width: 100%;
-      color: black;
-      background-color: white;
-      border-top: 6px solid black; }
-    .studentSection .grid-item .text p {
-      background-color: white;
-      font-family: HalisR;
-      margin-bottom: 0;
-      padding-bottom: 5px; }
+    padding: 5px;
+    height: 5vw;
+    border-top: 5px solid black; }
 .studentSection .grid-item:hover .hoverPhoto {
   display: flex;
   width: 100%;
@@ -1756,48 +1760,131 @@ body {
   left: 0px;
   z-index: 100000; }
 
+/* Scss Document */
+/*for single design template*/
+/*modified by ERIK FOR IVANNA on 5/1/18*/
+* {
+  font-family: HalisR, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; }
+
 .row {
-  margin: 40px; }
+  justify-content: flex-start; }
 
-img {
-  object-fit: contain; }
+.tinylogo img {
+  margin-top: 20px;
+  width: 100px; }
 
-ul {
-  list-style-type: none;
-  margin: 0; }
-  ul li {
-    display: inline-block;
-    padding-left: 0; }
-    ul li a {
-      margin: 10px 10px 10px 0;
-      padding-left: 0; }
+.studentSidebar {
+  width: 650px;
+  height: 300px;
+  text-transform: uppercase;
+  color: black;
+  font-size: 15px;
+  font-weight: 500; }
 
-.studentcard {
+.sidebar {
+  max-width: none;
+  padding-left: 28px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  padding: 20px;
-  border: 1px solid black; }
+  height: 80vh !important; }
 
-.studentimg {
-  width: 100%;
-  object-fit: contain;
-  min-width: 150px;
-  margin-right: 1vw; }
+.headshot {
+  width: 300px;
+  height: 300px;
+  float: left;
+  border: 5px black solid; }
 
-.projectimagehalf {
-  object-fit: contain;
-  width: 50vw;
+.studentInfo {
+  width: 280px;
+  height: 300px;
+  float: left;
+  margin-left: 20px; }
+
+.dash {
+  float: left;
+  text-align: left;
+  width: 400px;
+  margin-bottom: -2px;
+  margin-right: 20px;
+  margin-top: 130px; }
+
+.justify-end {
+  justify-content: flex-end; }
+
+.projectTitle {
+  font-weight: bold;
+  font-size: 33px;
+  color: black;
+  margin-bottom: 0px; }
+
+.projectSelector {
+  position: fixed;
+  top: 50px;
+  right: 49px;
+  height: 200px;
+  z-index: 100; }
+
+.projectSelectorName {
+  display: block;
   height: auto;
-  padding: 10px;
-  float: left; }
+  padding: 1px 5px;
+  float: right;
+  clear: both;
+  border: 2px black solid;
+  font-size: 17px;
+  color: black;
+  font-weight: 600;
+  margin: -2px 0 0 0; }
 
-.projectdesc {
-  padding: 20px;
-  border: 1px solid black; }
+.projectSelectorName:hover {
+  background: #F4EF4A; }
 
+.projectDescription {
+  outline: thin red solid; }
+
+.name {
+  font-size: 17px;
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.socialIcon {
+  display: block;
+  height: 32px;
+  width: 32px;
+  float: left;
+  margin-right: 20px; }
+
+span.nextStudent a {
+  font-size: 29px;
+  color: black;
+  border: 2px black solid;
+  padding: 6px 17px; }
+
+span.nextStudent a:hover, span.nextStudent a:active {
+  text-decoration: none; }
+
+p.category {
+  text-transform: capitalize;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 5px; }
+
+p.collaboratortitle {
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0; }
+
+p {
+  color: black;
+  font-size: 14px;
+  font-weight: 400; }
+
+.cell.twelve.imageGrid {
+  padding: 0; }
+
+/*end Ivanna*/
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -2099,7 +2186,7 @@ nav {
     justify-items: space-around;
     align-items: center;
     border: 5px solid black;
-    border-bottom: 2.5px solid black;
+    border-bottom: 3px solid black;
     box-sizing: border-box; }
     #topNav .row01 .headerLink {
       width: 33.3333%;
@@ -2124,7 +2211,7 @@ nav {
   #topNav .row02 {
     width: 100%;
     height: 50px;
-    margin-top: 0;
+    margin-top: -1px;
     padding: 0;
     box-sizing: border-box;
     display: flex;
@@ -2133,7 +2220,7 @@ nav {
     align-items: center;
     border: 5px solid black;
     box-sizing: border-box;
-    border-top: 2.5px solid black; }
+    border-top: 3px solid black; }
     #topNav .row02 .headerLink2 {
       width: 50%;
       height: 100%;
@@ -2156,6 +2243,18 @@ nav {
 .is-checked {
   background-color: black;
   color: white; }
+
+.buttonTitleBefore::before {
+  content: "search"; }
+
+.buttonTitleAfter::before {
+  content: "close"; }
+
+.filterTitleBefore::before {
+  content: "filter"; }
+
+.filterTitleAfter::before {
+  content: "close"; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -2366,3 +2465,160 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*for single design template*/
+/*modified by ERIK FOR IVANNA on 5/1/18*/
+* {
+  font-family: HalisR, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; }
+
+.row {
+  justify-content: flex-start; }
+
+.tinylogo img {
+  margin-top: 20px;
+  width: 100px; }
+
+.studentSidebar {
+  width: 650px;
+  height: 300px;
+  text-transform: uppercase;
+  color: black;
+  font-size: 15px;
+  font-weight: 500; }
+
+.sidebar {
+  max-width: none;
+  padding-left: 28px;
+  display: flex;
+  height: 80vh !important; }
+
+.headshot {
+  width: 300px;
+  height: 300px;
+  float: left;
+  border: 5px black solid; }
+
+.studentInfo {
+  width: 280px;
+  height: 300px;
+  float: left;
+  margin-left: 20px; }
+
+.dash {
+  float: left;
+  text-align: left;
+  width: 400px;
+  margin-bottom: -2px;
+  margin-right: 20px;
+  margin-top: 130px; }
+
+.justify-end {
+  justify-content: flex-end; }
+
+.projectTitle {
+  font-weight: bold;
+  font-size: 33px;
+  color: black;
+  margin-bottom: 0px; }
+
+.projectSelector {
+  position: fixed;
+  top: 50px;
+  right: 49px;
+  height: 200px;
+  z-index: 100; }
+
+.projectSelectorName {
+  display: block;
+  height: auto;
+  padding: 1px 5px;
+  float: right;
+  clear: both;
+  border: 2px black solid;
+  font-size: 17px;
+  color: black;
+  font-weight: 600;
+  margin: -2px 0 0 0; }
+
+.projectSelectorName:hover {
+  background: #F4EF4A; }
+
+.projectDescription {
+  outline: thin red solid; }
+
+.name {
+  font-size: 17px;
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.socialIcon {
+  display: block;
+  height: 32px;
+  width: 32px;
+  float: left;
+  margin-right: 20px; }
+
+span.nextStudent a {
+  font-size: 29px;
+  color: black;
+  border: 2px black solid;
+  padding: 6px 17px; }
+
+span.nextStudent a:hover, span.nextStudent a:active {
+  text-decoration: none; }
+
+p.category {
+  text-transform: capitalize;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 5px; }
+
+p.collaboratortitle {
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0; }
+
+p {
+  color: black;
+  font-size: 14px;
+  font-weight: 400; }
+
+.cell.twelve.imageGrid {
+  padding: 0; }
+
+.ivannafooter {
+  margin-top: 100px;
+  border: solid black 4px; }
+
+.ivannafooter .fab {
+  font-size: 30px; }
+
+.ivannafooter a .fab {
+  color: black; }
+
+.ivannafooter a .fab:hover {
+  color: black; }
+
+.footersocial {
+  padding: 0px; }
+
+.socialoutline {
+  border: solid black 4px;
+  height: 55px; }
+
+.red {
+  background-color: #de3831; }
+
+.green {
+  background-color: #00b588; }
+
+.blue {
+  background-color: #73c7e7; }
+
+.yellow {
+  background-color: #f5ed59; }
+
+/*end Ivanna*/

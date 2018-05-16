@@ -1,0 +1,855 @@
+[
+    {
+        "key": "group_590bbe5557fc2",
+        "title": "Profile Fields 2018 - Design",
+        "fields": [
+            {
+                "key": "field_590bbe55608e8",
+                "label": "Welcome!",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 60,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<h1 style=\"color: red;\"><strong>Uploading Instructions<\/strong><\/h1><br><br>\r\n<hr>\r\n\r\n<h3> Before you begin uploading your content, please save all of your images for web (72 ppi, max width 1920 px, max height 3000 px). <\/h3>\r\n<br><br>\r\n<p>There are three sections for you to complete:<br><br>\r\n<strong>01 Start Profile<\/strong>  Add your Headshot and personal details, <br>\r\n<strong>02 Upload Projects<\/strong>  Choose your Featured Project for the homepage., Build your student page with 3 projects and details.<br>\r\n<strong>03 Add Social Links<\/strong> Add links to social media channels you want to feature<\/p> <br><br>\r\n\r\nWhen you've finished adding your content to all three tabs, press the \"Update\" button in the righthand bar to post your page to the site.<br><br>\r\n\r\n<i>If you have trouble trying to upload your content, please ask your neighbor. If you're still having trouble, ping Erin on slack.<\/i>  <\/h3> <br><br>",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_590bbe5560874",
+                "label": "01 Start Profile",
+                "name": "01_start_profile",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5aef5bf20865e",
+                "label": "Start Here",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 60,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<h1 style=\"color: blue;\"><strong>Start your Profile<\/strong><\/h1><br><br>\r\n<hr>\r\n\r\nAdd your headshots and personal portfolio site link, and choose your three areas of focus.",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_590bbe5560959",
+                "label": "Add your Professional Headshot Photo",
+                "name": "headshot",
+                "type": "image",
+                "instructions": "<p> 600 x 600 px <\/p>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "uploadedTo",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5aea99c9526dc",
+                "label": "Add your Personality Headshot Photo",
+                "name": "headshot_hover",
+                "type": "image",
+                "instructions": "<p>Mild, Medium or Spicy Headshot, 600 x 600 px<\/p>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "uploadedTo",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_590bbe55609c9",
+                "label": "Add your Portfolio Website Address",
+                "name": "portfolio_site",
+                "type": "text",
+                "instructions": "<p style=\"color: rgb(255, 82, 15);\">Please do not include http:\/\/ or https:\/\/.\r\n\r\nExample:\r\n\"iank.co\"\r\n<\/p>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "yourwebsite.com",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5af47e1e40e8b",
+                "label": "TEST TAB",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_590bc2185d072",
+                "label": "Featured Project for Homepage",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 60,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<h1 style=\"color: blue;\"><strong>Featured Project<\/strong><\/h1><br><br>\r\n<hr>\r\n\r\n<h3>In this section you'll set up your featured project, which will appear on the homepage grid.<\/h3>\r\n\r\n<strong>For the Featured Image, you will need a 1024 x 1024 px image, saved for web, from the first project featured on your student page.<\/strong>This image will appear in the homepage grid as both a square or a 1 x 2 rectangle, please select an image which is visually interesting in both shapes.\r\n\r\nThe project title and type will appear on hover.",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_590bbe5560b8e",
+                "label": "Select your Featured Project Image",
+                "name": "featured_image",
+                "type": "image",
+                "instructions": "<p style=\"color: rgb(255, 82, 15);\">\r\n<strong> 1024px width x 1024px height <\/p>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "uploadedTo",
+                "min_width": 1024,
+                "min_height": 1024,
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "jpg"
+            },
+            {
+                "key": "field_590bea0adf92a",
+                "label": "Add your Featured Project Title",
+                "name": "project_title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5af0e0b765eb8",
+                "label": "What type project is this?",
+                "name": "project_type",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "SELECT": "SELECT",
+                    "Art Direction": "Art Direction",
+                    "Branding": "Branding",
+                    "Environmental Design": "Environmental Design",
+                    "Front End Development": "Front End Development",
+                    "Illustration": "Illustration",
+                    "Interaction Design": "Interaction Design",
+                    "Motion Graphics": "Motion Graphics",
+                    "Packaging": "Packaging",
+                    "Print Design": "Print Design",
+                    "UX \/ UI": "UX \/ UI",
+                    "Web Design": "Web Design",
+                    "AR \/ VR": "AR \/ VR",
+                    "Visual Design": "Visual Design",
+                    "Layout": "Layout",
+                    "Advertising": "Advertising"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_5aea9adb526dd",
+                "label": "Student Projects",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 60,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<h1 style=\"color: blue;\"><strong>How to Build your Projects Page <\/strong><\/h1><br><br>\r\n<hr>\r\n\r\n<h3>Below you will build your individual student page, featuring 3 projects. <br><br>\r\n\r\nHere's how to add projects to your page:\r\n\r\n<strong>1. Create New Project<\/strong> Click the \"Add Project\" button below, and then click the pop-up window to start creating your project\r\n<strong>2. Input Project Details <\/strong> Add your project title, type, description and collaborators.\r\n<strong>3. Add Project Image Rows<\/strong> Use the \"Add Row\" button and select the layout you wish to use. Each project will take 2-4 rows, you may combine or repeat rows as you prefer.\r\n<strong>4. Repeat steps 1-3 <\/strong> to build 2 more project layouts (total three projects).\r\n<\/h3>",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_5af0cda173ee7",
+                "label": "Copywriting Tips",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 40,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<h1 style=\"color: rgb(255, 82, 15);\"><strong> Copywriting Tips<\/strong><\/h1><br><br>\r\n<hr>\r\n<p>Copy should be written in first person, and use active voice (examples below).\r\n\r\n<i>EXAMPLES OF ACTIVE VOICE AND FIRST PERSON:<\/i>\r\n\r\n\"A non-profit needs a flexible, clear, and inclusive logo. With that in mind, I developed a simple geometric mark that references the concept of community.\"\r\n\r\n\"As a way to expand Bike Works footprint, I generated an asset library for use in advertising and merchandise.\"<\/p>",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_59149c42ad2c7",
+                "label": "Projects",
+                "name": "projects",
+                "type": "flexible_content",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "button_label": "Add Project",
+                "min": 3,
+                "max": 3,
+                "layouts": [
+                    {
+                        "key": "59149c4adb15a",
+                        "name": "project",
+                        "label": "Project",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_59149c70ad2c8",
+                                "label": "Add Project Title",
+                                "name": "project_title",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_5914b382b7b15",
+                                "label": "Choose Project Type",
+                                "name": "project_type",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "SELECT": "SELECT",
+                                    "Art Direction": "Art Direction",
+                                    "Branding": "Branding",
+                                    "Environmental Design": "Environmental Design",
+                                    "Front End Development": "Front End Development",
+                                    "Illustration": "Illustration",
+                                    "Interaction Design": "Interaction Design",
+                                    "Motion Graphics": "Motion Graphics",
+                                    "Packaging": "Packaging",
+                                    "Print Design": "Print Design",
+                                    "UX \/ UI": "UX \/ UI",
+                                    "Web Design": "Web Design",
+                                    "AR \/ VR": "AR \/ VR",
+                                    "Visual Design": "Visual Design",
+                                    "Layout": "Layout",
+                                    "Advertising": "Advertising"
+                                },
+                                "default_value": [
+                                    "Select"
+                                ],
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "ajax": 0,
+                                "placeholder": "",
+                                "disabled": 0,
+                                "readonly": 0
+                            },
+                            {
+                                "key": "field_5914b456b7b16",
+                                "label": "Add your Collaborators",
+                                "name": "collaborators",
+                                "type": "post_object",
+                                "instructions": "<p style=\"color:blue\">Select the Collaborators (if applicable) for this project.<\/p>",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "post_type": [
+                                    "design"
+                                ],
+                                "taxonomy": [],
+                                "allow_null": 0,
+                                "multiple": 1,
+                                "return_format": "object",
+                                "ui": 1
+                            },
+                            {
+                                "key": "field_59149c7aad2c9",
+                                "label": "Describe this Project",
+                                "name": "project_description",
+                                "type": "textarea",
+                                "instructions": "<p style=\"color: rgb(255, 82, 15);\">250 characters max<\/p>",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "maxlength": 250,
+                                "rows": "",
+                                "new_lines": "wpautop",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_59149c88ad2ca",
+                                "label": "Add Project Images",
+                                "name": "project_images",
+                                "type": "flexible_content",
+                                "instructions": "<p style=\"color: black\">Click ADD ROW to add image rows. Choose which of the 5 image layouts you want for each row. You can re-arrange the order of your rows.  Minimum 2 rows, maximum 4. ou can also preview your changes as you upload.<\/p>",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "button_label": "Add Row",
+                                "min": 2,
+                                "max": 4,
+                                "layouts": [
+                                    {
+                                        "key": "59149c8fa71cd",
+                                        "name": "portrait_3_column",
+                                        "label": "Portrait 3-Column",
+                                        "display": "block",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_59149c9cad2cb",
+                                                "label": "Images",
+                                                "name": "images",
+                                                "type": "repeater",
+                                                "instructions": "<p style=\"color: rgb(255, 82, 15);\"><strong>Save for web!<\/strong><br><br>3 portrait images side by side. Once uploaded, you can drag to reorder the images.\r\n<br>\r\nDimensions (pixels):<br>\r\n\r\nImage Width: 960<br>\r\n\r\nHeight Range: (min)1200 -1500(max)<strong>Choose one consistent height for all three images<\/strong><\/p>",
+                                                "required": 1,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "collapsed": "",
+                                                "min": 3,
+                                                "max": 3,
+                                                "layout": "table",
+                                                "button_label": "Add Image",
+                                                "sub_fields": [
+                                                    {
+                                                        "key": "field_59149cc0ad2cc",
+                                                        "label": "Image",
+                                                        "name": "image",
+                                                        "type": "image",
+                                                        "instructions": "",
+                                                        "required": 1,
+                                                        "conditional_logic": 0,
+                                                        "wrapper": {
+                                                            "width": "",
+                                                            "class": "",
+                                                            "id": ""
+                                                        },
+                                                        "return_format": "url",
+                                                        "preview_size": "thumbnail",
+                                                        "library": "all",
+                                                        "min_width": 960,
+                                                        "min_height": 1200,
+                                                        "min_size": "",
+                                                        "max_width": 960,
+                                                        "max_height": 1500,
+                                                        "max_size": 10,
+                                                        "mime_types": "jpg, gif"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "min": "",
+                                        "max": ""
+                                    },
+                                    {
+                                        "key": "5914b0940a859",
+                                        "name": "portrait_2_column",
+                                        "label": "Portrait 2-Column",
+                                        "display": "block",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_5914b0940a85a",
+                                                "label": "Images",
+                                                "name": "images",
+                                                "type": "repeater",
+                                                "instructions": "<p style=\"color: rgb(255, 82, 15);\"><strong>Save for web!<\/strong><br><br>2 portrait images side by side. Once uploaded, you can drag to reorder the images.\r\n<br>\r\nDimensions (pixels):<br>\r\n\r\nImage Width: 960<br>\r\n\r\nHeight Range: (min)1200 -1500(max) <strong>Choose one consistent height for both images<\/strong><\/p>",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "collapsed": "",
+                                                "min": 2,
+                                                "max": 2,
+                                                "layout": "table",
+                                                "button_label": "Add Image",
+                                                "sub_fields": [
+                                                    {
+                                                        "key": "field_5914b0940a85b",
+                                                        "label": "Image",
+                                                        "name": "image",
+                                                        "type": "image",
+                                                        "instructions": "",
+                                                        "required": 0,
+                                                        "conditional_logic": 0,
+                                                        "wrapper": {
+                                                            "width": "",
+                                                            "class": "",
+                                                            "id": ""
+                                                        },
+                                                        "return_format": "url",
+                                                        "preview_size": "thumbnail",
+                                                        "library": "all",
+                                                        "min_width": 960,
+                                                        "min_height": 1200,
+                                                        "min_size": "",
+                                                        "max_width": 960,
+                                                        "max_height": 1500,
+                                                        "max_size": 10,
+                                                        "mime_types": "jpg, gif"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "min": "",
+                                        "max": ""
+                                    },
+                                    {
+                                        "key": "5914b18c933e3",
+                                        "name": "portrait_1_column",
+                                        "label": "Portrait 1-Column",
+                                        "display": "block",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_5914b18c933e4",
+                                                "label": "Image",
+                                                "name": "image",
+                                                "type": "image",
+                                                "instructions": "<p style=\"color: rgb(255, 82, 15);\"><strong>Save for web!<\/strong><br><br>1 portrait image (centered)\r\n<br>\r\nDimensions (pixels):<br>\r\n\r\nImage Width: 960<br>\r\n\r\nHeight Range: (min)1200 -1500(max)<\/p>",
+                                                "required": 1,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "return_format": "url",
+                                                "preview_size": "thumbnail",
+                                                "library": "all",
+                                                "min_width": 960,
+                                                "min_height": 1200,
+                                                "min_size": "",
+                                                "max_width": 960,
+                                                "max_height": 1500,
+                                                "max_size": 10,
+                                                "mime_types": "jpg, gif"
+                                            }
+                                        ],
+                                        "min": "",
+                                        "max": ""
+                                    },
+                                    {
+                                        "key": "5914b1da933e6",
+                                        "name": "landscape_image",
+                                        "label": "Landscape Image",
+                                        "display": "block",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_5914b1da933e7",
+                                                "label": "Image",
+                                                "name": "image",
+                                                "type": "image",
+                                                "instructions": "<p style=\"color: rgb(255, 82, 15);\"><strong>Save for web!<\/strong><br><br>Landscape image<br>Dimensions (pixels):<br>\r\n\r\nImage Width: 1920<br>\r\n\r\nHeight Range:<br> (min)1080\/(max)1400<\/p>",
+                                                "required": 1,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "return_format": "url",
+                                                "preview_size": "thumbnail",
+                                                "library": "all",
+                                                "min_width": 1920,
+                                                "min_height": 1080,
+                                                "min_size": "",
+                                                "max_width": 1920,
+                                                "max_height": 1400,
+                                                "max_size": 10,
+                                                "mime_types": "jpg, gif"
+                                            }
+                                        ],
+                                        "min": "",
+                                        "max": ""
+                                    },
+                                    {
+                                        "key": "5914b24e933e9",
+                                        "name": "video",
+                                        "label": "Video",
+                                        "display": "block",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_5914b24e933ea",
+                                                "label": "Video",
+                                                "name": "video",
+                                                "type": "textarea",
+                                                "instructions": "<p style=\"color: rgb(255, 82, 15);\">Please paste your full iframe embed code for YouTube or Vimeo<\/p>",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "default_value": "",
+                                                "placeholder": "Paste iframe embed code here",
+                                                "maxlength": "",
+                                                "rows": 8,
+                                                "new_lines": "",
+                                                "readonly": 0,
+                                                "disabled": 0
+                                            }
+                                        ],
+                                        "min": "",
+                                        "max": ""
+                                    }
+                                ]
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5aeab73b54532",
+                "label": "Social Links",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 60,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<h1 style=\"color: rgb(255, 82, 15);\"><strong>Add your Social Media Links<\/strong><\/h1><br><br>\r\n<hr>\r\n<p>This is optional. You may input a max of 4 social media links. <\/p>",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_590bbe5560d4f",
+                "label": "Facebook",
+                "name": "facebook_page",
+                "type": "url",
+                "instructions": "Enter your Facebook page URL\r\n\r\nYou must enter \"http:\/\/\" or \"https:\/\/\" as a prefix to your URL:\r\n\r\n",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 60,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "http:\/\/facebook.com\/username"
+            },
+            {
+                "key": "field_590bbe5560e30",
+                "label": "Twitter",
+                "name": "twitter_page",
+                "type": "url",
+                "instructions": "Enter your Twitter URL\r\n\r\nYou must enter \"http:\/\/\" or \"https:\/\/\" as a prefix to your URL:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 60,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "http:\/\/twitter.com\/username"
+            },
+            {
+                "key": "field_590bbe5560ea0",
+                "label": "Instagram",
+                "name": "instagram_page",
+                "type": "url",
+                "instructions": "Enter your Instagram URL\r\n\r\nYou must enter \"http:\/\/\" or \"https:\/\/\" as a prefix to your URL:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 60,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "http:\/\/instagram.com\/username"
+            },
+            {
+                "key": "field_590bbe5560dc0",
+                "label": "Linkedin",
+                "name": "linkedin_page",
+                "type": "url",
+                "instructions": "Enter your Linkedin page URL.\r\n\r\nYou must enter \"http:\/\/\" or \"https:\/\/\" as a prefix to your URL:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 60,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/www.linkedin.com\/in\/username"
+            },
+            {
+                "key": "field_590bbe5560f10",
+                "label": "Tumblr",
+                "name": "tumblr_page",
+                "type": "url",
+                "instructions": "Enter your Tumblr URL\r\n\r\nYou must enter \"http:\/\/\" or \"https:\/\/\" as a prefix to your URL:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 60,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "http:\/\/tumblr.com\/username"
+            },
+            {
+                "key": "field_590bbe5560f80",
+                "label": "Pinterest",
+                "name": "pinterest_page",
+                "type": "url",
+                "instructions": "Enter your Pinterest URL\r\n\r\nYou must enter \"http:\/\/\" or \"https:\/\/\" as a prefix to your URL:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 60,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "http:\/\/pinterest.com\/username"
+            },
+            {
+                "key": "field_590c9d70dbcd8",
+                "label": "YouTube",
+                "name": "youtube_page",
+                "type": "url",
+                "instructions": "Enter your Youtube channel URL. \r\n\r\nYou must enter \"http:\/\/\" or \"https:\/\/\" as a prefix to your URL:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 60,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/www.youtube.com\/channel\/username"
+            },
+            {
+                "key": "field_590c9daadbcd9",
+                "label": "Vimeo",
+                "name": "vimeo_page",
+                "type": "url",
+                "instructions": "Enter your Vimeo channel URL. \r\n\r\nYou must enter \"http:\/\/\" or \"https:\/\/\" as a prefix to your URL:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 60,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "https:\/\/www.vimeo.com\/username"
+            },
+            {
+                "key": "field_590bbe556111e",
+                "label": "PSD Mockups",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<h1 style=\"color: rgb(255, 82, 15);\"><strong>Mockups<\/strong><\/h1><br><br>\r\n<hr>\r\n<p>The Class of 2016 assembled the following mock-up resource list. Use of these mockups is totally optional; they are not required nor vetted or endorsed by the 2018 team. \r\n<\/p>\r\n <strong> Hope this Helps!<\/strong>\r\n<br>\r\n<a href=\"http:\/\/2016.portshowl.io\/wp-content\/uploads\/2016\/05\/Postermockupv1.psd\"target=_blank\">Single Poster Horizontal Shadow<\/a>\r\n<a href=\"http:\/\/2016.portshowl.io\/wp-content\/uploads\/2016\/05\/Postermockup2v1.psd\"target=_blank\">Single Poster Drop Shadow<\/a>\r\n<a href=\"http:\/\/2016.portshowl.io\/wp-content\/uploads\/2016\/05\/Postermockup3v1.psd\"target=_blank\">Single Poster Drop Shadow<\/a>\r\n<a href=\"http:\/\/2016.portshowl.io\/wp-content\/uploads\/2016\/05\/Totebagmockup.psd\"target=_blank\">Poster Series<\/a>\r\n<a href=\"http:\/\/2016.portshowl.io\/wp-content\/uploads\/2016\/05\/Portfolio-Mockups_Final.psd\"target=_blank\">Digital Set: Mobile, Tablet, & Web<\/a><a href=\"http:\/\/graphicriver.net\/item\/coffee-cup-mockup\/7780929?s_rank=13\"target=_blank\">\r\nCoffee cup<\/a>\r\n<a href=\"http:\/\/graphicriver.net\/item\/sport-activity-outdoor-banner-02\/15277030?s_rank=52\"target=_blank\">Billboard <\/a>\r\n<a href=\"http:\/\/graphicriver.net\/item\/din-poster-mockups-n1\/9909735?s_rank=65\"target=_blank\">Poster <\/a>\r\n <a href=\"http:\/\/graphicriver.net\/item\/flyer-poster-artwork-mockup\/2907597?s_rank=75\"target=_blank\">Poster 2<\/a>\r\n<a href=\"http:\/\/graphicriver.net\/item\/book-mockup-softcover-edition\/6347935?s_rank=3\"target=_blank\">Book<\/a>\r\n<a href=\"http:\/\/graphicriver.net\/item\/realistic-beer-bottle-mockup\/8426567?s_rank=196\"target=_blank\"> Bottles<\/a>\r\n<a href=\"http:\/\/graphicriver.net\/item\/box-configurator\/9300500?s_rank=39 \r\nLP https:\/\/dribbble.com\/shots\/1437977-Vinyl-Record-PSD-Mock-Up\"target=_blank\">Boxes<\/a>\r\n<a href=\"http:\/\/graphicriver.net\/item\/tourist-branded-bus-mockup\/14246888?s_rank=195\"target=_blank\">Bus Wrap<\/a>\r\n<a href=\"http:\/\/graphicriver.net\/item\/2014-fiat-ducato-delivery-van-wrap-mockup\/9979959?s_rank=2\"target=_blank\">Van Wrap<\/a>\r\n<a href=\"http:\/\/graphicriver.net\/item\/brochure\/15555021?s_rank=7\"target=_blank\">Brochure<\/a>\r\n<a href=\"http:\/\/graphicriver.net\/item\/sport-activity-outdoor-banner-02\/15277030?s_rank=52\"target=_blank\">Billboard<\/a>\r\n<a href=\"https:\/\/www.behance.net\/gallery\/9046707\/Event-Tickets-Mock-up-V2\"target=_blank\">Tickets<\/a>\r\n<a href=\"http:\/\/graphicriver.net\/item\/bus-stop-poster-mockup\/4809481?s_rank=4\"target=_blank\">Bus Stop<\/a>\r\n<a href=\"http:\/\/downloadpsd.com\/mockups\/newspaper-advertisement-mockup-psd-freebie\"target=_blank\">Newsprint<\/a>\r\n<a href=\"http:\/\/themockshop.bigcartel.com\/product\/snapback-mockup\"target=_blank\">Hats<\/a>\r\n<a href=\"http:\/\/www.pixeden.com\/psd-mock-up-templates\/psd-button-badge-pin-mock-up\"target=_blank\">Pin<\/a>\r\n<a href=\"http:\/\/graphicriver.net\/item\/din-poster-mockups-n1\/9909735?s_rank=65\"target=_blank\">Poster<\/a>\r\n<a href=\"http:\/\/graphicriver.net\/item\/mitus-stationary-pack\/15803042?s_rank=24\"target=_blank\">Stationary<\/a>\r\n<a href=\"https:\/\/drive.google.com\/file\/d\/0ByCJXjQ-TRfcREREZlBlSmR6UGM\/view\"target=_blank\">Business Card<\/a>\r\n<a href=\"http:\/\/gaspix.net\/2015\/06\/canvas-tote-bag-mockup\/\"target=_blank\">Tote Bag<\/a>\r\n<a href=\"http:\/\/graphicriver.net\/item\/book-mockup-softcover-edition\/6347935?s_rank=3\"target=_blank\">Book<\/a>\r\n<a href=\"http:\/\/www.themeraid.com\/freebies\/a4-landscape-brochure-mockup\/\"target=_blank\">Landscape brand guide<\/a>\r\n<a href=\"https:\/\/www.behance.net\/gallery\/9046707\/Event-Tickets-Mock-up-V2\"target=_blank\">Tickets<\/a>",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_5af47a869647a",
+                "label": "",
+                "name": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "student"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content",
+            "excerpt",
+            "custom_fields",
+            "discussion",
+            "comments",
+            "slug",
+            "author",
+            "format",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": 1,
+        "description": ""
+    }
+]

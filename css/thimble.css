@@ -1,50 +1,41 @@
-/* line 4, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 h1, h2, h3, h4, h5, p, blockquote, figure, ol, ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 5, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 iframe {
   border: 0;
 }
 
-/* line 6, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 main {
   display: block;
 }
 
-/* line 8, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 ::-moz-selection {
   background-color: #57a290;
   color: #fff;
 }
 
-/* line 9, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 ::selection {
   background-color: #57a290;
   color: #fff;
 }
 
-/* line 10, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 ::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-/* line 11, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 :focus {
   outline: 0;
 }
 
-/* line 14, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 19, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 html {
   font-size: 100%;
   -ms-text-size-adjust: 100%;
@@ -55,7 +46,6 @@ html {
   margin: 0;
 }
 
-/* line 28, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 body {
   margin: 0;
   line-height: 1.4;
@@ -63,7 +53,6 @@ body {
   color: #616161;
 }
 
-/* line 34, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 hr {
   height: 2px;
   margin: 1rem auto;
@@ -71,43 +60,35 @@ hr {
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* line 40, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .float-left {
   float: left;
 }
 
-/* line 41, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .float-right {
   float: right;
 }
 
-/* line 42, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .hide, .xlarge-hide {
   display: none !important;
 }
 
-/* line 44, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .small-show, .medium-show, .large-show, xlarge-show {
   display: none;
 }
 
-/* line 47, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .clear:before, .clear:after {
   content: '';
   display: table;
 }
 
-/* line 48, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .clear:after {
   clear: both;
 }
 
-/* line 49, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .clear {
   zoom: 1;
 }
 
-/* line 52, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 a {
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -116,60 +97,49 @@ a {
   -webkit-text-decoration-skip: objects;
 }
 
-/* line 58, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 a:active, a:hover {
   color: #f15a3b;
 }
 
-/* line 61, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 a img {
   border: 0;
 }
 
-/* line 67, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 p {
   margin-bottom: 1.1rem;
   text-rendering: optimizeLegibility;
 }
 
-/* line 72, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 em, i, .em {
   font-style: italic;
   line-height: inherit;
 }
 
-/* line 76, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 77, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .capitalize {
   text-transform: capitalize;
 }
 
-/* line 78, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .lowercase {
   text-transform: lowercase;
 }
 
-/* line 79, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 strong, b, .strong {
   font-weight: bolder;
   line-height: inherit;
 }
 
-/* line 83, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 small, .small {
   font-size: 80%;
 }
 
-/* line 84, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .large {
   font-size: 140%;
 }
 
-/* line 85, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 sup, .sup, sub, .sub {
   position: relative;
   font-size: 75%;
@@ -177,31 +147,26 @@ sup, .sup, sub, .sub {
   vertical-align: baseline;
 }
 
-/* line 91, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 sup, .sup {
   top: -.5em;
 }
 
-/* line 92, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 sub, .sub {
   bottom: -.25em;
 }
 
-/* line 93, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .ellipsis, .ellipsis li {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 
-/* line 98, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .text-clip, .text-clip li {
   text-overflow: clip;
   white-space: nowrap;
   overflow: hidden;
 }
 
-/* line 105, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   font-family: Verdana, Geneva, sans-serif;
   font-weight: normal;
@@ -209,123 +174,101 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   font-size: inherit;
 }
 
-/* line 110, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 h1.super-header, h2.super-header, h3.super-header, h4.super-header, h5.super-header, .h1.super-header, .h2.super-header, .h3.super-header, .h4.super-header, .h5.super-header {
   font-size: 4rem;
   line-height: 1.18;
 }
 
-/* line 115, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .super-header {
   font-size: 4rem;
   line-height: 1.18;
 }
 
-/* line 116, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .h1 {
   font-size: 3rem;
   line-height: 1.22;
 }
 
-/* line 117, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .h2 {
   font-size: 2.5rem;
   line-height: 1.4;
 }
 
-/* line 118, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .h3 {
   font-size: 2rem;
   line-height: 1.55;
 }
 
-/* line 119, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .h4 {
   font-size: 1.5rem;
   line-height: 1.7;
 }
 
-/* line 120, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .h5 {
   font-size: 1rem;
   line-height: 1.85;
 }
 
-/* line 121, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .sub-header {
   color: rgba(97, 97, 97, 0.6);
 }
 
-/* line 124, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .super-header.vw {
   font-size: 7vw;
 }
 
-/* line 125, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 h1.vw {
   font-size: 6vw;
 }
 
-/* line 126, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 h2.vw {
   font-size: 5vw;
 }
 
-/* line 127, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 h3.vw {
   font-size: 4.5vw;
 }
 
-/* line 128, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 h4.vw {
   font-size: 4vw;
 }
 
-/* line 129, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 h5.vw {
   font-size: 3.5vw;
 }
 
-/* line 132, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 ul, ol, dl {
   list-style-position: outside;
   margin-bottom: 1.15rem;
 }
 
-/* line 135, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 ul ul, ul ol, ul dl, ol ul, ol ol, ol dl, dl ul, dl ol, dl dl {
   margin-bottom: 0;
 }
 
-/* line 139, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 ul {
   margin-left: 1.2rem;
   list-style-type: disc;
 }
 
-/* line 142, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 ul ul {
   list-style-type: circle;
 }
 
-/* line 145, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 ul.lined, ul.none {
   list-style-type: none;
   margin-left: 0;
 }
 
-/* line 149, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 ul.lined li {
   border-bottom: solid 1px rgba(0, 0, 0, 0.2);
 }
 
-/* line 153, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 ol {
   margin-left: 1.55rem;
   list-style-type: decimal;
 }
 
-/* line 159, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .img, img {
   max-width: 100%;
   height: auto;
@@ -333,12 +276,10 @@ ol {
   border-style: none;
 }
 
-/* line 165, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 168, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -346,7 +287,6 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 173, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .video-container iframe, .video-container object, .video-container embed, .video-container video {
   position: absolute;
   top: 0;
@@ -355,18 +295,15 @@ svg:not(:root) {
   height: 100%;
 }
 
-/* line 183, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .full {
   margin: 0 auto;
 }
 
-/* line 186, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .full {
   max-width: 960px;
   width: 100%;
 }
 
-/* line 192, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .grid {
   position: relative;
   display: -webkit-flex;
@@ -377,55 +314,46 @@ svg:not(:root) {
   flex-flow: row wrap;
 }
 
-/* line 201, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .nowrap {
   -webkit-flex-wrap: nowrap;
   flex-wrap: nowrap;
 }
 
-/* line 205, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .wrap-reverse {
   -webkit-flex-wrap: wrap-reverse;
   flex-wrap: wrap-reverse;
 }
 
-/* line 211, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .justify-start {
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
-/* line 215, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .justify-end {
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
 }
 
-/* line 219, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .justify-center {
   -webkit-justify-content: center;
   justify-content: center;
 }
 
-/* line 223, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .justify-space {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
-/* line 227, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .justify-around {
   -webkit-justify-content: space-around;
   justify-content: space-around;
 }
 
-/* line 233, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .reverse {
   -webkit-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
-/* line 237, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .vertical {
   -webkit-flex-direction: column;
   flex-direction: column;
@@ -433,7 +361,6 @@ svg:not(:root) {
   flex-wrap: nowrap;
 }
 
-/* line 242, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .vertical.reverse {
   -webkit-flex-direction: column-reverse;
   flex-direction: column-reverse;
@@ -441,7 +368,6 @@ svg:not(:root) {
   flex-wrap: nowrap;
 }
 
-/* line 311, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .align-top {
   -webkit-align-items: flex-start;
   align-items: flex-start;
@@ -449,7 +375,6 @@ svg:not(:root) {
   align-self: flex-start;
 }
 
-/* line 317, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .align-bottom {
   -webkit-align-items: flex-end;
   align-items: flex-end;
@@ -457,7 +382,6 @@ svg:not(:root) {
   align-self: flex-end;
 }
 
-/* line 323, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .align-center {
   -webkit-align-items: center;
   align-items: center;
@@ -465,19 +389,16 @@ svg:not(:root) {
   align-self: center;
 }
 
-/* line 329, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .align-baseline {
   -webkit-align-items: baseline;
   align-items: baseline;
 }
 
-/* line 333, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .align-stretch {
   -webkit-align-items: stretch;
   align-items: stretch;
 }
 
-/* line 340, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .cell {
   -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -490,501 +411,409 @@ svg:not(:root) {
   padding-right: 0.5rem;
 }
 
-/* line 350, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .cell.fit {
   -webkit-flex: 0 0 auto;
   flex: 0 0 auto;
   width: auto;
 }
 
-/* line 355, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .cell.fill {
   -webkit-flex: 1 1;
   flex: 1 1;
   width: auto;
 }
 
-/* line 360, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .cell.collapse {
   margin-left: 0;
   margin-right: 0;
 }
 
-/* line 364, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .cell.collapse-padding {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 272, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .hide {
   display: none !important;
 }
 
-/* line 273, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .show {
   display: inherit !important;
 }
 
-/* line 276, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 277, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 278, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 279, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .text-justify {
   text-align: justify;
 }
 
-/* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .twelve {
   max-width: calc( 100%/12 * 12 - 1rem);
   flex: 0 0 calc( 100%/12 * 12 - 1rem);
 }
 
-/* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .twelve.collapse {
   max-width: calc( 100%/12 * 12);
   flex: 0 0 calc( 100%/12 * 12);
 }
 
-/* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .order-12 {
   -webkit-order: 12;
   order: 12;
 }
 
-/* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .eleven {
   max-width: calc( 100%/12 * 11 - 1rem);
   flex: 0 0 calc( 100%/12 * 11 - 1rem);
 }
 
-/* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .eleven.collapse {
   max-width: calc( 100%/12 * 11);
   flex: 0 0 calc( 100%/12 * 11);
 }
 
-/* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .order-11 {
   -webkit-order: 11;
   order: 11;
 }
 
-/* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .ten {
   max-width: calc( 100%/12 * 10 - 1rem);
   flex: 0 0 calc( 100%/12 * 10 - 1rem);
 }
 
-/* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .ten.collapse {
   max-width: calc( 100%/12 * 10);
   flex: 0 0 calc( 100%/12 * 10);
 }
 
-/* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .order-10 {
   -webkit-order: 10;
   order: 10;
 }
 
-/* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .nine {
   max-width: calc( 100%/12 * 9 - 1rem);
   flex: 0 0 calc( 100%/12 * 9 - 1rem);
 }
 
-/* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .nine.collapse {
   max-width: calc( 100%/12 * 9);
   flex: 0 0 calc( 100%/12 * 9);
 }
 
-/* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .order-9 {
   -webkit-order: 9;
   order: 9;
 }
 
-/* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .eight {
   max-width: calc( 100%/12 * 8 - 1rem);
   flex: 0 0 calc( 100%/12 * 8 - 1rem);
 }
 
-/* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .eight.collapse {
   max-width: calc( 100%/12 * 8);
   flex: 0 0 calc( 100%/12 * 8);
 }
 
-/* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .order-8 {
   -webkit-order: 8;
   order: 8;
 }
 
-/* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .seven {
   max-width: calc( 100%/12 * 7 - 1rem);
   flex: 0 0 calc( 100%/12 * 7 - 1rem);
 }
 
-/* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .seven.collapse {
   max-width: calc( 100%/12 * 7);
   flex: 0 0 calc( 100%/12 * 7);
 }
 
-/* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .order-7 {
   -webkit-order: 7;
   order: 7;
 }
 
-/* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .six {
   max-width: calc( 100%/12 * 6 - 1rem);
   flex: 0 0 calc( 100%/12 * 6 - 1rem);
 }
 
-/* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .six.collapse {
   max-width: calc( 100%/12 * 6);
   flex: 0 0 calc( 100%/12 * 6);
 }
 
-/* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .order-6 {
   -webkit-order: 6;
   order: 6;
 }
 
-/* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .five {
   max-width: calc( 100%/12 * 5 - 1rem);
   flex: 0 0 calc( 100%/12 * 5 - 1rem);
 }
 
-/* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .five.collapse {
   max-width: calc( 100%/12 * 5);
   flex: 0 0 calc( 100%/12 * 5);
 }
 
-/* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .order-5 {
   -webkit-order: 5;
   order: 5;
 }
 
-/* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .four {
   max-width: calc( 100%/12 * 4 - 1rem);
   flex: 0 0 calc( 100%/12 * 4 - 1rem);
 }
 
-/* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .four.collapse {
   max-width: calc( 100%/12 * 4);
   flex: 0 0 calc( 100%/12 * 4);
 }
 
-/* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .order-4 {
   -webkit-order: 4;
   order: 4;
 }
 
-/* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .three {
   max-width: calc( 100%/12 * 3 - 1rem);
   flex: 0 0 calc( 100%/12 * 3 - 1rem);
 }
 
-/* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .three.collapse {
   max-width: calc( 100%/12 * 3);
   flex: 0 0 calc( 100%/12 * 3);
 }
 
-/* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .order-3 {
   -webkit-order: 3;
   order: 3;
 }
 
-/* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .two {
   max-width: calc( 100%/12 * 2 - 1rem);
   flex: 0 0 calc( 100%/12 * 2 - 1rem);
 }
 
-/* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .two.collapse {
   max-width: calc( 100%/12 * 2);
   flex: 0 0 calc( 100%/12 * 2);
 }
 
-/* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .order-2 {
   -webkit-order: 2;
   order: 2;
 }
 
-/* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .one {
   max-width: calc( 100%/12 * 1 - 1rem);
   flex: 0 0 calc( 100%/12 * 1 - 1rem);
 }
 
-/* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .one.collapse {
   max-width: calc( 100%/12 * 1);
   flex: 0 0 calc( 100%/12 * 1);
 }
 
-/* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .order-1 {
   -webkit-order: 1;
   order: 1;
 }
 
-/* line 298, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .fifth {
   max-width: calc( 20% - 1rem);
   flex: 0 0 calc( 20% - 1rem);
 }
 
-/* line 301, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
 .fifth.collapse {
   max-width: 20%;
   flex: 0 0 20%;
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 272, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-hide {
     display: none !important;
   }
-  /* line 273, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-show {
     display: inherit !important;
   }
-  /* line 276, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-text-left {
     text-align: left;
   }
-  /* line 277, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-text-right {
     text-align: right;
   }
-  /* line 278, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-text-center {
     text-align: center;
   }
-  /* line 279, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-text-justify {
     text-align: justify;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-twelve {
     max-width: calc( 100%/12 * 12 - 1rem);
     flex: 0 0 calc( 100%/12 * 12 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-twelve.collapse {
     max-width: calc( 100%/12 * 12);
     flex: 0 0 calc( 100%/12 * 12);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-order-12 {
     -webkit-order: 12;
     order: 12;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-eleven {
     max-width: calc( 100%/12 * 11 - 1rem);
     flex: 0 0 calc( 100%/12 * 11 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-eleven.collapse {
     max-width: calc( 100%/12 * 11);
     flex: 0 0 calc( 100%/12 * 11);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-order-11 {
     -webkit-order: 11;
     order: 11;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-ten {
     max-width: calc( 100%/12 * 10 - 1rem);
     flex: 0 0 calc( 100%/12 * 10 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-ten.collapse {
     max-width: calc( 100%/12 * 10);
     flex: 0 0 calc( 100%/12 * 10);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-order-10 {
     -webkit-order: 10;
     order: 10;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-nine {
     max-width: calc( 100%/12 * 9 - 1rem);
     flex: 0 0 calc( 100%/12 * 9 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-nine.collapse {
     max-width: calc( 100%/12 * 9);
     flex: 0 0 calc( 100%/12 * 9);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-order-9 {
     -webkit-order: 9;
     order: 9;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-eight {
     max-width: calc( 100%/12 * 8 - 1rem);
     flex: 0 0 calc( 100%/12 * 8 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-eight.collapse {
     max-width: calc( 100%/12 * 8);
     flex: 0 0 calc( 100%/12 * 8);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-order-8 {
     -webkit-order: 8;
     order: 8;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-seven {
     max-width: calc( 100%/12 * 7 - 1rem);
     flex: 0 0 calc( 100%/12 * 7 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-seven.collapse {
     max-width: calc( 100%/12 * 7);
     flex: 0 0 calc( 100%/12 * 7);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-order-7 {
     -webkit-order: 7;
     order: 7;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-six {
     max-width: calc( 100%/12 * 6 - 1rem);
     flex: 0 0 calc( 100%/12 * 6 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-six.collapse {
     max-width: calc( 100%/12 * 6);
     flex: 0 0 calc( 100%/12 * 6);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-order-6 {
     -webkit-order: 6;
     order: 6;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-five {
     max-width: calc( 100%/12 * 5 - 1rem);
     flex: 0 0 calc( 100%/12 * 5 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-five.collapse {
     max-width: calc( 100%/12 * 5);
     flex: 0 0 calc( 100%/12 * 5);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-order-5 {
     -webkit-order: 5;
     order: 5;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-four {
     max-width: calc( 100%/12 * 4 - 1rem);
     flex: 0 0 calc( 100%/12 * 4 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-four.collapse {
     max-width: calc( 100%/12 * 4);
     flex: 0 0 calc( 100%/12 * 4);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-order-4 {
     -webkit-order: 4;
     order: 4;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-three {
     max-width: calc( 100%/12 * 3 - 1rem);
     flex: 0 0 calc( 100%/12 * 3 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-three.collapse {
     max-width: calc( 100%/12 * 3);
     flex: 0 0 calc( 100%/12 * 3);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-order-3 {
     -webkit-order: 3;
     order: 3;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-two {
     max-width: calc( 100%/12 * 2 - 1rem);
     flex: 0 0 calc( 100%/12 * 2 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-two.collapse {
     max-width: calc( 100%/12 * 2);
     flex: 0 0 calc( 100%/12 * 2);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-order-2 {
     -webkit-order: 2;
     order: 2;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-one {
     max-width: calc( 100%/12 * 1 - 1rem);
     flex: 0 0 calc( 100%/12 * 1 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-one.collapse {
     max-width: calc( 100%/12 * 1);
     flex: 0 0 calc( 100%/12 * 1);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-order-1 {
     -webkit-order: 1;
     order: 1;
   }
-  /* line 298, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-fifth {
     max-width: calc( 20% - 1rem);
     flex: 0 0 calc( 20% - 1rem);
   }
-  /* line 301, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .small-fifth.collapse {
     max-width: 20%;
     flex: 0 0 20%;
@@ -992,457 +821,363 @@ svg:not(:root) {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 272, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-hide {
     display: none !important;
   }
-  /* line 273, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-show {
     display: inherit !important;
   }
-  /* line 276, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-text-left {
     text-align: left;
   }
-  /* line 277, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-text-right {
     text-align: right;
   }
-  /* line 278, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-text-center {
     text-align: center;
   }
-  /* line 279, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-text-justify {
     text-align: justify;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-twelve {
     max-width: calc( 100%/12 * 12 - 1rem);
     flex: 0 0 calc( 100%/12 * 12 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-twelve.collapse {
     max-width: calc( 100%/12 * 12);
     flex: 0 0 calc( 100%/12 * 12);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-order-12 {
     -webkit-order: 12;
     order: 12;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-eleven {
     max-width: calc( 100%/12 * 11 - 1rem);
     flex: 0 0 calc( 100%/12 * 11 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-eleven.collapse {
     max-width: calc( 100%/12 * 11);
     flex: 0 0 calc( 100%/12 * 11);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-order-11 {
     -webkit-order: 11;
     order: 11;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-ten {
     max-width: calc( 100%/12 * 10 - 1rem);
     flex: 0 0 calc( 100%/12 * 10 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-ten.collapse {
     max-width: calc( 100%/12 * 10);
     flex: 0 0 calc( 100%/12 * 10);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-order-10 {
     -webkit-order: 10;
     order: 10;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-nine {
     max-width: calc( 100%/12 * 9 - 1rem);
     flex: 0 0 calc( 100%/12 * 9 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-nine.collapse {
     max-width: calc( 100%/12 * 9);
     flex: 0 0 calc( 100%/12 * 9);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-order-9 {
     -webkit-order: 9;
     order: 9;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-eight {
     max-width: calc( 100%/12 * 8 - 1rem);
     flex: 0 0 calc( 100%/12 * 8 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-eight.collapse {
     max-width: calc( 100%/12 * 8);
     flex: 0 0 calc( 100%/12 * 8);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-order-8 {
     -webkit-order: 8;
     order: 8;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-seven {
     max-width: calc( 100%/12 * 7 - 1rem);
     flex: 0 0 calc( 100%/12 * 7 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-seven.collapse {
     max-width: calc( 100%/12 * 7);
     flex: 0 0 calc( 100%/12 * 7);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-order-7 {
     -webkit-order: 7;
     order: 7;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-six {
     max-width: calc( 100%/12 * 6 - 1rem);
     flex: 0 0 calc( 100%/12 * 6 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-six.collapse {
     max-width: calc( 100%/12 * 6);
     flex: 0 0 calc( 100%/12 * 6);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-order-6 {
     -webkit-order: 6;
     order: 6;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-five {
     max-width: calc( 100%/12 * 5 - 1rem);
     flex: 0 0 calc( 100%/12 * 5 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-five.collapse {
     max-width: calc( 100%/12 * 5);
     flex: 0 0 calc( 100%/12 * 5);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-order-5 {
     -webkit-order: 5;
     order: 5;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-four {
     max-width: calc( 100%/12 * 4 - 1rem);
     flex: 0 0 calc( 100%/12 * 4 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-four.collapse {
     max-width: calc( 100%/12 * 4);
     flex: 0 0 calc( 100%/12 * 4);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-order-4 {
     -webkit-order: 4;
     order: 4;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-three {
     max-width: calc( 100%/12 * 3 - 1rem);
     flex: 0 0 calc( 100%/12 * 3 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-three.collapse {
     max-width: calc( 100%/12 * 3);
     flex: 0 0 calc( 100%/12 * 3);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-order-3 {
     -webkit-order: 3;
     order: 3;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-two {
     max-width: calc( 100%/12 * 2 - 1rem);
     flex: 0 0 calc( 100%/12 * 2 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-two.collapse {
     max-width: calc( 100%/12 * 2);
     flex: 0 0 calc( 100%/12 * 2);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-order-2 {
     -webkit-order: 2;
     order: 2;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-one {
     max-width: calc( 100%/12 * 1 - 1rem);
     flex: 0 0 calc( 100%/12 * 1 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-one.collapse {
     max-width: calc( 100%/12 * 1);
     flex: 0 0 calc( 100%/12 * 1);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-order-1 {
     -webkit-order: 1;
     order: 1;
   }
-  /* line 298, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-fifth {
     max-width: calc( 20% - 1rem);
     flex: 0 0 calc( 20% - 1rem);
   }
-  /* line 301, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .medium-fifth.collapse {
     max-width: 20%;
     flex: 0 0 20%;
   }
-  /* line 381, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .super-header.vw {
     font-size: 5vw;
   }
-  /* line 382, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .h1.vw {
     font-size: 3.5vw;
   }
-  /* line 383, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .h2.vw {
     font-size: 3vw;
   }
-  /* line 384, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .h3.vw {
     font-size: 2.5vw;
   }
-  /* line 385, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .h4.vw {
     font-size: 2vw;
   }
-  /* line 386, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .h5.vw {
     font-size: 1.5vw;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  /* line 272, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-hide {
     display: none !important;
   }
-  /* line 273, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-show {
     display: inherit !important;
   }
-  /* line 276, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-text-left {
     text-align: left;
   }
-  /* line 277, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-text-right {
     text-align: right;
   }
-  /* line 278, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-text-center {
     text-align: center;
   }
-  /* line 279, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-text-justify {
     text-align: justify;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-twelve {
     max-width: calc( 100%/12 * 12 - 1rem);
     flex: 0 0 calc( 100%/12 * 12 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-twelve.collapse {
     max-width: calc( 100%/12 * 12);
     flex: 0 0 calc( 100%/12 * 12);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-order-12 {
     -webkit-order: 12;
     order: 12;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-eleven {
     max-width: calc( 100%/12 * 11 - 1rem);
     flex: 0 0 calc( 100%/12 * 11 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-eleven.collapse {
     max-width: calc( 100%/12 * 11);
     flex: 0 0 calc( 100%/12 * 11);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-order-11 {
     -webkit-order: 11;
     order: 11;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-ten {
     max-width: calc( 100%/12 * 10 - 1rem);
     flex: 0 0 calc( 100%/12 * 10 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-ten.collapse {
     max-width: calc( 100%/12 * 10);
     flex: 0 0 calc( 100%/12 * 10);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-order-10 {
     -webkit-order: 10;
     order: 10;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-nine {
     max-width: calc( 100%/12 * 9 - 1rem);
     flex: 0 0 calc( 100%/12 * 9 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-nine.collapse {
     max-width: calc( 100%/12 * 9);
     flex: 0 0 calc( 100%/12 * 9);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-order-9 {
     -webkit-order: 9;
     order: 9;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-eight {
     max-width: calc( 100%/12 * 8 - 1rem);
     flex: 0 0 calc( 100%/12 * 8 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-eight.collapse {
     max-width: calc( 100%/12 * 8);
     flex: 0 0 calc( 100%/12 * 8);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-order-8 {
     -webkit-order: 8;
     order: 8;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-seven {
     max-width: calc( 100%/12 * 7 - 1rem);
     flex: 0 0 calc( 100%/12 * 7 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-seven.collapse {
     max-width: calc( 100%/12 * 7);
     flex: 0 0 calc( 100%/12 * 7);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-order-7 {
     -webkit-order: 7;
     order: 7;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-six {
     max-width: calc( 100%/12 * 6 - 1rem);
     flex: 0 0 calc( 100%/12 * 6 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-six.collapse {
     max-width: calc( 100%/12 * 6);
     flex: 0 0 calc( 100%/12 * 6);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-order-6 {
     -webkit-order: 6;
     order: 6;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-five {
     max-width: calc( 100%/12 * 5 - 1rem);
     flex: 0 0 calc( 100%/12 * 5 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-five.collapse {
     max-width: calc( 100%/12 * 5);
     flex: 0 0 calc( 100%/12 * 5);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-order-5 {
     -webkit-order: 5;
     order: 5;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-four {
     max-width: calc( 100%/12 * 4 - 1rem);
     flex: 0 0 calc( 100%/12 * 4 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-four.collapse {
     max-width: calc( 100%/12 * 4);
     flex: 0 0 calc( 100%/12 * 4);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-order-4 {
     -webkit-order: 4;
     order: 4;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-three {
     max-width: calc( 100%/12 * 3 - 1rem);
     flex: 0 0 calc( 100%/12 * 3 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-three.collapse {
     max-width: calc( 100%/12 * 3);
     flex: 0 0 calc( 100%/12 * 3);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-order-3 {
     -webkit-order: 3;
     order: 3;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-two {
     max-width: calc( 100%/12 * 2 - 1rem);
     flex: 0 0 calc( 100%/12 * 2 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-two.collapse {
     max-width: calc( 100%/12 * 2);
     flex: 0 0 calc( 100%/12 * 2);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-order-2 {
     -webkit-order: 2;
     order: 2;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-one {
     max-width: calc( 100%/12 * 1 - 1rem);
     flex: 0 0 calc( 100%/12 * 1 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-one.collapse {
     max-width: calc( 100%/12 * 1);
     flex: 0 0 calc( 100%/12 * 1);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-order-1 {
     -webkit-order: 1;
     order: 1;
   }
-  /* line 298, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-fifth {
     max-width: calc( 20% - 1rem);
     flex: 0 0 calc( 20% - 1rem);
   }
-  /* line 301, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .large-fifth.collapse {
     max-width: 20%;
     flex: 0 0 20%;
@@ -1450,220 +1185,174 @@ svg:not(:root) {
 }
 
 @media only screen and (min-width: 1200px) {
-  /* line 272, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-hide {
     display: none !important;
   }
-  /* line 273, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-show {
     display: inherit !important;
   }
-  /* line 276, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-text-left {
     text-align: left;
   }
-  /* line 277, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-text-right {
     text-align: right;
   }
-  /* line 278, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-text-center {
     text-align: center;
   }
-  /* line 279, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-text-justify {
     text-align: justify;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-twelve {
     max-width: calc( 100%/12 * 12 - 1rem);
     flex: 0 0 calc( 100%/12 * 12 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-twelve.collapse {
     max-width: calc( 100%/12 * 12);
     flex: 0 0 calc( 100%/12 * 12);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-order-12 {
     -webkit-order: 12;
     order: 12;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-eleven {
     max-width: calc( 100%/12 * 11 - 1rem);
     flex: 0 0 calc( 100%/12 * 11 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-eleven.collapse {
     max-width: calc( 100%/12 * 11);
     flex: 0 0 calc( 100%/12 * 11);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-order-11 {
     -webkit-order: 11;
     order: 11;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-ten {
     max-width: calc( 100%/12 * 10 - 1rem);
     flex: 0 0 calc( 100%/12 * 10 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-ten.collapse {
     max-width: calc( 100%/12 * 10);
     flex: 0 0 calc( 100%/12 * 10);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-order-10 {
     -webkit-order: 10;
     order: 10;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-nine {
     max-width: calc( 100%/12 * 9 - 1rem);
     flex: 0 0 calc( 100%/12 * 9 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-nine.collapse {
     max-width: calc( 100%/12 * 9);
     flex: 0 0 calc( 100%/12 * 9);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-order-9 {
     -webkit-order: 9;
     order: 9;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-eight {
     max-width: calc( 100%/12 * 8 - 1rem);
     flex: 0 0 calc( 100%/12 * 8 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-eight.collapse {
     max-width: calc( 100%/12 * 8);
     flex: 0 0 calc( 100%/12 * 8);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-order-8 {
     -webkit-order: 8;
     order: 8;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-seven {
     max-width: calc( 100%/12 * 7 - 1rem);
     flex: 0 0 calc( 100%/12 * 7 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-seven.collapse {
     max-width: calc( 100%/12 * 7);
     flex: 0 0 calc( 100%/12 * 7);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-order-7 {
     -webkit-order: 7;
     order: 7;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-six {
     max-width: calc( 100%/12 * 6 - 1rem);
     flex: 0 0 calc( 100%/12 * 6 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-six.collapse {
     max-width: calc( 100%/12 * 6);
     flex: 0 0 calc( 100%/12 * 6);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-order-6 {
     -webkit-order: 6;
     order: 6;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-five {
     max-width: calc( 100%/12 * 5 - 1rem);
     flex: 0 0 calc( 100%/12 * 5 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-five.collapse {
     max-width: calc( 100%/12 * 5);
     flex: 0 0 calc( 100%/12 * 5);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-order-5 {
     -webkit-order: 5;
     order: 5;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-four {
     max-width: calc( 100%/12 * 4 - 1rem);
     flex: 0 0 calc( 100%/12 * 4 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-four.collapse {
     max-width: calc( 100%/12 * 4);
     flex: 0 0 calc( 100%/12 * 4);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-order-4 {
     -webkit-order: 4;
     order: 4;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-three {
     max-width: calc( 100%/12 * 3 - 1rem);
     flex: 0 0 calc( 100%/12 * 3 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-three.collapse {
     max-width: calc( 100%/12 * 3);
     flex: 0 0 calc( 100%/12 * 3);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-order-3 {
     -webkit-order: 3;
     order: 3;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-two {
     max-width: calc( 100%/12 * 2 - 1rem);
     flex: 0 0 calc( 100%/12 * 2 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-two.collapse {
     max-width: calc( 100%/12 * 2);
     flex: 0 0 calc( 100%/12 * 2);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-order-2 {
     -webkit-order: 2;
     order: 2;
   }
-  /* line 285, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-one {
     max-width: calc( 100%/12 * 1 - 1rem);
     flex: 0 0 calc( 100%/12 * 1 - 1rem);
   }
-  /* line 288, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-one.collapse {
     max-width: calc( 100%/12 * 1);
     flex: 0 0 calc( 100%/12 * 1);
   }
-  /* line 295, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-order-1 {
     -webkit-order: 1;
     order: 1;
   }
-  /* line 298, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-fifth {
     max-width: calc( 20% - 1rem);
     flex: 0 0 calc( 20% - 1rem);
   }
-  /* line 301, /Users/annaatiagina/Documents/GD CLASS OF 2018/portsholio website/wp-content/themes/portshowlio18/sass/_thimble-core.scss */
   .xlarge-fifth.collapse {
     max-width: 20%;
     flex: 0 0 20%;
   }
 }
-
-/*# sourceMappingURL=../css/thimble.map */
