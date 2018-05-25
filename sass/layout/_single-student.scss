@@ -1,26 +1,119 @@
 /* Scss Document */
 
-/*for single design template*/
-/*modified by ERIK FOR IVANNA on 5/1/18*/
+/*for single student template*/
+/*modified by ERIK FOR IVANNA on 5/1/18
+heavily edited by Anna after - no thimble */
 
 *{
 	font-family: HalisR, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
-.row {
 
-	justify-content: flex-start;
-} 
-.tinylogo img{
-	margin-top: 20px;
-	width: 100px;
+/* style student's personal infrmation */
+
+.rowStudentHeader {
+	display: flex;
+	flex-direction: row;
+	width: 90vw;
+	padding-top: 20px;
+	height: auto;
+	margin: -20px auto 20px;
+	justify-content: space-between;
+	
+	
+	.projectSelectorHeader {
+		width: 35%;
+		    display: flex;
+    flex-direction: column;
+
+		
+			
+		 a.projectSelectorNameHeader {
+	font-family: HalisR-Bold;
+	text-align: right;
+			 height: 100%;
+			 width: 100%;
+	border: 5px solid black;
+	border-bottom: 0px;
+	padding: 10px;
+			width: auto;
+			height: auto;
+			 color: black;
+			 &:hover{
+				 background-color: $yellow;
+			 }
+			}
+		a.projectSelectorNameHeader:last-of-type {
+			border-bottom: 5px solid black;
+		}
+
+	}
+
+	
 }
-.studentSidebar {
-	width: 650px;
-    height: 300px;
-    text-transform: uppercase;
+
+div.headshot {
+	
+	    width: 20vw;
+    height: 20vw;
+    border: 5px black solid;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.studentInfo {
+	width: 50vw;
+	height: 20vw;
+	padding-bottom: 10vw;
+	float: left;
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* project's row */
+
+.rowProject {
+display: flex;
+	flex-direction: row;
+	width: 90vw;
+	margin: 40px auto;
+	justify-content: space-between;
+	img {
+		border: 5px solid black;
+	}
+	
+	.video {
+		align-self: center;
+		border: 5px solid black;
+		margin: 10px auto;
+	}
+} 
+
+
+.imageThird {
+	width: 30%;
+}
+
+.imageHalf {
+	width: 48%;
+}
+
+.tinylogo img{
+	
+	width: 120px;
+}
+.studentContainer {
+	width: 70vw;
+    height: 20vw;
     color: black;
     font-size: 15px;
     font-weight: 500;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
 }
 .sidebar {
     max-width: none;
@@ -29,26 +122,20 @@
 	height: 80vh !important;
 }
 
-.headshot {
-	    width: 300px;
-    height: 300px;
-    float: left;
-    border: 5px black solid;
+
+
+.aboutProject {
+	width: 35vw;
+	align-self: flex-end;
 }
-.studentInfo {
-	width: 280px;
-	height: 300px;
-	float: left;
-	margin-left: 20px;
-}
-.dash {
+/*.dash {
 	float: left;
     text-align: left;
     width: 400px;
     margin-bottom: -2px;
     margin-right: 20px;
     margin-top: 130px;
-}
+}*/
 .justify-end {
 	justify-content: flex-end;
 }
@@ -58,25 +145,8 @@
     color: black;
 	    margin-bottom: 0px;
 }
-.projectSelector {
-	position: fixed;
-	top: 50px;
-	right: 49px;
-	height: 200px;
-	z-index: 100;
-}
-.projectSelectorName {
-	display: block;
-	    height: auto;
-    padding: 1px 5px;
-   float: right;
-    clear: both;
-	border: 2px black solid;
-	font-size: 17px;
-    color: black;
-    font-weight: 600;
-	    margin: -2px 0 0 0;
-}
+
+
 .projectSelectorName:hover {
 	background: #F4EF4A;
 }
@@ -84,9 +154,9 @@
 .collaboratorTitle {
 }
 .projectDescription {
-	outline: thin red solid;
+	
 }
-.name {
+span.name {
 	font-size: 17px;
     color: black;
     font-weight: 600;
@@ -102,14 +172,18 @@
 }
 
 
-span.nextStudent a {
+
+
+span.nextStudent a,
+span.previousStudent a{
     font-size: 29px;
     color: black;
-	    border: 2px black solid;
+	    
     padding: 6px 17px;
 }
 
-span.nextStudent a:hover, span.nextStudent a:active {
+span.nextStudent a:hover, span.nextStudent a:active,
+span.previousStudent a:hover, span.previousStudent a:active{
 	text-decoration: none;
 }
 
@@ -128,15 +202,210 @@ p.collaboratortitle {
 	margin: 0;
 }
 
-p {
-    color: black;
-    font-size: 14px;
-    font-weight: 400;
+
+
+
+
+
+.red {background-color: #de3831;}
+.green {background-color: #00b588;}
+.blue {background-color: #73c7e7;}
+.yellow {background-color: #f5ed59;}
+
+
+
+/*big container to place element right */		
+		.nextStudent {
+			
+		}
+		
+/*wrapper for the red element and parent for our layers */
+.buttonWrapper {
+	
+    position: relative;
+		}
+		
+.buttonWrapper:before {
+			    content: '';
+    position: absolute;
+    display: block;
+  top: 10px;
+    left: -10px;
+    right: 15px;
+    bottom: -25px;
+    border: 5px solid black;
+    opacity: 0;
+    -webkit-transition: opacity .1s, -webkit-transform .2s;
+    transition: opacity .01s, -webkit-transform .2s;
+    transition: opacity .01s, transform .2s;
+    transition: opacity .01s, transform .2s, -webkit-transform .2s;
+    z-index: 2;
+	background-color: white;
+			
+		}
+	
+		
+.buttonWrapper:after {
+			    content: '';
+    position: absolute;
+    display: block;
+       top: 20px;
+    left: -20px;
+    right: 30px;
+    bottom: -35px;
+    border: 5px solid black;
+    opacity: 0;
+    -webkit-transition: opacity .1s, -webkit-transform .2s;
+    transition: opacity .01s, -webkit-transform .2s;
+    transition: opacity .01s, transform .2s;
+    transition: opacity .01s, transform .2s, -webkit-transform .2s;
+    z-index: 1;
+			background-color: white;
+		}
+		
+/* red element */
+		
+.buttonWrapper strong {
+			
+			
+		position: relative;
+		  padding: 15px;
+			 border: 5px solid black;
+	z-index: 3;
+		}
+		
+/* hover code. we hover over the big element and move the red element. the rest stays where it was but becomes visible */
+		
+.nextStudent:hover .buttonWrapper strong,
+.nextStudent:focus .buttonWrapper strong,
+.previousStudent:hover .buttonWrapper strong,
+.previousStudent:focus .buttonWrapper strong{
+			    transform: translate(-20px, -20px);
+	background-color: $yellow;
+		}
+		
+		
+.nextStudent:hover .buttonWrapper:after,
+.nextStudent:focus .buttonWrapper:after,
+.previousStudent:hover .buttonWrapper:after,
+.previousStudent:focus .buttonWrapper:after{
+			opacity: 1;
+			
+		}
+		
+.nextStudent:hover .buttonWrapper:before,
+.nextStudent:focus .buttonWrapper:before,
+.previousStudent:hover .buttonWrapper:before,
+.previousStudent:focus .buttonWrapper:before{
+			opacity: 1;
+		}
+
+
+@media all and (max-width: 767px) {
+	
+	.studentInfo {
+	width: 90vw;
+	height: auto;
+		padding-bottom: 0;
+		justify-content: center;
+	margin-left: 0;
+}
+	
+	.rowProject {
+		flex-direction: column;
+		width: 90vw;
+		div {
+			margin: 10px 0;
+		}
+	}
+	
+	.rowProject.betweenNav {
+		flex-direction: row;
+		justify-content: space-between;
+	
+			.buttonWrapper {
+			a {font-size: 18px;}
+				
+			}
+		
+		.buttonWrapper:after {
+			 top: 15px;
+    left: -20px;
+    right: 30px;
+    bottom: -40px;
+		}
+		.buttonWrapper:before {
+			    
+  top: 0px;
+    left: -10px;
+    right: 15px;
+			bottom: -30px;}
+			}
+		
+	
+		
+	
+	
+	.aboutProject {
+	width: 90vw;
+}
+	.tinylogo img{
+	
+	width: 80px;
+}
+	.rowStudentHeader {
+	.projectSelectorHeader {
+		width: 80%;
+		}
+	}
+	
+	.imageThird {
+	width: 90vw;
 }
 
-.cell.twelve.imageGrid {
-    padding: 0;
+.imageHalf {
+	width: 90vw;
 }
-
-/*end Ivanna*/
-
+	
+	.studentContainer {
+	width: 100vw;
+    height: auto;
+		flex-direction: column;
+		div {
+			margin: 10px 0;
+		}
+	}
+	
+	div.headshot {
+	
+	    width: 90vw;
+    height: 90vw;
+    border: 5px black solid;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+	.rowStudentHeader {
+		margin-top: -80px;
+		
+	}
+	
+	
+	.rowProject.betweenNav {
+		
+		span {
+			margin-bottom: 60px;
+			.buttonWrapper {
+			a {
+				font-size: 12px;
+			}
+			}
+		}
+		
+		.buttonWrapper:after {
+			 display: none;
+		}
+		.buttonWrapper:before {
+			   display: none;}
+	}
+}

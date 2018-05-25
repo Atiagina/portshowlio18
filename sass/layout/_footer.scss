@@ -1,0 +1,102 @@
+/* Scss Document */
+
+
+.ivannafooter{
+	margin: 100px 5px 5px 5px;
+	outline: solid black 5px;
+	height: 20vw;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: space-between;
+}
+
+
+.ivannafooter .fab {
+	font-size: 30px;
+}
+
+.ivannafooter a .fab {
+	color: black;
+}
+.ivannafooter a .fab:hover {
+	color: black;
+}
+.footersocial {
+	padding: 0px;
+	width: 30vw;
+	height: 20vw;
+	.footerrow {
+		display: flex;
+		flex-direction: row;
+		height: 50%;
+		div {
+			
+			float: left;
+		}
+		
+	}
+}
+
+.social_center {
+	padding: 20px;
+	width: 70%;
+	height: 100%;
+	margin: 0;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	font-size: 32px;
+	text-transform: uppercase;
+	font-family: HalisR-Bold;
+	p{
+	font-family: HalisR-Bold;
+	font-weight: bold;
+	font-size: 16px;
+		text-transform: none;
+	}
+}
+
+
+
+.socialoutline {
+	outline: solid black 5px;
+	 display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	float: left;
+	
+}
+
+
+@media all and (max-width: 767px) { 
+	.footersocial {
+	padding: 0px;
+	width: 100vw;
+	height: auto;
+	.footerrow {
+		display: flex;
+		flex-direction: row;
+		height: 50vw;
+		}}
+	
+	.social_center {
+	padding: 20px;
+	width: 100%;
+	}
+	
+	.ivannafooter{
+	height: auto;
+	flex-direction: column-reverse;
+}
+	
+	.ivannafooter .fab {
+	font-size: 60px;
+}
+
+}

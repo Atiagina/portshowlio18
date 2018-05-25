@@ -1,8 +1,13 @@
 /* Scss Document */
+/* This is a document for Portshowlio 2018 theme. This specific file covers home page escept masonry grid. For masinry grid se grid.scss*/
+
 body {
 	padding-top: 60px;
 }
-.homeHero {
+
+/* hero image - currently for Bodymovin json file */
+
+#homeHero {
 	height: 90vh;
 	width: 100vw;
 	background-position: center;
@@ -10,12 +15,16 @@ body {
 	background-size: cover;
 }
 
+/* initially we don't show student or event section. it is displayed on click in the menu */
 .studentSection {
 	display: none;
 }
 
+#eventSection {
+	display: none;
+}
 
-
+/* this is quick search and filters containers that are visible only on click. When used, they display only the results from the masonry grid container */
 
 .quicksearch {
 	display: none;
@@ -23,14 +32,15 @@ body {
 
 
 #filters {
-	background-color: white;
+	background-color: $pink;
 	width: 100vw;
-	height: 50px;
+	height: 150px;
 	border: 5px solid black;
 	border-top: 0;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+	overflow: hidden;
+	/*flex-direction: row;
+	justify-content: space-between;*/
+	
 	display: none;
 	position: fixed; 
 	top: 98px; left: 0px;
@@ -38,7 +48,32 @@ body {
 	
 }
 
-.quicksearch {
+/* stylying for filter button */
+.filterChoiceCont {
+	width: 20%;
+	padding: 0 10px;
+	height: 50px;
+	background-color: $pink;
+	float: left;
+	display: flex;
+	align-items: center;
+	
+	.filterItem {
+		width:100%;
+		font-size: 0.9;
+		font-family: HalisR-Bold;
+			text-transform: uppercase;
+	}
+	&:hover{
+		background-color: white;
+	}
+}
+
+/* styling for search input field */
+
+.quicksearch,
+input.quicksearch,
+input[type="text"] {
 	background-color: white;
 	width: 100vw;
 	height: 50px;
@@ -48,6 +83,321 @@ body {
 	align-items: center;
 	display: none;
 	position: fixed; 
-	top: 100px; left: 0px;
+	top: 94px; 
+	left: 0px;
 	z-index: 100000; 
+	padding-left:20px;
 }
+
+.is-checked {
+	background-color: white;
+	color: black;
+}
+
+/* event tab from Bill - heavily edited by Anna */
+
+#eventSection {
+	padding-top: 100px;
+	section {
+		border-top: $borderMain;
+		span.buttonDirections {
+    width: 100px;
+	.buttonWrapper {
+	width:100%;
+    position: relative;
+		}
+}
+
+/* styling for Directions button - this button is custom and it takes a bit :) */
+
+span.buttonDirections a {
+    font-size: 29px;
+    color: black;
+	width:100px;
+    padding: 6px 17px;
+}
+
+span.buttonDirections a:hover, span.buttonDirections a:active{
+	text-decoration: none;
+}
+
+		
+.buttonWrapper:before {
+	width: 200px;
+			    content: '';
+    position: absolute;
+    display: block;
+  top: 10px;
+    left: -10px;
+    right: 15px;
+    bottom: -25px;
+    border: 5px solid black;
+	
+    opacity: 0;
+    -webkit-transition: opacity .1s, -webkit-transform .2s;
+    transition: opacity .01s, -webkit-transform .2s;
+    transition: opacity .01s, transform .2s;
+    transition: opacity .01s, transform .2s, -webkit-transform .2s;
+    z-index: 2;
+	background-color: white;
+			
+		}
+	
+		
+.buttonWrapper:after {
+	width: 200px;
+			    content: '';
+    position: absolute;
+    display: block;
+       top: 20px;
+    left: -20px;
+    right: 30px;
+    bottom: -35px;
+    border: 5px solid black;
+    opacity: 0;
+    -webkit-transition: opacity .1s, -webkit-transform .2s;
+    transition: opacity .01s, -webkit-transform .2s;
+    transition: opacity .01s, transform .2s;
+    transition: opacity .01s, transform .2s, -webkit-transform .2s;
+    z-index: 1;
+			background-color: white;
+		}
+		
+.buttonWrapper strong {
+			
+			width: 200px;
+		position: relative;
+		  padding: 15px;
+			 border: 5px solid black;
+	z-index: 3;
+		}
+		
+/* hover code. we hover over the big element and move the strong element. the rest stays where it was but becomes visible */
+		
+.buttonDirections:hover .buttonWrapper strong,
+.buttonDirections:focus .buttonWrapper strong{
+			    transform: translate(-20px, -20px);
+	background-color: $yellow;
+		}
+		
+		
+.buttonDirections:hover .buttonWrapper:after,
+.buttonDirections:focus .buttonWrapper:after{
+			opacity: 1;
+			
+		}
+		
+.buttonDirections:hover .buttonWrapper:before,
+.buttonDirections:focus .buttonWrapper:before{
+			opacity: 1;
+		}
+	}
+}
+
+.center {display: flex;
+    justify-content: center;
+	align-items: center;
+	text-align: center;}
+
+
+
+/* other event page elements */
+
+
+.floorplan-img {
+    width: 100%;
+    padding: 52px 36px 0px 36px;
+}
+.border-bottom {
+    border-bottom: $borderMain;
+}
+.border-top {
+    border-top: $borderMain;
+}
+.border-left {
+    border-left: $borderMain;
+}
+.rowEvent {
+    outline: none;
+	display: flex;
+	flex-direction: row;
+	.cellEvent {
+		width: 50%;
+		margin-left:0;
+		margin-right:0;
+	
+	}
+}
+
+/*GOOGLE MAPS STYLES */
+.section-map {
+    
+    background-size: contain;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.section {
+    padding: 5% 5% 0% 5%;
+}
+.section-white {
+    padding-bottom: 7%;
+}
+
+.pop {
+    font-size: 110px;
+    line-height: 1.1;
+    padding-top: 24px;
+    padding-bottom: 36px;
+}
+.para-yellow {
+    padding-right: 35%;
+    font-size: 24px;
+    line-height: 1.8;
+    font-family: HalisR-Medium;
+    margin-bottom: 11%;
+}
+
+.space-top {
+    margin-top: 18px;
+}
+
+/*  media queries for Home page (except the grid container) */
+
+@media all and (max-width: 1200px) 
+{
+    .para-yellow {
+    padding-right: 7%;
+    font-size: 22px;
+    line-height: 1.8;
+    font-family: HalisR-Medium;
+    margin-bottom: 11%;
+}
+}
+ /* added styles */ 
+/*TABLET LANDSCAPE*/
+@media all and (max-width: 991px) {
+ /* added styles */ 
+.pop {
+    font-size: 96px;
+    line-height: 1.1;
+}
+.para-yellow {
+    padding-right: 7%;
+    font-size: 22px;
+    line-height: 1.8;
+    font-family: HalisR-Medium;
+    margin-bottom: 11%;
+}
+/* added styles end */ 
+
+  
+}
+/*TABLET PORTRAIT*/
+@media all and (max-width: 767px) { 
+	body {
+		padding-top: 100px;
+	}
+    /* added styles */  
+    .pop {
+    font-size: 80px;
+}
+    .para-yellow {
+        font-size: 18px;
+    }
+    .border-left {
+    border-left: none; 
+}
+    
+ /* added styles end */ 
+	#homeHero {
+		height: 70vh;
+	}
+	
+#filters {
+	
+	height: 350px;
+	}
+	
+.filterChoiceCont {
+	width: 50%;
+	}
+	
+	.rowEvent {
+    outline: none;
+	display: flex;
+	flex-direction: column-reverse;
+		height: auto;
+	.cellEvent {
+		width: 100%;
+		margin-left:0;
+		margin-right:0;
+		height: auto;
+		.section-map {
+       height: 100vw;
+    }
+		.section-pink {
+			border-bottom: $borderMain;
+			height: auto;
+			padding-bottom: 50px;
+		}
+	}
+		
+}
+    
+}
+/*MOBILE*/
+@media all and (max-width: 480px) {
+ /* added styles */  
+    .pop {
+    font-size: 80px;
+}
+    .section-pink {
+        padding-top: 33px;
+    }
+   
+    .border-left {
+    border-left: none; 
+}
+ 
+	
+	#homeHero {
+		height: 50vh;
+	}
+}
+
+@media all and (max-width: 400px) {
+    .scca {
+        font-size: 16px;
+    }
+    .para-yellow {
+ 
+    margin-bottom: 42px;
+}
+}
+/*colors from Bill's mock-up. I have variables created for these colors and I use variables in other pages- need to adress it later and rewrite scss to be consistent*/
+.green {
+    background-color: #00B686;
+}
+.light-blue {
+    background-color: #6EC6EA;
+}
+.dark-blue {
+    background-color: #0040B0;
+}
+.red {
+    background-color: #DF3628;
+}
+.yellow {
+    background-color: #F4EF4A;
+}
+.pink {
+    background-color: #FACED6;
+}
+.white {
+    background-color: #Ffffff;
+}
+

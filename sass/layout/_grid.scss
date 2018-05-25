@@ -11,90 +11,61 @@ body {
 			margin: 0 auto;
 		/*border: 3px solid black;*/
 	box-sizing: border-box;
-	
-	
-		
-		.grid-item {
-		
-			height: 25vw;
-			width: 24.7vw;
-			padding: 0px;
-			margin: 0;
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: cover;
-			outline: 5px solid black;
-			background-color: white;
-			box-sizing: border-box;
-			
-		}
-		
-	
-	}	
-		.workSection .grid-item:nth-child(5n) {  
-  width: 49.4vw;
+	padding-top: 99px;
+	margin-top: -5px;
 }
-		div.textProject {
-			display: none;
-			
-		}
-
-.textProject {
-		display: flex;
-		width: 100%;
-		height: auto;
-		flex-direction: column;
-		
-		text-align: left;
-		color: black;
-		padding: 10px;
-	h2{
-		margin-bottom: 20px;
-	}
-	
-		h3 {
-			font-family: HalisR-Bold;
-			width: 100%;
-			color: black;
-			background-color: white;
-			border-top: 6px solid black;
-		}
-		p {
-			text-align: left;
-			font-family: HalisR;
-			margin-bottom: 0;
-			padding-bottom: 5px;
-		}
-	
-	
-	
-	
-	}
-		
-		.grid-item:hover .textProject {
-			display: flex;
-			width: 100%;
-			height: 100%;
-			padding: 10px;
-			flex-direction: column;
-			justify-content: flex-end;
-			
-			align-items: flex-start;
-			background-color: $yellow;
-			
-			color: black;
-			font-family: HalisR-Bold;
-			h1 {
-				text-align: center;
-			}
-		}
-
-.studentSection {
+.grid.workSection {
+	padding-top: 94px;
 	.grid-item {
 	overflow: hidden;
-		width:24.5vw;
-	height: 30vw;
-	.hoverPhoto {display: none;}
+	width:24.5vw;
+	height: 32vw;
+	outline: 5px solid black;
+	background-color: white;
+	box-sizing: border-box;
+		margin-top: 5px;
+		a {
+			height: 32vw;
+		}
+	
+		.text {
+			padding: 5px;
+			height: 5vw;
+			border-top: 5px solid black;
+			h3 {line-height: 20px;
+margin-bottom: 5px;
+		}
+		}
+	
+
+	.mainPhoto {display: flex;
+			width: 100%;
+			height: 24.5vw;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+	}
+
+}
+}
+	
+	
+		
+
+	
+	
+.grid.studentSection .grid-item {
+		overflow: hidden;
+	width:24.5vw;
+	height: 32vw;
+	outline: 5px solid black;
+	background-color: white;
+	box-sizing: border-box;
+	a {
+			height: 32vw;
+		}
+		
+			.hoverPhoto {display: none;}
 	
 	.mainPhoto {display: flex;
 			width: 100%;
@@ -103,17 +74,17 @@ body {
 			background-repeat: no-repeat;
 			background-position: center;
 	}
-		.text {
+	.text {
 			padding: 5px;
 			height: 5vw;
 			border-top: 5px solid black;
+			h3 {line-height: 20px;
+margin-bottom: 5px;
 		}
-	
-
-	
-
-}
-	.grid-item:hover {
+		}
+	}
+		
+	.studentSection .grid-item:hover {
 		.hoverPhoto {
 			display: flex;
 			width: 100%;
@@ -128,10 +99,101 @@ body {
 		.text {
 			
 		}
-	}
+		}
+		
+	
+
+.workSection .grid-item:nth-child(5n) {  
+  width: 49vw;
 }
+	
+
 
 .search.search-results #main,
 .search.search-results {
 	margin-top: 100px;
 }
+
+
+@media all and (max-width: 840px) {
+	.grid {
+		padding-top: 0px;
+	}
+	.grid.workSection,
+	.grid.studentSection{
+	.grid-item {
+	overflow: hidden;
+		width:48vw;
+		height: 55vw;
+		a {
+			height: 55vw;
+		}
+		.mainPhoto {
+			width: 48vw;
+			height: 38vw;
+		}
+	
+		
+		/*.text {
+			height: auto;
+		}*/
+}
+	}
+	
+		.studentSection {.grid-item:hover,
+			.grid-item:focus {
+		.hoverPhoto {
+			display: flex;
+			width: 48vw;
+			height: 38vw;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		}
+		}
+}
+	
+
+@media only screen and (max-width: 600px) {
+	.grid {
+		padding-top: 0px;
+	}
+	
+	.grid.workSection,
+	.grid.studentSection{
+	.grid-item {
+	overflow: hidden;
+		width:100vw;
+		height: auto;
+		a {
+			height: auto;
+		}
+		.mainPhoto {
+			width: 100vw;
+			height: 80vw;
+		}
+		.text {
+			height: auto;
+		}
+		}
+		
+
+	}
+		.studentSection {.grid-item:hover,
+			.grid-item:focus {
+		.hoverPhoto {
+			display: flex;
+			width: 100vw;
+			height: 80vw;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		}
+		}
+		
+		
+}
+
+	

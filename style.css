@@ -45,7 +45,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 /* normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
-@import 'css/style.css';
+
 
 /* Document
 	 ========================================================================== */
@@ -55,7 +55,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-
+@import 'css/style.css';
 
 html {
 	line-height: 1.15; /* 1 */
@@ -530,7 +530,8 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button,
+
+/*button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -602,7 +603,7 @@ input[type="color"]:focus,
 textarea:focus {
 	color: #111;
 }
-
+*/
 select {
 	border: 1px solid #ccc;
 }
