@@ -619,19 +619,19 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: black;
 }
 
 a:visited {
-	color: purple;
+	color: black;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: black;
 }
 
 a:focus {
-	outline: thin dotted;
+	outline: 0;
 }
 
 a:hover, a:active {
@@ -987,7 +987,12 @@ object {
 .gallery-caption {
 	display: block;
 }
-
-
+/*erik*/
+div.headshot {background-size:130%;}
+.grid.studentSection .grid-item .mainPhoto {background-size:130%;}
+.studentSection .grid-item:hover .hoverPhoto {background-size:130%;}
+@media (screen) and (min-width:1400px){
+.bx-wrapper .bx-viewport  {border:thin red solid;height:200px!important;display:block;}
+}
 
 		

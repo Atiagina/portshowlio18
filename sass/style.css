@@ -729,7 +729,8 @@ nav {
     color: black;
     font-size: 18px;
     font-family: HalisR-Medium;
-    display: block; }
+    display: block;
+    text-decoration: underline solid #F4EF4A; }
 
 .hideNav {
   display: none; }
@@ -832,12 +833,21 @@ nav {
     width: 20vw; }
 
   .nameNav {
-    width: 60vw; } }
+    width: 60vw; }
+
+  a.siteLink {
+    font-size: 14px;
+    text-decoration: underline solid #F4EF4A; } }
 @media screen and (max-width: 500px) {
   #studentNav span.name {
     font-size: 20px; }
   #studentNav a.siteLink {
-    font-size: 14px; } }
+    font-size: 14px;
+    text-decoration: underline solid #F4EF4A; } }
+@media screen and (max-width: 410px) {
+  #topNav p {
+    font-size: 10px;
+    line-height: 2; } }
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -1020,6 +1030,11 @@ h4 {
   color: black;
   font-weight: medium; }
 
+h5 {
+  font-size: 20px;
+  color: black;
+  font-family: HalisR-Book; }
+
 p {
   font-size: 14px;
   line-height: 1.6;
@@ -1109,6 +1124,12 @@ mark, ins {
 big {
   font-size: 125%; }
 
+a {
+  color: black;
+  text-decoration: none; }
+  a:hover, a:focus {
+    color: black; }
+
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
@@ -1146,6 +1167,8 @@ body {
       .grid.workSection .grid-item .text h3 {
         line-height: 20px;
         margin-bottom: 5px; }
+        .grid.workSection .grid-item .text h3:hover {
+          text-decoration: underline solid #F4EF4A; }
     .grid.workSection .grid-item .mainPhoto {
       display: flex;
       width: 100%;
@@ -1179,6 +1202,8 @@ body {
     .grid.studentSection .grid-item .text h3 {
       line-height: 20px;
       margin-bottom: 5px; }
+      .grid.studentSection .grid-item .text h3:hover {
+        text-decoration: underline solid #F4EF4A; }
 
 .studentSection .grid-item:hover .hoverPhoto {
   display: flex;
@@ -1197,21 +1222,53 @@ body {
 .search.search-results {
   margin-top: 100px; }
 
-@media all and (max-width: 840px) {
+.grid.merchSection {
+  width: 90%;
+  margin-top: 0;
+  padding-top: 0; }
+
+.grid.merchSection .grid-item {
+  overflow: hidden;
+  width: 18vw;
+  height: 18vw;
+  outline: 5px solid black;
+  background-color: white;
+  box-sizing: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+@media only screen and (max-width: 1150px) and (min-width: 861px) {
+  .grid.workSection h3,
+  .grid.studentSection h3 {
+    font-size: 22px; }
+  .grid.workSection p,
+  .grid.studentSection p {
+    font-size: 11px; }
+
+  .grid.workSection .grid-item .text h3 {
+    line-height: 18px;
+    margin-bottom: 2px; } }
+@media all and (max-width: 860px) {
   .grid {
     padding-top: 0px; }
+
+  .grid.merchSection .grid-item {
+    overflow: hidden;
+    width: 40vw;
+    height: 40vw; }
 
   .grid.workSection .grid-item,
   .grid.studentSection .grid-item {
     overflow: hidden;
     width: 48vw;
-    height: 55vw;
+    height: 52vw;
     /*.text {
     	height: auto;
     }*/ }
     .grid.workSection .grid-item a,
     .grid.studentSection .grid-item a {
-      height: 55vw; }
+      height: 52vw; }
     .grid.workSection .grid-item .mainPhoto,
     .grid.studentSection .grid-item .mainPhoto {
       width: 48vw;
@@ -1229,10 +1286,13 @@ body {
   .grid {
     padding-top: 0px; }
 
+  #studentSection {
+    padding-top: 100px; }
+
   .grid.workSection .grid-item,
   .grid.studentSection .grid-item {
     overflow: hidden;
-    width: 100vw;
+    width: 98vw;
     height: auto; }
     .grid.workSection .grid-item a,
     .grid.studentSection .grid-item a {
@@ -1245,14 +1305,10 @@ body {
     .grid.studentSection .grid-item .text {
       height: auto; }
 
-  .studentSection .grid-item:hover .hoverPhoto,
-  .studentSection .grid-item:focus .hoverPhoto {
-    display: flex;
-    width: 100vw;
-    height: 80vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; } }
+  .studentSection .grid-item:hover .hoverPhoto {
+    display: none; }
+  .studentSection .grid-item:hover .mainPhoto {
+    display: flex; } }
 /* Scss Document */
 /* This is a document for Portshowlio 2018 theme. This specific file covers home page escept masonry grid. For masinry grid se grid.scss*/
 body {
@@ -1300,7 +1356,8 @@ body {
   background-color: #FACED6;
   float: left;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  cursor: pointer; }
   .filterChoiceCont .filterItem {
     width: 100%;
     font-size: 0.9;
@@ -1313,7 +1370,7 @@ body {
 .quicksearch,
 input.quicksearch,
 input[type="text"] {
-  background-color: white;
+  background-color: #FACED6;
   width: 100vw;
   height: 50px;
   border: 5px solid black;
@@ -1325,7 +1382,9 @@ input[type="text"] {
   top: 94px;
   left: 0px;
   z-index: 100000;
-  padding-left: 20px; }
+  padding-left: 20px;
+  font-family: HalisR-Medium;
+  color: black; }
 
 .is-checked {
   background-color: white;
@@ -1333,73 +1392,82 @@ input[type="text"] {
 
 /* event tab from Bill - heavily edited by Anna */
 #eventSection {
-  padding-top: 100px; }
-  #eventSection section {
+  padding-top: 99px;
+  /* styling for Directions button - this button is custom and it takes a bit :) */
+  /* hover code. we hover over the big element and move the strong element. the rest stays where it was but becomes visible */ }
+  #eventSection .yellow {
     border-top: 5px solid black;
-    /* styling for Directions button - this button is custom and it takes a bit :) */
-    /* hover code. we hover over the big element and move the strong element. the rest stays where it was but becomes visible */ }
-    #eventSection section span.buttonDirections {
-      width: 100px; }
-      #eventSection section span.buttonDirections .buttonWrapper {
-        width: 100%;
-        position: relative; }
-    #eventSection section span.buttonDirections a {
-      font-size: 29px;
-      color: black;
-      width: 100px;
-      padding: 6px 17px; }
-    #eventSection section span.buttonDirections a:hover, #eventSection section span.buttonDirections a:active {
-      text-decoration: none; }
-    #eventSection section .buttonWrapper:before {
-      width: 200px;
-      content: '';
-      position: absolute;
-      display: block;
-      top: 10px;
-      left: -10px;
-      right: 15px;
-      bottom: -25px;
-      border: 5px solid black;
-      opacity: 0;
-      -webkit-transition: opacity .1s, -webkit-transform .2s;
-      transition: opacity .01s, -webkit-transform .2s;
-      transition: opacity .01s, transform .2s;
-      transition: opacity .01s, transform .2s, -webkit-transform .2s;
-      z-index: 2;
-      background-color: white; }
-    #eventSection section .buttonWrapper:after {
-      width: 200px;
-      content: '';
-      position: absolute;
-      display: block;
-      top: 20px;
-      left: -20px;
-      right: 30px;
-      bottom: -35px;
-      border: 5px solid black;
-      opacity: 0;
-      -webkit-transition: opacity .1s, -webkit-transform .2s;
-      transition: opacity .01s, -webkit-transform .2s;
-      transition: opacity .01s, transform .2s;
-      transition: opacity .01s, transform .2s, -webkit-transform .2s;
-      z-index: 1;
-      background-color: white; }
-    #eventSection section .buttonWrapper strong {
-      width: 200px;
-      position: relative;
-      padding: 15px;
-      border: 5px solid black;
-      z-index: 3; }
-    #eventSection section .buttonDirections:hover .buttonWrapper strong,
-    #eventSection section .buttonDirections:focus .buttonWrapper strong {
-      transform: translate(-20px, -20px);
-      background-color: #F4EF4A; }
-    #eventSection section .buttonDirections:hover .buttonWrapper:after,
-    #eventSection section .buttonDirections:focus .buttonWrapper:after {
-      opacity: 1; }
-    #eventSection section .buttonDirections:hover .buttonWrapper:before,
-    #eventSection section .buttonDirections:focus .buttonWrapper:before {
-      opacity: 1; }
+    margin-top: -5px; }
+  #eventSection h5 {
+    font-size: 20px;
+    color: black;
+    font-family: HalisR-Book; }
+  #eventSection section {
+    border-top: 5px solid black; }
+  #eventSection span.buttonDirections {
+    width: 100px; }
+    #eventSection span.buttonDirections .buttonWrapper {
+      width: 100%;
+      position: relative; }
+  #eventSection span.buttonDirections a {
+    font-size: 29px;
+    color: black;
+    width: 100px;
+    padding: 6px 17px; }
+  #eventSection span.buttonDirections a:hover, #eventSection span.buttonDirections a:active {
+    text-decoration: none; }
+  #eventSection .buttonWrapper:before {
+    width: 210px;
+    content: '';
+    position: absolute;
+    display: block;
+    top: 10px;
+    left: -10px;
+    right: 10px;
+    bottom: -25px;
+    border: 5px solid black;
+    opacity: 0;
+    -webkit-transition: opacity .1s, -webkit-transform .2s;
+    transition: opacity .01s, -webkit-transform .2s;
+    transition: opacity .01s, transform .2s;
+    transition: opacity .01s, transform .2s, -webkit-transform .2s;
+    z-index: 2;
+    background-color: white; }
+  #eventSection .buttonWrapper:after {
+    width: 210px;
+    content: '';
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: -20px;
+    right: 30px;
+    bottom: -35px;
+    border: 5px solid black;
+    opacity: 0;
+    -webkit-transition: opacity .1s, -webkit-transform .2s;
+    transition: opacity .01s, -webkit-transform .2s;
+    transition: opacity .01s, transform .2s;
+    transition: opacity .01s, transform .2s, -webkit-transform .2s;
+    z-index: 1;
+    background-color: white; }
+  #eventSection .buttonWrapper strong {
+    width: 200px;
+    position: relative;
+    padding: 15px;
+    padding-top: 20px;
+    border: 5px solid black;
+    z-index: 3;
+    background-color: white; }
+  #eventSection .buttonDirections:hover .buttonWrapper strong,
+  #eventSection .buttonDirections:focus .buttonWrapper strong {
+    transform: translate(-20px, -20px);
+    background-color: #F4EF4A; }
+  #eventSection .buttonDirections:hover .buttonWrapper:after,
+  #eventSection .buttonDirections:focus .buttonWrapper:after {
+    opacity: 1; }
+  #eventSection .buttonDirections:hover .buttonWrapper:before,
+  #eventSection .buttonDirections:focus .buttonWrapper:before {
+    opacity: 1; }
 
 .center {
   display: flex;
@@ -1421,12 +1489,21 @@ input[type="text"] {
 .border-left {
   border-left: 5px solid black; }
 
+.rowSlider {
+  width: 100vw;
+  height: auto;
+  padding: 20px 0; }
+
 .rowEvent {
   outline: none;
   display: flex;
   flex-direction: row; }
   .rowEvent .cellEvent {
     width: 50%;
+    margin-left: 0;
+    margin-right: 0; }
+  .rowEvent .cellEventIntro {
+    width: 90%;
     margin-left: 0;
     margin-right: 0; }
 
@@ -1461,6 +1538,14 @@ input[type="text"] {
 .space-top {
   margin-top: 18px; }
 
+/* merchandise */
+.rowSlider {
+  padding: 5% 5% 0% 5%; }
+  .rowSlider p {
+    width: 50vw;
+    margin-top: 20px;
+    margin-bottom: 5%; }
+
 /*  media queries for Home page (except the grid container) */
 @media all and (max-width: 1200px) {
   .para-yellow {
@@ -1471,7 +1556,7 @@ input[type="text"] {
     margin-bottom: 11%; } }
 /* added styles */
 /*TABLET LANDSCAPE*/
-@media all and (max-width: 991px) {
+@media all and (max-width: 1024px) {
   /* added styles */
   .pop {
     font-size: 96px;
@@ -1484,9 +1569,14 @@ input[type="text"] {
     font-family: HalisR-Medium;
     margin-bottom: 11%; }
 
-  /* added styles end */ }
+  /* added styles end */
+  .social_center p {
+    font-size: 14px; }
+
+  #homeHero {
+    height: 60vw; } }
 /*TABLET PORTRAIT*/
-@media all and (max-width: 767px) {
+@media all and (max-width: 860px) {
   body {
     padding-top: 100px; }
 
@@ -1502,7 +1592,7 @@ input[type="text"] {
 
   /* added styles end */
   #homeHero {
-    height: 70vh; }
+    height: 50vw; }
 
   #filters {
     height: 350px; }
@@ -1520,17 +1610,25 @@ input[type="text"] {
       margin-left: 0;
       margin-right: 0;
       height: auto; }
-      .rowEvent .cellEvent .section-map {
-        height: 100vw; }
-      .rowEvent .cellEvent .section-pink {
-        border-bottom: 5px solid black;
-        height: auto;
-        padding-bottom: 50px; } }
+    .rowEvent .section-pink {
+      border-bottom: 5px solid black;
+      padding-bottom: 7vh; }
+    .rowEvent .section-map {
+      height: 90vw;
+      width: 90vw;
+      margin: 0 auto; }
+
+  .rowSlider {
+    padding: 5% 5% 0% 5%; }
+    .rowSlider p {
+      width: 90vw;
+      margin-top: 20px;
+      margin-bottom: 5%; } }
 /*MOBILE*/
 @media all and (max-width: 480px) {
   /* added styles */
   .pop {
-    font-size: 80px; }
+    font-size: 64px; }
 
   .section-pink {
     padding-top: 33px; }
@@ -1539,7 +1637,7 @@ input[type="text"] {
     border-left: none; }
 
   #homeHero {
-    height: 50vh; } }
+    height: 50vw; } }
 @media all and (max-width: 400px) {
   .scca {
     font-size: 16px; }
@@ -1778,6 +1876,7 @@ p.collaboratortitle {
 .buttonWrapper strong {
   position: relative;
   padding: 15px;
+  padding-top: 20px;
   border: 5px solid black;
   z-index: 3; }
 
@@ -1801,6 +1900,32 @@ p.collaboratortitle {
 .previousStudent:focus .buttonWrapper:before {
   opacity: 1; }
 
+a.siteLink {
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+  text-decoration: underline solid #F4EF4A; }
+
+.studentInfo span.name {
+  font-size: 30px; }
+
+.socialIcon {
+  font-size: 20px;
+  color: black; }
+
+.socialSection {
+  margin-top: 20px; }
+
+/* PROJECT SECTION styling changes*/
+.aboutProject {
+  margin-top: 8vh; }
+
+p.category {
+  margin-bottom: 16px; }
+
+@media all and (max-width: 1000px) {
+  .aboutProject {
+    width: 70vw; } }
 @media all and (max-width: 767px) {
   .studentInfo {
     width: 90vw;
@@ -1872,6 +1997,10 @@ p.collaboratortitle {
     display: none; }
   .rowProject.betweenNav .buttonWrapper:before {
     display: none; } }
+@media all and (max-width: 360px) {
+  .rowProject.betweenNav {
+    flex-direction: column;
+    justify-content: space-between; } }
 /* Scss Document */
 /* styles for 404 page */
 .error-404 {
@@ -1967,10 +2096,13 @@ p.collaboratortitle {
   height: 100%;
   float: left; }
 
+@media all and (max-width: 991px) {
+  .social_center p {
+    font-size: 14px; } }
 @media all and (max-width: 767px) {
   .footersocial {
     padding: 0px;
-    width: 100vw;
+    width: 99vw;
     height: auto; }
     .footersocial .footerrow {
       display: flex;
@@ -1983,7 +2115,8 @@ p.collaboratortitle {
 
   .ivannafooter {
     height: auto;
-    flex-direction: column-reverse; }
+    flex-direction: column-reverse;
+    width: 98vw; }
 
   .ivannafooter .fab {
     font-size: 60px; } }

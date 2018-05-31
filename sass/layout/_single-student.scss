@@ -8,6 +8,8 @@ heavily edited by Anna after - no thimble */
 	font-family: HalisR, Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
+
+
 /* style student's personal infrmation */
 
 .rowStudentHeader {
@@ -270,6 +272,7 @@ p.collaboratortitle {
 			
 		position: relative;
 		  padding: 15px;
+	padding-top: 20px;
 			 border: 5px solid black;
 	z-index: 3;
 		}
@@ -299,6 +302,37 @@ p.collaboratortitle {
 .previousStudent:focus .buttonWrapper:before{
 			opacity: 1;
 		}
+
+a.siteLink{
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    text-decoration: underline solid $yellow;
+}
+.studentInfo {span.name {
+    font-size: 30px;
+}
+}
+.socialIcon{
+    font-size: 20px;
+    color:black;
+}
+.socialSection{
+    margin-top: 20px;
+}
+/* PROJECT SECTION styling changes*/
+.aboutProject{
+    margin-top: 8vh;
+}
+p.category{
+    margin-bottom: 16px;
+}
+
+@media all and (max-width: 1000px) {
+	.aboutProject {
+	width: 70vw;
+}
+}
 
 
 @media all and (max-width: 767px) {
@@ -408,4 +442,14 @@ p.collaboratortitle {
 		.buttonWrapper:before {
 			   display: none;}
 	}
+	
+	
+}
+
+@media all and (max-width: 360px) {
+
+.rowProject.betweenNav {
+		flex-direction: column;
+	justify-content: space-between;}
+	
 }

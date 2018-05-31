@@ -868,6 +868,7 @@ nav #logoNav {
   font-size: 18px;
   font-family: HalisR-Medium;
   display: block;
+  text-decoration: underline solid #F4EF4A;
 }
 
 .hideNav {
@@ -993,6 +994,10 @@ nav #logoNav {
   .nameNav {
     width: 60vw;
   }
+  a.siteLink {
+    font-size: 14px;
+    text-decoration: underline solid #F4EF4A;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1001,6 +1006,14 @@ nav #logoNav {
   }
   #studentNav a.siteLink {
     font-size: 14px;
+    text-decoration: underline solid #F4EF4A;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  #topNav p {
+    font-size: 10px;
+    line-height: 2;
   }
 }
 
@@ -1213,6 +1226,12 @@ h4 {
   font-weight: medium;
 }
 
+h5 {
+  font-size: 20px;
+  color: black;
+  font-family: HalisR-Book;
+}
+
 p {
   font-size: 14px;
   line-height: 1.6;
@@ -1318,6 +1337,15 @@ big {
   font-size: 125%;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: black;
+}
+
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
@@ -1367,6 +1395,10 @@ body {
   margin-bottom: 5px;
 }
 
+.grid.workSection .grid-item .text h3:hover {
+  text-decoration: underline solid #F4EF4A;
+}
+
 .grid.workSection .grid-item .mainPhoto {
   display: flex;
   width: 100%;
@@ -1413,6 +1445,10 @@ body {
   margin-bottom: 5px;
 }
 
+.grid.studentSection .grid-item .text h3:hover {
+  text-decoration: underline solid #F4EF4A;
+}
+
 .studentSection .grid-item:hover .hoverPhoto {
   display: flex;
   width: 100%;
@@ -1435,22 +1471,60 @@ body {
   margin-top: 100px;
 }
 
-@media all and (max-width: 840px) {
+.grid.merchSection {
+  width: 90%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.grid.merchSection .grid-item {
+  overflow: hidden;
+  width: 18vw;
+  height: 18vw;
+  outline: 5px solid black;
+  background-color: white;
+  box-sizing: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (max-width: 1150px) and (min-width: 861px) {
+  .grid.workSection h3,
+  .grid.studentSection h3 {
+    font-size: 22px;
+  }
+  .grid.workSection p,
+  .grid.studentSection p {
+    font-size: 11px;
+  }
+  .grid.workSection .grid-item .text h3 {
+    line-height: 18px;
+    margin-bottom: 2px;
+  }
+}
+
+@media all and (max-width: 860px) {
   .grid {
     padding-top: 0px;
+  }
+  .grid.merchSection .grid-item {
+    overflow: hidden;
+    width: 40vw;
+    height: 40vw;
   }
   .grid.workSection .grid-item,
   .grid.studentSection .grid-item {
     overflow: hidden;
     width: 48vw;
-    height: 55vw;
+    height: 52vw;
     /*.text {
 			height: auto;
 		}*/
   }
   .grid.workSection .grid-item a,
   .grid.studentSection .grid-item a {
-    height: 55vw;
+    height: 52vw;
   }
   .grid.workSection .grid-item .mainPhoto,
   .grid.studentSection .grid-item .mainPhoto {
@@ -1472,10 +1546,13 @@ body {
   .grid {
     padding-top: 0px;
   }
+  #studentSection {
+    padding-top: 100px;
+  }
   .grid.workSection .grid-item,
   .grid.studentSection .grid-item {
     overflow: hidden;
-    width: 100vw;
+    width: 98vw;
     height: auto;
   }
   .grid.workSection .grid-item a,
@@ -1491,14 +1568,11 @@ body {
   .grid.studentSection .grid-item .text {
     height: auto;
   }
-  .studentSection .grid-item:hover .hoverPhoto,
-  .studentSection .grid-item:focus .hoverPhoto {
+  .studentSection .grid-item:hover .hoverPhoto {
+    display: none;
+  }
+  .studentSection .grid-item:hover .mainPhoto {
     display: flex;
-    width: 100vw;
-    height: 80vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 
@@ -1556,6 +1630,7 @@ body {
   float: left;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .filterChoiceCont .filterItem {
@@ -1573,7 +1648,7 @@ body {
 .quicksearch,
 input.quicksearch,
 input[type="text"] {
-  background-color: white;
+  background-color: #FACED6;
   width: 100vw;
   height: 50px;
   border: 5px solid black;
@@ -1586,6 +1661,8 @@ input[type="text"] {
   left: 0px;
   z-index: 100000;
   padding-left: 20px;
+  font-family: HalisR-Medium;
+  color: black;
 }
 
 .is-checked {
@@ -1595,43 +1672,54 @@ input[type="text"] {
 
 /* event tab from Bill - heavily edited by Anna */
 #eventSection {
-  padding-top: 100px;
-}
-
-#eventSection section {
-  border-top: 5px solid black;
+  padding-top: 99px;
   /* styling for Directions button - this button is custom and it takes a bit :) */
   /* hover code. we hover over the big element and move the strong element. the rest stays where it was but becomes visible */
 }
 
-#eventSection section span.buttonDirections {
+#eventSection .yellow {
+  border-top: 5px solid black;
+  margin-top: -5px;
+}
+
+#eventSection h5 {
+  font-size: 20px;
+  color: black;
+  font-family: HalisR-Book;
+}
+
+#eventSection section {
+  border-top: 5px solid black;
+}
+
+#eventSection span.buttonDirections {
   width: 100px;
 }
 
-#eventSection section span.buttonDirections .buttonWrapper {
+#eventSection span.buttonDirections .buttonWrapper {
   width: 100%;
   position: relative;
 }
 
-#eventSection section span.buttonDirections a {
+#eventSection span.buttonDirections a {
   font-size: 29px;
   color: black;
   width: 100px;
   padding: 6px 17px;
 }
 
-#eventSection section span.buttonDirections a:hover, #eventSection section span.buttonDirections a:active {
+#eventSection span.buttonDirections a:hover, #eventSection span.buttonDirections a:active {
   text-decoration: none;
 }
 
-#eventSection section .buttonWrapper:before {
-  width: 200px;
+#eventSection .buttonWrapper:before {
+  width: 210px;
   content: '';
   position: absolute;
   display: block;
   top: 10px;
   left: -10px;
-  right: 15px;
+  right: 10px;
   bottom: -25px;
   border: 5px solid black;
   opacity: 0;
@@ -1643,8 +1731,8 @@ input[type="text"] {
   background-color: white;
 }
 
-#eventSection section .buttonWrapper:after {
-  width: 200px;
+#eventSection .buttonWrapper:after {
+  width: 210px;
   content: '';
   position: absolute;
   display: block;
@@ -1662,27 +1750,29 @@ input[type="text"] {
   background-color: white;
 }
 
-#eventSection section .buttonWrapper strong {
+#eventSection .buttonWrapper strong {
   width: 200px;
   position: relative;
   padding: 15px;
+  padding-top: 20px;
   border: 5px solid black;
   z-index: 3;
+  background-color: white;
 }
 
-#eventSection section .buttonDirections:hover .buttonWrapper strong,
-#eventSection section .buttonDirections:focus .buttonWrapper strong {
+#eventSection .buttonDirections:hover .buttonWrapper strong,
+#eventSection .buttonDirections:focus .buttonWrapper strong {
   transform: translate(-20px, -20px);
   background-color: #F4EF4A;
 }
 
-#eventSection section .buttonDirections:hover .buttonWrapper:after,
-#eventSection section .buttonDirections:focus .buttonWrapper:after {
+#eventSection .buttonDirections:hover .buttonWrapper:after,
+#eventSection .buttonDirections:focus .buttonWrapper:after {
   opacity: 1;
 }
 
-#eventSection section .buttonDirections:hover .buttonWrapper:before,
-#eventSection section .buttonDirections:focus .buttonWrapper:before {
+#eventSection .buttonDirections:hover .buttonWrapper:before,
+#eventSection .buttonDirections:focus .buttonWrapper:before {
   opacity: 1;
 }
 
@@ -1711,6 +1801,12 @@ input[type="text"] {
   border-left: 5px solid black;
 }
 
+.rowSlider {
+  width: 100vw;
+  height: auto;
+  padding: 20px 0;
+}
+
 .rowEvent {
   outline: none;
   display: flex;
@@ -1719,6 +1815,12 @@ input[type="text"] {
 
 .rowEvent .cellEvent {
   width: 50%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.rowEvent .cellEventIntro {
+  width: 90%;
   margin-left: 0;
   margin-right: 0;
 }
@@ -1760,6 +1862,17 @@ input[type="text"] {
   margin-top: 18px;
 }
 
+/* merchandise */
+.rowSlider {
+  padding: 5% 5% 0% 5%;
+}
+
+.rowSlider p {
+  width: 50vw;
+  margin-top: 20px;
+  margin-bottom: 5%;
+}
+
 /*  media queries for Home page (except the grid container) */
 @media all and (max-width: 1200px) {
   .para-yellow {
@@ -1773,7 +1886,7 @@ input[type="text"] {
 
 /* added styles */
 /*TABLET LANDSCAPE*/
-@media all and (max-width: 991px) {
+@media all and (max-width: 1024px) {
   /* added styles */
   .pop {
     font-size: 96px;
@@ -1787,10 +1900,16 @@ input[type="text"] {
     margin-bottom: 11%;
   }
   /* added styles end */
+  .social_center p {
+    font-size: 14px;
+  }
+  #homeHero {
+    height: 60vw;
+  }
 }
 
 /*TABLET PORTRAIT*/
-@media all and (max-width: 767px) {
+@media all and (max-width: 860px) {
   body {
     padding-top: 100px;
   }
@@ -1806,7 +1925,7 @@ input[type="text"] {
   }
   /* added styles end */
   #homeHero {
-    height: 70vh;
+    height: 50vw;
   }
   #filters {
     height: 350px;
@@ -1826,13 +1945,22 @@ input[type="text"] {
     margin-right: 0;
     height: auto;
   }
-  .rowEvent .cellEvent .section-map {
-    height: 100vw;
-  }
-  .rowEvent .cellEvent .section-pink {
+  .rowEvent .section-pink {
     border-bottom: 5px solid black;
-    height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 7vh;
+  }
+  .rowEvent .section-map {
+    height: 90vw;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .rowSlider {
+    padding: 5% 5% 0% 5%;
+  }
+  .rowSlider p {
+    width: 90vw;
+    margin-top: 20px;
+    margin-bottom: 5%;
   }
 }
 
@@ -1840,7 +1968,7 @@ input[type="text"] {
 @media all and (max-width: 480px) {
   /* added styles */
   .pop {
-    font-size: 80px;
+    font-size: 64px;
   }
   .section-pink {
     padding-top: 33px;
@@ -1849,7 +1977,7 @@ input[type="text"] {
     border-left: none;
   }
   #homeHero {
-    height: 50vh;
+    height: 50vw;
   }
 }
 
@@ -2140,6 +2268,7 @@ p.collaboratortitle {
 .buttonWrapper strong {
   position: relative;
   padding: 15px;
+  padding-top: 20px;
   border: 5px solid black;
   z-index: 3;
 }
@@ -2165,6 +2294,41 @@ p.collaboratortitle {
 .previousStudent:hover .buttonWrapper:before,
 .previousStudent:focus .buttonWrapper:before {
   opacity: 1;
+}
+
+a.siteLink {
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+  text-decoration: underline solid #F4EF4A;
+}
+
+.studentInfo span.name {
+  font-size: 30px;
+}
+
+.socialIcon {
+  font-size: 20px;
+  color: black;
+}
+
+.socialSection {
+  margin-top: 20px;
+}
+
+/* PROJECT SECTION styling changes*/
+.aboutProject {
+  margin-top: 8vh;
+}
+
+p.category {
+  margin-bottom: 16px;
+}
+
+@media all and (max-width: 1000px) {
+  .aboutProject {
+    width: 70vw;
+  }
 }
 
 @media all and (max-width: 767px) {
@@ -2246,6 +2410,13 @@ p.collaboratortitle {
   }
   .rowProject.betweenNav .buttonWrapper:before {
     display: none;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .rowProject.betweenNav {
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
@@ -2370,10 +2541,16 @@ p.collaboratortitle {
   float: left;
 }
 
+@media all and (max-width: 991px) {
+  .social_center p {
+    font-size: 14px;
+  }
+}
+
 @media all and (max-width: 767px) {
   .footersocial {
     padding: 0px;
-    width: 100vw;
+    width: 99vw;
     height: auto;
   }
   .footersocial .footerrow {
@@ -2388,6 +2565,7 @@ p.collaboratortitle {
   .ivannafooter {
     height: auto;
     flex-direction: column-reverse;
+    width: 98vw;
   }
   .ivannafooter .fab {
     font-size: 60px;

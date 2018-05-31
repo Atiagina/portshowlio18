@@ -188,9 +188,9 @@ foreach ($choices as $choice):
 <!-- start of Event tab -->
 <div id="eventSection">
 	<!-- section-1 yellow -->
-<div class="section yellow border-bottom">
+<div class="section yellow border-bottom border-top">
     <div class="rowEvent">
-        <div class="cellEvent">
+        <div class="cellEventIntro">
         <h3 class="scca">SEATTLE CENTRAL CREATIVE ACADEMY</h3>
         <h4>presents</h4>
         <h1 class="pop">POP UP STUDIO!</h1>
@@ -203,8 +203,9 @@ foreach ($choices as $choice):
 <!-- section-2 pink -->
     <div class="pink border-bottom">
     <div class="rowEvent">
-        <div class="cellEvent red section-map" style="background-image: url(<?php bloginfo('template_url'); ?>/img/9map.jpg);">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.507347307381!2d-122.32377288437408!3d47.616268379185264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906accc351c149%3A0xdc1a5c338dd4395c!2sSeattle+Central+College!5e0!3m2!1sen!2sus!4v1526579163184" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+		 <!-- <div id="map" class="cellEvent red section-map" style = "width:100%; height:100%;"></div>-->
+         <div class="cellEvent red section-map" style="background-image: url(<?php bloginfo('template_url'); ?>/img/map.jpg);">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.507347307381!2d-122.32377288437408!3d47.616268379185264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906accc351c149%3A0xdc1a5c338dd4395c!2sSeattle+Central+College!5e0!3m2!1sen!2sus!4v1526579163184" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="cellEvent section section-pink border-left">
             <h3>Seattle Central College</h3>
@@ -229,7 +230,39 @@ foreach ($choices as $choice):
         <img src="<?php bloginfo('template_url'); ?>/img/floorplan.jpg" class="floorplan-img">
         </div>
     </div>
+	
+	
 </div>
+	
+<div class="rowSlider">
+	<h2 class="merchHeadline"><?php the_field('merch_headline'); ?></h2>
+	<?php the_field('merch_description'); ?>
+	<div class="grid merchSection" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 0, "fitWidth": "true" }'>
+		
+		<div class="grid-item" style="background-image:url(<?php the_field('one'); ?>);">	
+		</div>
+		<div class="grid-item" style="background-image:url(<?php the_field('two'); ?>);">	
+		</div>
+		<div class="grid-item" style="background-image:url(<?php the_field('three'); ?>);">	
+		</div>
+		<div class="grid-item" style="background-image:url(<?php the_field('four'); ?>);">	
+		</div>
+		<div class="grid-item" style="background-image:url(<?php the_field('five'); ?>);">	
+		</div>
+		<div class="grid-item" style="background-image:url(<?php the_field('six'); ?>);">	
+		</div>
+		<div class="grid-item" style="background-image:url(<?php the_field('seven'); ?>);">	
+		</div>
+		<div class="grid-item" style="background-image:url(<?php the_field('eight'); ?>);">	
+		</div>
+		<div class="grid-item" style="background-image:url(<?php the_field('nine'); ?>);">	
+		</div>
+		<div class="grid-item" style="background-image:url(<?php the_field('ten'); ?>);">	
+		</div>
+		
+		
+	</div>
+	</div>
 </div>
 <!-- end of Event tab -->
 
@@ -608,6 +641,81 @@ function debounce( fn, threshold ) {
 
 	
 </script>
+
+<!-- Google Map code -->
+
+<script>
+      var map;
+	
+	function getJSONMarkers() {
+          const markers = [
+            {
+    "featureType": "landscape.man_made",
+    "stylers": [
+      {
+        "color": "#f6f6f6"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.natural",
+    "stylers": [
+      {
+        "color": "#facdd6"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.business",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#f4f135"
+      }
+    ]
+  }
+          ];
+          return markers;
+        }
+
+	
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 2,
+          center: new google.maps.LatLng(47.616268,-122.321584)
+        });
+
+        // Create a <script> tag and set the USGS URL as the source.
+        var script = document.createElement('script');
+        // This example uses a local copy of the GeoJSON stored at
+        // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
+        script.src = $getJSONMarkers;
+        document.getElementsByTagName('head')[0].appendChild(script);
+      }
+	
+	
+
+      // Loop through the results array and place a marker for each
+      // set of coordinates.
+      window.eqfeed_callback = function(results) {
+        for (var i = 0; i < results.features.length; i++) {
+          var coords = results.features[i].geometry.coordinates;
+          var latLng = new google.maps.LatLng(coords[1],coords[0]);
+          var marker = new google.maps.Marker({
+            position: latLng,
+            map: map
+          });
+        }
+      }
+    </script>
+
+ 
+
+<!-- call Google Maps API with my API key-->
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP9jspctNhTk-z1Orgv-9Te_gslMeaXCE &callback=initMap">
+    </script>
+
 
 
 			

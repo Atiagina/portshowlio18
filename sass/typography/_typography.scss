@@ -14,3 +14,12 @@ textarea {
 
 @import "copy";
 
+a {
+	color: black;
+	text-decoration: none;
+	
+	&:hover,
+	&:focus {
+		color: black;
+	}
+}

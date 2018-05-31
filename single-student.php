@@ -48,14 +48,13 @@
 			<!--<span class='clickArrow'>INFO</span></span>-->
 		</span>
 <br/>
-		<a class='' href="http://<?php the_field('portfolio_site'); ?>" target='_blank'><?php the_field('portfolio_site'); ?></a>
-
-		<br/>
+<a class='siteLink' href="http://<?php the_field('portfolio_site'); ?>" target='_blank'><?php the_field('portfolio_site'); ?></a>
+<br/>
 <!-- loop to get the focus for the student -->
-		<?php $focus = get_field('focus');
+<?php $focus = get_field('focus');
 			if( $focus ): ?>
 			<?php foreach( $focus as $focus ): ?>
-					<span class='focus'>• <?php echo $focus; ?></span>
+					<span class='focus'><?php echo $focus; ?></span>
 			<?php endforeach; ?>
 		<?php endif; ?>
 		<!-- Social media icons -->
@@ -84,6 +83,9 @@
 			<?php endif; ?>
 			<?php if( get_field('vimeo_page') ): ?>
 				<a class='socialIcon fab fa-vimeo' href='<?php the_field('vimeo_page')?>' target='_blank'><span class='icon-vimeo'></span></a>
+			<?php endif; ?>
+			<?php if( get_field('dribble_page') ): ?>
+				<a class='socialIcon fab fa-dribbble' href='<?php the_field('dribble_page')?>' target='_blank'><span class='icon-dribble'></span></a>
 			<?php endif; ?>
 		</div>
 		</div>
@@ -122,7 +124,7 @@
 									<?php $post_objects = get_sub_field('collaborators'); if( $post_objects ): ?>
 										<?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
 						        	<?php setup_postdata($post); ?>
-						        	<a class="collaborators graylink" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+						        	<a class="collaborators siteLink" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 						    		<?php endforeach; ?>
 						    	
 						    	<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>

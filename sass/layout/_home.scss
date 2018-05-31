@@ -57,6 +57,7 @@ body {
 	float: left;
 	display: flex;
 	align-items: center;
+	cursor: pointer;
 	
 	.filterItem {
 		width:100%;
@@ -66,6 +67,7 @@ body {
 	}
 	&:hover{
 		background-color: white;
+		
 	}
 }
 
@@ -74,7 +76,7 @@ body {
 .quicksearch,
 input.quicksearch,
 input[type="text"] {
-	background-color: white;
+	background-color: $pink;
 	width: 100vw;
 	height: 50px;
 	border: 5px solid black;
@@ -87,6 +89,8 @@ input[type="text"] {
 	left: 0px;
 	z-index: 100000; 
 	padding-left:20px;
+	font-family: HalisR-Medium;
+	color: black;
 }
 
 .is-checked {
@@ -97,16 +101,31 @@ input[type="text"] {
 /* event tab from Bill - heavily edited by Anna */
 
 #eventSection {
-	padding-top: 100px;
+	padding-top: 99px;
+	.yellow {
+				border-top: $borderMain;
+		
+	margin-top: -5px;
+			}
+	
+h5 {
+	font-size: 20px;
+    color: black;
+    font-family: HalisR-Book;
+}
 	section {
 		border-top: $borderMain;
+	}
 		span.buttonDirections {
     width: 100px;
 	.buttonWrapper {
 	width:100%;
     position: relative;
+		
 		}
-}
+			
+		}
+	
 
 /* styling for Directions button - this button is custom and it takes a bit :) */
 
@@ -123,13 +142,13 @@ span.buttonDirections a:hover, span.buttonDirections a:active{
 
 		
 .buttonWrapper:before {
-	width: 200px;
+	width: 210px;
 			    content: '';
     position: absolute;
     display: block;
   top: 10px;
     left: -10px;
-    right: 15px;
+    right: 10px;
     bottom: -25px;
     border: 5px solid black;
 	
@@ -145,7 +164,7 @@ span.buttonDirections a:hover, span.buttonDirections a:active{
 	
 		
 .buttonWrapper:after {
-	width: 200px;
+	width: 210px;
 			    content: '';
     position: absolute;
     display: block;
@@ -168,8 +187,10 @@ span.buttonDirections a:hover, span.buttonDirections a:active{
 			width: 200px;
 		position: relative;
 		  padding: 15px;
-			 border: 5px solid black;
+	padding-top: 20px;
+			 border: $borderMain;
 	z-index: 3;
+	background-color: white;
 		}
 		
 /* hover code. we hover over the big element and move the strong element. the rest stays where it was but becomes visible */
@@ -191,7 +212,7 @@ span.buttonDirections a:hover, span.buttonDirections a:active{
 .buttonDirections:focus .buttonWrapper:before{
 			opacity: 1;
 		}
-	}
+	
 }
 
 .center {display: flex;
@@ -217,12 +238,25 @@ span.buttonDirections a:hover, span.buttonDirections a:active{
 .border-left {
     border-left: $borderMain;
 }
+
+.rowSlider {
+	width: 100vw;
+	height: auto;
+	padding: 20px 0;
+}
 .rowEvent {
     outline: none;
 	display: flex;
 	flex-direction: row;
 	.cellEvent {
 		width: 50%;
+		margin-left:0;
+		margin-right:0;
+	
+	}
+	
+	.cellEventIntro {
+		width: 90%;
 		margin-left:0;
 		margin-right:0;
 	
@@ -265,6 +299,16 @@ span.buttonDirections a:hover, span.buttonDirections a:active{
     margin-top: 18px;
 }
 
+/* merchandise */
+
+
+.rowSlider {
+	padding: 5% 5% 0% 5%;
+	p {width: 50vw;
+		margin-top: 20px;
+	margin-bottom: 5%;}
+}
+
 /*  media queries for Home page (except the grid container) */
 
 @media all and (max-width: 1200px) 
@@ -279,7 +323,7 @@ span.buttonDirections a:hover, span.buttonDirections a:active{
 }
  /* added styles */ 
 /*TABLET LANDSCAPE*/
-@media all and (max-width: 991px) {
+@media all and (max-width: 1024px) {
  /* added styles */ 
 .pop {
     font-size: 96px;
@@ -293,11 +337,17 @@ span.buttonDirections a:hover, span.buttonDirections a:active{
     margin-bottom: 11%;
 }
 /* added styles end */ 
-
+	.social_center p {
+		font-size: 14px;
+	}
+	
+	#homeHero {
+		height: 60vw;
+	}
   
 }
 /*TABLET PORTRAIT*/
-@media all and (max-width: 767px) { 
+@media all and (max-width: 860px) { 
 	body {
 		padding-top: 100px;
 	}
@@ -314,8 +364,10 @@ span.buttonDirections a:hover, span.buttonDirections a:active{
     
  /* added styles end */ 
 	#homeHero {
-		height: 70vh;
+		height: 50vw;
 	}
+	
+	
 	
 #filters {
 	
@@ -336,16 +388,29 @@ span.buttonDirections a:hover, span.buttonDirections a:active{
 		margin-left:0;
 		margin-right:0;
 		height: auto;
-		.section-map {
-       height: 100vw;
-    }
-		.section-pink {
-			border-bottom: $borderMain;
-			height: auto;
-			padding-bottom: 50px;
-		}
+		
+		
+		
 	}
 		
+		.section-pink {
+			border-bottom: $borderMain;
+			padding-bottom: 7vh;
+			
+		}
+		
+		.section-map {
+       height: 90vw;
+			width: 90vw;
+			margin: 0 auto;
+    }
+		
+}
+	.rowSlider {
+	padding: 5% 5% 0% 5%;
+	p {width: 90vw;
+		margin-top: 20px;
+	margin-bottom: 5%;}
 }
     
 }
@@ -353,7 +418,7 @@ span.buttonDirections a:hover, span.buttonDirections a:active{
 @media all and (max-width: 480px) {
  /* added styles */  
     .pop {
-    font-size: 80px;
+    font-size: 64px;
 }
     .section-pink {
         padding-top: 33px;
@@ -365,7 +430,7 @@ span.buttonDirections a:hover, span.buttonDirections a:active{
  
 	
 	#homeHero {
-		height: 50vh;
+		height: 50vw;
 	}
 }
 

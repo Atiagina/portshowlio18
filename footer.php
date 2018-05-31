@@ -22,12 +22,12 @@
 	
   <div class="footersocial">
 	<div class="footerrow">
-  <div class="socialoutline red social_center"><a href="#"><i class="fab fa-instagram"></i></a></div>
+  <div class="socialoutline red social_center"><a href="https://www.instagram.com/creative_academy/" target="_blank"><i class="fab fa-instagram"></i></a></div>
   <div class="socialoutline blue social_center">scca</div>
 </div> 
 	  <div class="footerrow">
-  <div class="socialoutline yellow social_center"><a href="#"><i class="fab fa-facebook"></i></a></div>
-  <div class="socialoutline green social_center"><a href="#"><i class="fab fa-twitter"></i></a></div>
+  <div class="socialoutline yellow social_center"><a href="https://www.facebook.com/seattlecentralcreativeacademy/" target="_blank"><i class="fab fa-facebook"></i></a></div>
+  <div class="socialoutline green social_center"><a href="https://twitter.com/sccaportfolio?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></div>
 </div> 
 	</div>
   <div class="thankyou social_center">

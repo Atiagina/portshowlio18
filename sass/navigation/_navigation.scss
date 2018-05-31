@@ -201,6 +201,7 @@ margin: 10px auto;
 	width: 100vw; 
 	background-color: white; 
 	/*display: flex;*/
+	
 	flex-direction: row; 
 	align-content: center; 
 	height: 10vw; 
@@ -220,6 +221,7 @@ margin: 10px auto;
 		font-size: 18px;
 		font-family: HalisR-Medium;
 		display: block;
+		text-decoration: underline solid $yellow;
 	}
 
 }
@@ -361,6 +363,11 @@ margin: 10px auto;
 	width: 60vw;
 	
 }
+	
+	a.siteLink {
+		font-size: 14px;
+		text-decoration: underline solid $yellow;
+	}
 }
 
 @media screen and (max-width: 500px) {
@@ -370,10 +377,24 @@ margin: 10px auto;
 }
 	a.siteLink {
 		font-size: 14px;
+		text-decoration: underline solid $yellow;
 	}
 	}
+	
+	
+	
+	
+}
 
 
 
+@media screen and (max-width: 410px) {
+
+#topNav {
+		p{
+			font-size: 10px;
+line-height: 2;
+		}
+	}
 	
 }
