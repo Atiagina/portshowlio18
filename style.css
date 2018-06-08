@@ -991,8 +991,16 @@ object {
 div.headshot {background-size:130%;}
 .grid.studentSection .grid-item .mainPhoto {background-size:130%;}
 .studentSection .grid-item:hover .hoverPhoto {background-size:130%;}
-@media (screen) and (min-width:1400px){
-.bx-wrapper .bx-viewport  {border:thin red solid;height:200px!important;display:block;}
+@media (screen) and (min-width: 860px){
+	.grid.studentSection .grid-item:last-child {width:24vw; margin-top:6px;}
+	
 }
-
+@media (screen) and (min-width: 900px)and (max-width:1280px){
+.grid.studentSection .grid-item .text h3 {
+    line-height: 4px;
+    margin-bottom: 4px;
+	font-size:24px;
+}
+}
+.quicksearch, input.quicksearch, input[type="text"]{font-size:xx-large;}
 		

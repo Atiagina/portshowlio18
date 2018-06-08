@@ -41,7 +41,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-@import url(thimble.css);
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -1682,6 +1681,10 @@ input[type="text"] {
   margin-top: -5px;
 }
 
+#eventSection h1 {
+  font-family: HalisR-Bold;
+}
+
 #eventSection h5 {
   font-size: 20px;
   color: black;
@@ -1862,6 +1865,12 @@ input[type="text"] {
   margin-top: 18px;
 }
 
+.dates {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /* merchandise */
 .rowSlider {
   padding: 5% 5% 0% 5%;
@@ -1932,6 +1941,11 @@ input[type="text"] {
   }
   .filterChoiceCont {
     width: 50%;
+  }
+  .dates {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .rowEvent {
     outline: none;
@@ -2413,7 +2427,7 @@ p.category {
   }
 }
 
-@media all and (max-width: 360px) {
+@media all and (max-width: 400px) {
   .rowProject.betweenNav {
     flex-direction: column;
     justify-content: space-between;

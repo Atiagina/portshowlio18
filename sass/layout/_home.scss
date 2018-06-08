@@ -108,6 +108,10 @@ input[type="text"] {
 	margin-top: -5px;
 			}
 	
+	h1 {
+		font-family: HalisR-Bold;
+		
+	}
 h5 {
 	font-size: 20px;
     color: black;
@@ -299,6 +303,12 @@ span.buttonDirections a:hover, span.buttonDirections a:active{
     margin-top: 18px;
 }
 
+.dates {
+	display: flex; 
+	flex-direction: row; 
+	justify-content: space-between;
+}
+
 /* merchandise */
 
 
@@ -377,6 +387,12 @@ span.buttonDirections a:hover, span.buttonDirections a:active{
 .filterChoiceCont {
 	width: 50%;
 	}
+	
+	.dates {
+	display: flex; 
+	flex-direction: column; 
+	justify-content: space-between;
+}
 	
 	.rowEvent {
     outline: none;

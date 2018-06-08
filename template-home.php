@@ -195,7 +195,21 @@ foreach ($choices as $choice):
         <h4>presents</h4>
         <h1 class="pop">POP UP STUDIO!</h1>
         <p class="para-yellow">The graduating class of Seattle Central Creative Academy is proud to present Portshowlio 2018. This group of talented graduates is anything but one-dimensional. This show captures the many facets of their collaboration and dedication.</p>
-        
+		<div class="dates" >
+			<div>
+        <h3 class="scca">PROFESSIONAL NIGHT</h3>
+		<p class="para-yellow">June 13th<br>
+			5-9pm</p>
+			</div>
+			<div>
+		<h3 class="scca">OPEN GALLERY</h3>
+		<p class="para-yellow">June 14th<br>
+			2-5pm</p>
+		<h3 class="scca">FRIENDS & FAMILY NIGHT</h3>
+		<p class="para-yellow">June 14th<br>
+			5-9pm</p>
+			</div>
+			</div>
         </div>
     </div>
 </div>
@@ -214,7 +228,7 @@ foreach ($choices as $choice):
 			
 				<span class='buttonDirections'>
 				<div class="buttonWrapper">
-					<strong><a href="#">Directions</a></strong>
+					<strong><a href="https://www.google.com/maps/dir//47.6162684,-122.3215842/@47.616268,-122.321584,16z?hl=en-US" target="_blank">Directions</a></strong>
 					</div>
 			</span>
 					
@@ -227,7 +241,8 @@ foreach ($choices as $choice):
     <div class="rowEvent">
         <div>
         <h3>Floor Plan</h3>
-        <img src="<?php bloginfo('template_url'); ?>/img/floorplan.jpg" class="floorplan-img">
+			 <img src="https://2018.portshowl.io/wp-content/uploads/2018/06/new_map.jpg" class="floorplan-img"/>
+       
         </div>
     </div>
 	
@@ -347,6 +362,10 @@ $('#studentLink').click(function() {
 		$('#eventLink').css('background-color','white');
 	$('.searchButton').css('background-color','white');
 	$('.filterButton').css('background-color','white');
+	$('.buttonTitle').addClass('buttonTitleBefore');
+	$('.buttonTitle').removeClass('buttonTitleAfter');
+	$('.filterTitle').addClass('filterTitleBefore');
+	$('.filterTitle').removeClass('filterTitleAfter');
 	$('#filters').css('display','none');
 	$('.quicksearch').css('display','none');
 	$('.studentSection').masonry({
@@ -388,6 +407,10 @@ $('.studentSection').css('display','none');
 		$('body').css('background','white');
 	$('.searchButton').css('background-color','white');
 	$('.filterButton').css('background-color','white');
+	$('.filterTitle').addClass('filterTitleBefore');
+	$('.filterTitle').removeClass('filterTitleAfter');
+	$('.buttonTitle').addClass('buttonTitleBefore');
+	$('.buttonTitle').removeClass('buttonTitleAfter');
 	$('#filters').css('display','none');
 	$('.quicksearch').css('display','none');
 	$('.workSection').masonry({
@@ -432,6 +455,10 @@ $('.studentSection').css('display','none');
 	$('.filterButton').css('background-color','white');
 	$('#filters').css('display','none');
 	$('.quicksearch').css('display','none');
+	$('.buttonTitle').addClass('buttonTitleBefore');
+	$('.buttonTitle').removeClass('buttonTitleAfter');
+	$('.filterTitle').addClass('filterTitleBefore');
+	$('.filterTitle').removeClass('filterTitleAfter');
 		//var $filtersJoin = $filters.join(', ');
 		//$grid.isotope({ filter: $filtersJoin });
 	var buttonFilter;

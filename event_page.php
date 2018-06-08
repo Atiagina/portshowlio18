@@ -317,7 +317,7 @@ P {
     <div class="row">
         <div class="cell event">
         <h3>Floor Plans</h3>
-        <img src="https://2018.portshowl.io/wp-content/uploads/2018/05/floorplan.jpg"/>
+        <img src="https://2018.portshowl.io/wp-content/uploads/2018/06/new_map.jpg"/>
         </div>
     </div>
 </div>

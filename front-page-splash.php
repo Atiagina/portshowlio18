@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: front-page
+ * Template Name: front-page-splash
  */
 ?>
 
